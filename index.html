@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty50 Smart Investment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+    <!-- Auth overlay -->
+    <div id="auth-overlay" class="auth-overlay">
+        <div class="auth-box">
+            <h2>Nifty50 Dashboard</h2>
+            <p>Enter password to access</p>
+            <input type="password" id="auth-password" placeholder="Password" autofocus>
+            <label class="auth-remember"><input type="checkbox" id="auth-remember" checked> Remember me</label>
+            <button id="auth-submit">Unlock</button>
+            <p id="auth-error" class="auth-error"></p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-top">
+            <h1>Nifty50 Smart Investment Dashboard</h1>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">&#9790;</button>
+                <button id="logout-btn" class="logout-btn" title="Logout">Logout</button>
+            </div>
+        </div>
+        <!-- Market Overview Bar -->
+        <div class="market-bar">
+            <div class="market-item nifty-value">
+                <span class="market-label">NIFTY 50</span>
+                <span id="nifty-value" class="market-num">--</span>
+                <span id="nifty-change" class="market-change">--</span>
+            </div>
+            <div class="market-item">
+                <span class="market-label">Last Updated</span>
+                <span id="last-updated" class="market-num-sm">--</span>
+            </div>
+            <div class="market-item">
+                <span class="market-label">Gainers</span>
+                <span id="gainers-count" class="market-num-sm green">0</span>
+            </div>
+            <div class="market-item">
+                <span class="market-label">Losers</span>
+                <span id="losers-count" class="market-num-sm red">0</span>
+            </div>
+            <div class="market-item">
+                <span class="market-label">Buy Signals</span>
+                <span id="buy-count" class="market-num-sm green">0</span>
+            </div>
+            <div class="market-item">
+                <span class="market-label">Sell Signals</span>
+                <span id="sell-count" class="market-num-sm red">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Controls -->
+        <div class="controls">
+            <div class="filter-row">
+                <div class="sector-tabs">
+                    <button class="tab active" data-sector="all">All</button>
+                    <button class="tab" data-sector="watchlist">&#9733; Watchlist</button>
+                    <button class="tab" data-sector="IT">IT</button>
+                    <button class="tab" data-sector="Banking">Banking</button>
+                    <button class="tab" data-sector="Pharma">Pharma</button>
+                    <button class="tab" data-sector="Auto">Auto</button>
+                    <button class="tab" data-sector="FMCG">FMCG</button>
+                    <button class="tab" data-sector="Energy">Energy</button>
+                    <button class="tab" data-sector="Metals">Metals</button>
+                    <button class="tab" data-sector="Financial Services">Fin Services</button>
+                    <button class="tab" data-sector="Infrastructure">Infra</button>
+                    <button class="tab" data-sector="Others">Others</button>
+                </div>
+                <div class="controls-right">
+                    <input type="text" id="search" placeholder="Search stocks...">
+                    <select id="signal-filter">
+                        <option value="all">All Signals</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Hold">Hold</option>
+                        <option value="Sell">Sell</option>
+                    </select>
+                    <select id="sort-by">
+                        <option value="change_pct_desc">Top Gainers</option>
+                        <option value="change_pct_asc">Top Losers</option>
+                        <option value="name_asc">Name A-Z</option>
+                        <option value="pe_asc">P/E Low-High</option>
+                        <option value="dividend_desc">Dividend High</option>
+                        <option value="market_cap_desc">Market Cap</option>
+                    </select>
+                    <button id="export-csv" class="export-btn">CSV</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <section class="charts-section">
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Nifty50 Trend</h3>
+                    <div class="chart-wrapper"><canvas id="nifty-trend-chart"></canvas></div>
+                </div>
+                <div class="chart-container">
+                    <h3>Sector Performance</h3>
+                    <div class="chart-wrapper"><canvas id="sector-chart"></canvas></div>
+                </div>
+                <div class="chart-container">
+                    <h3>Signal Distribution</h3>
+                    <div class="chart-wrapper"><canvas id="signal-chart"></canvas></div>
+                </div>
+                <div class="chart-container">
+                    <h3>Top Picks by Confidence</h3>
+                    <div class="chart-wrapper"><canvas id="picks-chart"></canvas></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sector Heatmap -->
+        <section class="heatmap-section">
+            <h2 class="section-title">Sector Heatmap</h2>
+            <div id="sector-heatmap" class="sector-heatmap"></div>
+        </section>
+
+        <!-- Stock Grid -->
+        <h2 class="section-title" id="stocks-heading">Stocks</h2>
+        <div id="stocks-grid" class="stocks-grid">
+            <p class="loading">Loading stock data...</p>
+        </div>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <h2 class="section-title">Market News</h2>
+            <div id="news-grid" class="news-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data from Yahoo Finance &bull; AI analysis by Groq (Llama 3.3) &bull; Updated during market hours</p>
+        <p class="disclaimer">Disclaimer: This is for educational purposes only. Not financial advice. Always do your own research before investing.</p>
+    </footer>
+
+    <script src="chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
