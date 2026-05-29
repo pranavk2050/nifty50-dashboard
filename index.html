@@ -69,7 +69,39 @@
         <!-- === OVERVIEW TAB === -->
         <div class="tab-panel active" id="panel-overview">
 
-        <!-- Controls -->
+        <!-- Charts -->
+        <section class="charts-section">
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Nifty50 Trend</h3>
+                    <div class="chart-wrapper"><canvas id="nifty-trend-chart"></canvas></div>
+                </div>
+                <div class="chart-container">
+                    <h3>Sector Performance</h3>
+                    <div class="chart-wrapper"><canvas id="sector-chart"></canvas></div>
+                </div>
+                <div class="chart-container">
+                    <h3>Signal Distribution</h3>
+                    <div class="chart-wrapper"><canvas id="signal-chart"></canvas></div>
+                </div>
+                <div class="chart-container">
+                    <h3>Top Picks by Confidence</h3>
+                    <div class="chart-wrapper"><canvas id="picks-chart"></canvas></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sector Heatmap -->
+        <section class="heatmap-section">
+            <h2 class="section-title">Sector Heatmap</h2>
+            <div id="sector-heatmap" class="sector-heatmap"></div>
+        </section>
+
+        </div><!-- end panel-overview -->
+
+        <!-- === STOCKS TAB === -->
+        <div class="tab-panel" id="panel-stocks">
+
         <div class="controls">
             <div class="filter-row">
                 <div class="sector-tabs">
@@ -109,83 +141,6 @@
                         <option value="market_cap_desc">Market Cap</option>
                     </select>
                     <button id="export-csv" class="export-btn">CSV</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Charts -->
-        <section class="charts-section">
-            <div class="charts-grid">
-                <div class="chart-container">
-                    <h3>Nifty50 Trend</h3>
-                    <div class="chart-wrapper"><canvas id="nifty-trend-chart"></canvas></div>
-                </div>
-                <div class="chart-container">
-                    <h3>Sector Performance</h3>
-                    <div class="chart-wrapper"><canvas id="sector-chart"></canvas></div>
-                </div>
-                <div class="chart-container">
-                    <h3>Signal Distribution</h3>
-                    <div class="chart-wrapper"><canvas id="signal-chart"></canvas></div>
-                </div>
-                <div class="chart-container">
-                    <h3>Top Picks by Confidence</h3>
-                    <div class="chart-wrapper"><canvas id="picks-chart"></canvas></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sector Heatmap -->
-        <section class="heatmap-section">
-            <h2 class="section-title">Sector Heatmap</h2>
-            <div id="sector-heatmap" class="sector-heatmap"></div>
-        </section>
-
-        </div><!-- end panel-overview -->
-
-        <!-- === STOCKS TAB === -->
-        <div class="tab-panel" id="panel-stocks">
-
-        <!-- Stock Filters (duplicated for stocks tab) -->
-        <div class="controls">
-            <div class="filter-row">
-                <div class="sector-tabs" id="sector-tabs-stocks">
-                    <button class="tab active" data-sector="all">All</button>
-                    <button class="tab" data-sector="watchlist">&#9733; Watchlist</button>
-                    <button class="tab" data-sector="IT">IT</button>
-                    <button class="tab" data-sector="Banking">Banking</button>
-                    <button class="tab" data-sector="Pharma">Pharma</button>
-                    <button class="tab" data-sector="Auto">Auto</button>
-                    <button class="tab" data-sector="FMCG">FMCG</button>
-                    <button class="tab" data-sector="Energy">Energy</button>
-                    <button class="tab" data-sector="Metals">Metals</button>
-                    <button class="tab" data-sector="Financial Services">Fin Services</button>
-                    <button class="tab" data-sector="Infrastructure">Infra</button>
-                    <button class="tab" data-sector="Others">Others</button>
-                </div>
-                <div class="controls-right">
-                    <input type="text" id="search-stocks" placeholder="Search stocks...">
-                    <select id="signal-filter-stocks">
-                        <option value="all">All Signals</option>
-                        <option value="Buy">Buy</option>
-                        <option value="Hold">Hold</option>
-                        <option value="Sell">Sell</option>
-                        <option value="52w_high">Near 52W High</option>
-                        <option value="52w_low">Near 52W Low</option>
-                        <option value="earnings">Earnings Soon</option>
-                    </select>
-                    <select id="sort-by-stocks">
-                        <option value="change_pct_desc">Top Gainers</option>
-                        <option value="change_pct_asc">Top Losers</option>
-                        <option value="risk_asc">Low Risk First</option>
-                        <option value="risk_desc">High Risk First</option>
-                        <option value="sharpe_desc">Best Sharpe</option>
-                        <option value="name_asc">Name A-Z</option>
-                        <option value="pe_asc">P/E Low-High</option>
-                        <option value="dividend_desc">Dividend High</option>
-                        <option value="market_cap_desc">Market Cap</option>
-                    </select>
-                    <button id="export-csv-stocks" class="export-btn">CSV</button>
                 </div>
             </div>
         </div>

@@ -578,26 +578,9 @@
         });
     });
 
-    // Overview panel controls
     document.getElementById("search").addEventListener("input", renderStocks);
     document.getElementById("signal-filter").addEventListener("change", renderStocks);
     document.getElementById("sort-by").addEventListener("change", renderStocks);
-
-    // Stocks panel controls
-    document.getElementById("search-stocks").addEventListener("input", () => {
-        document.getElementById("search").value = document.getElementById("search-stocks").value;
-        renderStocks();
-    });
-    document.getElementById("signal-filter-stocks").addEventListener("change", () => {
-        document.getElementById("signal-filter").value = document.getElementById("signal-filter-stocks").value;
-        renderStocks();
-    });
-    document.getElementById("sort-by-stocks").addEventListener("change", () => {
-        document.getElementById("sort-by").value = document.getElementById("sort-by-stocks").value;
-        renderStocks();
-    });
-    document.getElementById("export-csv-stocks").addEventListener("click", exportCSV);
-
     document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
     document.getElementById("logout-btn").addEventListener("click", () => { localStorage.removeItem("auth_token"); location.reload(); });
     document.getElementById("export-csv").addEventListener("click", exportCSV);
