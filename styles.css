@@ -171,22 +171,56 @@ select { padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius:
 .rs-badge.underperform { background: rgba(239,68,68,0.1); color: var(--red); }
 
 /* Portfolio section */
-.portfolio-section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; margin-bottom: 2rem; }
-.portfolio-controls { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1rem; align-items: center; }
-.portfolio-controls select, .portfolio-controls input { padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; background: var(--bg); color: var(--text); }
-.portfolio-controls input { width: 100px; }
-.portfolio-summary { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; font-size: 0.85rem; }
-.portfolio-summary .ps-item { display: flex; flex-direction: column; }
-.portfolio-summary .ps-label { font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; }
-.portfolio-summary .ps-value { font-size: 1.1rem; font-weight: 700; }
-.portfolio-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; }
-.portfolio-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
-.portfolio-table th { text-align: left; padding: 0.4rem; border-bottom: 1px solid var(--border); color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; }
-.portfolio-table td { padding: 0.4rem; border-bottom: 1px solid var(--border); }
-.portfolio-table .remove-btn { background: none; border: none; color: var(--red); cursor: pointer; font-size: 0.9rem; }
-.portfolio-chart-wrapper { display: flex; flex-direction: column; gap: 0.5rem; }
-.diversification-score { text-align: center; font-size: 0.85rem; padding: 0.5rem; border-radius: 8px; background: var(--bg); }
-.sector-warn { color: var(--yellow); font-size: 0.75rem; margin-top: 0.3rem; }
+.portfolio-section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+.portfolio-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; }
+.portfolio-actions { display: flex; gap: 0.4rem; }
+.portfolio-action-btn { padding: 0.35rem 0.8rem; border: 1px solid var(--border); background: var(--bg); color: var(--text-light); border-radius: 6px; cursor: pointer; font-size: 0.78rem; font-weight: 500; transition: all 0.2s; }
+.portfolio-action-btn.danger:hover { border-color: var(--red); color: var(--red); }
+
+/* Summary cards */
+.portfolio-summary-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin-bottom: 1.2rem; }
+.ps-card { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem 1rem; text-align: center; }
+.ps-card .ps-label { font-size: 0.68rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 0.2rem; }
+.ps-card .ps-value { font-size: 1.3rem; font-weight: 700; display: block; }
+.ps-card .ps-sub { font-size: 0.72rem; margin-top: 0.15rem; display: block; }
+
+/* Add form */
+.portfolio-add-form { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; }
+.portfolio-add-form h4 { font-size: 0.85rem; margin-bottom: 0.8rem; color: var(--text-light); }
+.portfolio-form-row { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: flex-end; }
+.form-group { display: flex; flex-direction: column; gap: 0.3rem; flex: 1; min-width: 140px; }
+.form-group label { font-size: 0.72rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.3px; }
+.form-group select, .form-group input { padding: 0.5rem 0.7rem; border: 1px solid var(--border); border-radius: 8px; font-size: 0.85rem; background: var(--card-bg); color: var(--text); outline: none; transition: border-color 0.2s; }
+.form-group select:focus, .form-group input:focus { border-color: var(--accent); }
+.portfolio-add-btn { padding: 0.5rem 1.2rem; background: var(--accent); color: #fff; border: none; border-radius: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s; white-space: nowrap; }
+.portfolio-add-btn:hover { opacity: 0.85; }
+.portfolio-form-error { color: var(--red); font-size: 0.78rem; margin-top: 0.5rem; min-height: 1em; }
+
+/* Holdings layout */
+.portfolio-layout { display: grid; grid-template-columns: 5fr 2fr; gap: 1.2rem; }
+.portfolio-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.portfolio-table thead { position: sticky; top: 0; background: var(--card-bg); }
+.portfolio-table th { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.3px; }
+.portfolio-table td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); }
+.portfolio-table tr:hover { background: var(--card-hover); }
+.portfolio-table .stock-info { display: flex; flex-direction: column; }
+.portfolio-table .stock-info .sym { font-weight: 700; }
+.portfolio-table .stock-info .name { font-size: 0.7rem; color: var(--text-light); }
+.portfolio-table .remove-btn { background: none; border: 1px solid var(--border); color: var(--text-light); cursor: pointer; font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; transition: all 0.2s; }
+.portfolio-table .remove-btn:hover { border-color: var(--red); color: var(--red); }
+.portfolio-table .alloc-bar { height: 4px; border-radius: 2px; background: var(--accent); margin-top: 0.2rem; }
+
+/* Portfolio chart side */
+.portfolio-chart-wrapper { display: flex; flex-direction: column; gap: 0.8rem; }
+.diversification-score { text-align: center; font-size: 0.85rem; padding: 0.8rem; border-radius: 10px; background: var(--bg); border: 1px solid var(--border); }
+.div-score-num { font-size: 1.8rem; font-weight: 800; display: block; margin-bottom: 0.2rem; }
+.div-score-label { font-size: 0.72rem; color: var(--text-light); text-transform: uppercase; }
+.sector-warn { color: var(--yellow); font-size: 0.72rem; margin-top: 0.4rem; padding: 0.4rem; background: rgba(245,158,11,0.08); border-radius: 6px; }
+
+/* Empty state */
+.portfolio-empty { text-align: center; padding: 2rem 1rem; color: var(--text-light); }
+.portfolio-empty .empty-icon { font-size: 2.5rem; margin-bottom: 0.5rem; opacity: 0.3; display: block; }
+.portfolio-empty p { font-size: 0.85rem; }
 
 /* Modal */
 .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 1000; display: flex; align-items: center; justify-content: center; }
@@ -224,4 +258,8 @@ footer p { font-size: 0.8rem; color: var(--text-light); }
     #search { flex: 1; }
     .news-grid { grid-template-columns: 1fr; }
     .detail-grid { grid-template-columns: 1fr; }
+    .portfolio-summary-cards { grid-template-columns: repeat(2, 1fr); }
+    .portfolio-layout { grid-template-columns: 1fr; }
+    .portfolio-form-row { flex-direction: column; }
+    .form-group { min-width: 100%; }
 }

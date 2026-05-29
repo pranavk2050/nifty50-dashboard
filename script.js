@@ -309,21 +309,40 @@
 
     function initPortfolio() {
         const select = document.getElementById("portfolio-stock");
-        select.innerHTML = '<option value="">Select stock...</option>' +
-            allStocks.map(s => `<option value="${s.symbol}">${s.symbol} - ${s.name}</option>`).join("");
+        select.innerHTML = '<option value="">Choose a stock...</option>' +
+            allStocks.map(s => `<option value="${s.symbol}" data-price="${s.price}">${s.symbol} - ${s.name} (&#8377;${s.price})</option>`).join("");
+        // Auto-fill current price when stock is selected
+        select.addEventListener("change", () => {
+            const opt = select.selectedOptions[0];
+            if (opt && opt.dataset.price) {
+                document.getElementById("portfolio-price").value = opt.dataset.price;
+            }
+        });
         renderPortfolio();
     }
 
     function addToPortfolio() {
+        const errEl = document.getElementById("portfolio-form-error");
         const sym = document.getElementById("portfolio-stock").value;
         const qty = parseInt(document.getElementById("portfolio-qty").value);
         const buyPrice = parseFloat(document.getElementById("portfolio-price").value);
-        if (!sym || !qty || !buyPrice) return;
+        errEl.textContent = "";
+        if (!sym) { errEl.textContent = "Please select a stock"; return; }
+        if (!qty || qty < 1) { errEl.textContent = "Enter a valid quantity (min 1)"; return; }
+        if (!buyPrice || buyPrice <= 0) { errEl.textContent = "Enter a valid buy price"; return; }
         portfolio.push({ symbol: sym, qty, buy_price: buyPrice });
         savePortfolio();
         renderPortfolio();
+        document.getElementById("portfolio-stock").value = "";
         document.getElementById("portfolio-qty").value = "";
         document.getElementById("portfolio-price").value = "";
+    }
+
+    function clearPortfolio() {
+        if (!portfolio.length) return;
+        portfolio = [];
+        savePortfolio();
+        renderPortfolio();
     }
 
     function removeFromPortfolio(index) {
@@ -336,63 +355,96 @@
         const wrapper = document.getElementById("portfolio-table-wrapper");
         const summary = document.getElementById("portfolio-summary");
         const divEl = document.getElementById("portfolio-diversification");
+        const layout = document.getElementById("portfolio-layout");
 
         if (!portfolio.length) {
-            wrapper.innerHTML = '<p style="color:var(--text-light);font-size:0.85rem">No stocks in portfolio. Add above.</p>';
             summary.innerHTML = "";
+            layout.style.display = "none";
+            wrapper.innerHTML = `<div class="portfolio-empty">
+                <span class="empty-icon">&#128188;</span>
+                <p>Your portfolio is empty. Add stocks using the form above to track your investments.</p>
+            </div>`;
             divEl.innerHTML = "";
             return;
         }
+        layout.style.display = "";
 
-        let totalInvested = 0, totalCurrent = 0;
+        let totalInvested = 0, totalCurrent = 0, totalDayPnl = 0;
         const sectorAlloc = {};
-        const rows = portfolio.map((p, i) => {
+        const holdings = portfolio.map((p, i) => {
             const stock = allStocks.find(s => s.symbol === p.symbol);
             const curPrice = stock ? stock.price : p.buy_price;
             const sector = stock ? stock.sector : "Unknown";
+            const changePct = stock ? stock.change_pct : 0;
             const invested = p.qty * p.buy_price;
             const current = p.qty * curPrice;
             const pnl = current - invested;
-            const pnlPct = (pnl / invested * 100).toFixed(2);
+            const pnlPct = invested > 0 ? (pnl / invested * 100) : 0;
+            const dayPnl = current * (changePct / 100);
             totalInvested += invested;
             totalCurrent += current;
+            totalDayPnl += dayPnl;
             sectorAlloc[sector] = (sectorAlloc[sector] || 0) + current;
-            return `<tr>
-                <td><strong>${p.symbol}</strong></td>
-                <td>${p.qty}</td>
-                <td>&#8377;${p.buy_price}</td>
-                <td>&#8377;${curPrice.toFixed(2)}</td>
-                <td class="${pnl >= 0 ? 'green' : 'red'}">&#8377;${pnl.toFixed(0)} (${pnlPct}%)</td>
-                <td>${(current / Math.max(totalCurrent, 1) * 100).toFixed(1)}%</td>
-                <td><button class="remove-btn" onclick="window.__removePortfolio(${i})">&#10005;</button></td>
-            </tr>`;
+            return { ...p, stock, curPrice, sector, invested, current, pnl, pnlPct, dayPnl, changePct, index: i };
         });
 
         const totalPnl = totalCurrent - totalInvested;
-        const totalPnlPct = totalInvested > 0 ? (totalPnl / totalInvested * 100).toFixed(2) : 0;
+        const totalPnlPct = totalInvested > 0 ? (totalPnl / totalInvested * 100) : 0;
+        const totalDayPnlPct = totalCurrent > 0 ? (totalDayPnl / (totalCurrent - totalDayPnl) * 100) : 0;
 
         summary.innerHTML = `
-            <div class="ps-item"><span class="ps-label">Invested</span><span class="ps-value">&#8377;${totalInvested.toLocaleString("en-IN")}</span></div>
-            <div class="ps-item"><span class="ps-label">Current Value</span><span class="ps-value">&#8377;${totalCurrent.toLocaleString("en-IN")}</span></div>
-            <div class="ps-item"><span class="ps-label">P&L</span><span class="ps-value ${totalPnl >= 0 ? 'green' : 'red'}">&#8377;${totalPnl.toFixed(0)} (${totalPnlPct}%)</span></div>
+            <div class="ps-card">
+                <span class="ps-label">Total Invested</span>
+                <span class="ps-value">&#8377;${Math.round(totalInvested).toLocaleString("en-IN")}</span>
+            </div>
+            <div class="ps-card">
+                <span class="ps-label">Current Value</span>
+                <span class="ps-value">&#8377;${Math.round(totalCurrent).toLocaleString("en-IN")}</span>
+            </div>
+            <div class="ps-card">
+                <span class="ps-label">Total P&L</span>
+                <span class="ps-value ${totalPnl >= 0 ? 'green' : 'red'}">&#8377;${Math.round(totalPnl).toLocaleString("en-IN")}</span>
+                <span class="ps-sub ${totalPnl >= 0 ? 'green' : 'red'}">${totalPnlPct >= 0 ? "+" : ""}${totalPnlPct.toFixed(2)}%</span>
+            </div>
+            <div class="ps-card">
+                <span class="ps-label">Today's P&L</span>
+                <span class="ps-value ${totalDayPnl >= 0 ? 'green' : 'red'}">&#8377;${Math.round(totalDayPnl).toLocaleString("en-IN")}</span>
+                <span class="ps-sub ${totalDayPnl >= 0 ? 'green' : 'red'}">${totalDayPnlPct >= 0 ? "+" : ""}${totalDayPnlPct.toFixed(2)}%</span>
+            </div>
         `;
 
         wrapper.innerHTML = `<table class="portfolio-table">
-            <thead><tr><th>Stock</th><th>Qty</th><th>Buy</th><th>CMP</th><th>P&L</th><th>Alloc</th><th></th></tr></thead>
-            <tbody>${rows.join("")}</tbody>
+            <thead><tr><th>Stock</th><th>Qty</th><th>Avg Buy</th><th>CMP</th><th>P&L</th><th>Today</th><th>Allocation</th><th></th></tr></thead>
+            <tbody>${holdings.map(h => {
+                const allocPct = totalCurrent > 0 ? (h.current / totalCurrent * 100) : 0;
+                const stockName = h.stock ? h.stock.name : h.symbol;
+                return `<tr>
+                    <td><div class="stock-info"><span class="sym">${h.symbol}</span><span class="name">${stockName}</span></div></td>
+                    <td>${h.qty}</td>
+                    <td>&#8377;${h.buy_price.toFixed(2)}</td>
+                    <td>&#8377;${h.curPrice.toFixed(2)}</td>
+                    <td class="${h.pnl >= 0 ? 'green' : 'red'}">&#8377;${Math.round(h.pnl).toLocaleString("en-IN")} <small>(${h.pnlPct >= 0 ? "+" : ""}${h.pnlPct.toFixed(1)}%)</small></td>
+                    <td class="${h.changePct >= 0 ? 'green' : 'red'}">${h.changePct >= 0 ? "+" : ""}${h.changePct.toFixed(2)}%</td>
+                    <td>${allocPct.toFixed(1)}%<div class="alloc-bar" style="width:${Math.min(allocPct, 100)}%"></div></td>
+                    <td><button class="remove-btn" onclick="window.__removePortfolio(${h.index})">Remove</button></td>
+                </tr>`;
+            }).join("")}</tbody>
         </table>`;
 
         // Diversification score
         const sectorCount = Object.keys(sectorAlloc).length;
-        const maxAlloc = Math.max(...Object.values(sectorAlloc)) / totalCurrent * 100;
-        const divScore = Math.min(10, Math.round(sectorCount * 1.5 + (maxAlloc < 30 ? 3 : maxAlloc < 50 ? 1 : 0)));
+        const maxAllocPct = totalCurrent > 0 ? Math.max(...Object.values(sectorAlloc)) / totalCurrent * 100 : 0;
+        const divScore = Math.min(10, Math.round(sectorCount * 1.5 + (maxAllocPct < 30 ? 3 : maxAllocPct < 50 ? 1 : 0)));
         let warns = [];
         for (const [sec, val] of Object.entries(sectorAlloc)) {
-            if (val / totalCurrent > 0.3) warns.push(`${sec} > 30%`);
+            const pct = totalCurrent > 0 ? (val / totalCurrent * 100) : 0;
+            if (pct > 30) warns.push(`${sec}: ${pct.toFixed(0)}%`);
         }
+        const scoreColor = divScore >= 7 ? "green" : divScore >= 4 ? "" : "red";
         divEl.innerHTML = `<div class="diversification-score">
-            Diversification: <strong>${divScore}/10</strong> (${sectorCount} sectors)
-            ${warns.length ? `<div class="sector-warn">Warning: ${warns.join(", ")}</div>` : ""}
+            <span class="div-score-num ${scoreColor}">${divScore}/10</span>
+            <span class="div-score-label">Diversification Score (${sectorCount} sector${sectorCount !== 1 ? "s" : ""})</span>
+            ${warns.length ? `<div class="sector-warn">Over-concentrated: ${warns.join(", ")}</div>` : ""}
         </div>`;
 
         // Pie chart
@@ -519,6 +571,7 @@
     document.getElementById("logout-btn").addEventListener("click", () => { localStorage.removeItem("auth_token"); location.reload(); });
     document.getElementById("export-csv").addEventListener("click", exportCSV);
     document.getElementById("portfolio-add").addEventListener("click", addToPortfolio);
+    document.getElementById("portfolio-clear").addEventListener("click", clearPortfolio);
     document.getElementById("comparison-modal").addEventListener("click", e => { if (e.target.id === "comparison-modal") window.__closeModal(); });
 
     loadData();
