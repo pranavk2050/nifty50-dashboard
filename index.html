@@ -82,10 +82,16 @@
                         <option value="Buy">Buy</option>
                         <option value="Hold">Hold</option>
                         <option value="Sell">Sell</option>
+                        <option value="52w_high">Near 52W High</option>
+                        <option value="52w_low">Near 52W Low</option>
+                        <option value="earnings">Earnings Soon</option>
                     </select>
                     <select id="sort-by">
                         <option value="change_pct_desc">Top Gainers</option>
                         <option value="change_pct_asc">Top Losers</option>
+                        <option value="risk_asc">Low Risk First</option>
+                        <option value="risk_desc">High Risk First</option>
+                        <option value="sharpe_desc">Best Sharpe</option>
                         <option value="name_asc">Name A-Z</option>
                         <option value="pe_asc">P/E Low-High</option>
                         <option value="dividend_desc">Dividend High</option>
@@ -123,6 +129,36 @@
             <h2 class="section-title">Sector Heatmap</h2>
             <div id="sector-heatmap" class="sector-heatmap"></div>
         </section>
+
+        <!-- Portfolio Simulator -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Portfolio Simulator</h2>
+            <div class="portfolio-controls">
+                <select id="portfolio-stock"><option value="">Select stock...</option></select>
+                <input type="number" id="portfolio-qty" placeholder="Qty" min="1">
+                <input type="number" id="portfolio-price" placeholder="Buy price" min="0" step="0.01">
+                <button id="portfolio-add" class="export-btn">Add</button>
+            </div>
+            <div class="portfolio-summary" id="portfolio-summary"></div>
+            <div class="portfolio-layout">
+                <div id="portfolio-table-wrapper"></div>
+                <div class="portfolio-chart-wrapper">
+                    <div id="portfolio-diversification"></div>
+                    <div class="chart-wrapper" style="height:200px"><canvas id="portfolio-pie"></canvas></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peer Comparison Modal -->
+        <div id="comparison-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="comparison-title">Peer Comparison</h3>
+                    <button class="modal-close" onclick="window.__closeModal()">&times;</button>
+                </div>
+                <div id="comparison-body" class="comparison-body"></div>
+            </div>
+        </div>
 
         <!-- Stock Grid -->
         <h2 class="section-title" id="stocks-heading">Stocks</h2>

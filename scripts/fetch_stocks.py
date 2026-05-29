@@ -133,9 +133,121 @@ def calc_bollinger(prices, period=20):
     return round(float(sma + 2 * std), 2), round(float(sma), 2), round(float(sma - 2 * std), 2)
 
 
+def calc_atr(highs, lows, closes, period=14):
+    """Calculate Average True Range."""
+    if len(closes) < period + 1:
+        return None
+    trs = []
+    for i in range(1, len(closes)):
+        tr = max(highs[i] - lows[i], abs(highs[i] - closes[i - 1]), abs(lows[i] - closes[i - 1]))
+        trs.append(tr)
+    if len(trs) < period:
+        return None
+    return round(float(np.mean(trs[-period:])), 2)
+
+
+def calc_beta(stock_closes, nifty_closes):
+    """Calculate Beta vs Nifty50 index."""
+    min_len = min(len(stock_closes), len(nifty_closes))
+    if min_len < 20:
+        return None
+    sr = np.diff(stock_closes[-min_len:]) / stock_closes[-min_len:-1] if min_len > 1 else []
+    nr = np.diff(nifty_closes[-min_len:]) / nifty_closes[-min_len:-1] if min_len > 1 else []
+    if len(sr) < 2 or len(nr) < 2:
+        return None
+    cov = np.cov(sr, nr)[0][1]
+    var = np.var(nr)
+    if var == 0:
+        return None
+    return round(float(cov / var), 2)
+
+
+def calc_volatility(closes, period=30):
+    """Calculate annualized volatility from daily returns."""
+    if len(closes) < period + 1:
+        return None
+    returns = np.diff(closes[-period - 1:]) / closes[-period - 1:-1]
+    return round(float(np.std(returns) * np.sqrt(252) * 100), 2)
+
+
+def calc_max_drawdown(closes):
+    """Calculate max drawdown from peak."""
+    if len(closes) < 2:
+        return None
+    peak = closes[0]
+    max_dd = 0
+    for p in closes:
+        if p > peak:
+            peak = p
+        dd = (peak - p) / peak * 100
+        if dd > max_dd:
+            max_dd = dd
+    return round(float(-max_dd), 2)
+
+
+def calc_sharpe(closes, risk_free_rate=0.065):
+    """Calculate Sharpe-like ratio (annualized)."""
+    if len(closes) < 30:
+        return None
+    returns = np.diff(closes[-30:]) / closes[-30:-1]
+    ann_return = float(np.mean(returns) * 252)
+    ann_vol = float(np.std(returns) * np.sqrt(252))
+    if ann_vol == 0:
+        return None
+    return round((ann_return - risk_free_rate) / ann_vol, 2)
+
+
+def calc_support_resistance(closes):
+    """Calculate support and resistance from recent swing points."""
+    if len(closes) < 10:
+        return None, None
+    recent = closes[-20:] if len(closes) >= 20 else closes
+    support = round(float(min(recent)), 2)
+    resistance = round(float(max(recent)), 2)
+    return support, resistance
+
+
+def calc_risk_score(volatility, debt_to_equity, rsi, price, week52_high, week52_low, beta):
+    """Calculate composite risk score 1-10."""
+    score = 5.0  # Base
+
+    # Volatility component (0-3 points)
+    if volatility is not None:
+        if volatility > 40:
+            score += 2
+        elif volatility > 25:
+            score += 1
+        elif volatility < 15:
+            score -= 1
+
+    # Debt component (0-2 points)
+    if debt_to_equity > 150:
+        score += 2
+    elif debt_to_equity > 80:
+        score += 1
+    elif debt_to_equity < 30:
+        score -= 1
+
+    # RSI extremes (0-1 point)
+    if rsi is not None and (rsi > 75 or rsi < 25):
+        score += 1
+
+    # 52W position (0-1 point)
+    if week52_high > 0 and week52_low > 0:
+        range_pct = (price - week52_low) / (week52_high - week52_low) if (week52_high - week52_low) > 0 else 0.5
+        if range_pct > 0.95 or range_pct < 0.05:
+            score += 1
+
+    # Beta component (0-1 point)
+    if beta is not None and abs(beta) > 1.5:
+        score += 1
+
+    return max(1, min(10, round(score)))
+
+
 # --- Data Fetching ---
 
-def fetch_stock_data(symbol, meta):
+def fetch_stock_data(symbol, meta, nifty_closes=None):
     """Fetch comprehensive data for a single stock."""
     try:
         ticker = yf.Ticker(symbol)
@@ -146,6 +258,8 @@ def fetch_stock_data(symbol, meta):
             return None
 
         closes = hist["Close"].values.tolist()
+        highs = hist["High"].values.tolist()
+        lows = hist["Low"].values.tolist()
         current_price = closes[-1] if closes else 0
         prev_close = info.get("previousClose") or info.get("regularMarketPreviousClose") or (closes[-2] if len(closes) > 1 else current_price)
         change = current_price - prev_close
@@ -158,6 +272,57 @@ def fetch_stock_data(symbol, meta):
         sma50 = calc_sma(closes, 50)
         sma200 = calc_sma(closes, 200) if len(closes) >= 200 else None
         bb_upper, bb_middle, bb_lower = calc_bollinger(closes)
+
+        # Risk & volatility metrics
+        atr = calc_atr(highs, lows, closes)
+        beta = calc_beta(closes, nifty_closes) if nifty_closes else None
+        volatility = calc_volatility(closes)
+        max_drawdown = calc_max_drawdown(closes)
+        sharpe = calc_sharpe(closes)
+        support, resistance = calc_support_resistance(closes)
+
+        week52_high = round(float(info.get("fiftyTwoWeekHigh") or 0), 2)
+        week52_low = round(float(info.get("fiftyTwoWeekLow") or 0), 2)
+        debt_to_equity = round(float(info.get("debtToEquity") or 0), 2)
+
+        risk_score = calc_risk_score(volatility, debt_to_equity, rsi, current_price, week52_high, week52_low, beta)
+
+        # Relative strength vs Nifty (30-day)
+        relative_strength = None
+        if nifty_closes and len(closes) >= 30 and len(nifty_closes) >= 30:
+            stock_30d_ret = (closes[-1] - closes[-30]) / closes[-30] * 100
+            nifty_30d_ret = (nifty_closes[-1] - nifty_closes[-30]) / nifty_closes[-30] * 100
+            relative_strength = round(stock_30d_ret - nifty_30d_ret, 2)
+
+        # 52W alerts
+        near_52w_high = week52_high > 0 and current_price >= week52_high * 0.95
+        near_52w_low = week52_low > 0 and current_price <= week52_low * 1.05
+
+        # Earnings & dividend dates
+        next_earnings = None
+        earnings_soon = False
+        ex_div_date = None
+        payout_ratio = round(float(info.get("payoutRatio") or 0) * 100, 2)
+        try:
+            cal = ticker.calendar
+            if cal is not None and not (hasattr(cal, 'empty') and cal.empty):
+                if isinstance(cal, dict):
+                    ed = cal.get("Earnings Date")
+                    if ed:
+                        edate = ed[0] if isinstance(ed, list) else ed
+                        next_earnings = str(edate)[:10]
+                exd = info.get("exDividendDate")
+                if exd:
+                    ex_div_date = datetime.fromtimestamp(exd).strftime("%Y-%m-%d") if isinstance(exd, (int, float)) else str(exd)[:10]
+        except Exception:
+            pass
+
+        if next_earnings:
+            try:
+                days_to_earnings = (datetime.strptime(next_earnings, "%Y-%m-%d") - datetime.now()).days
+                earnings_soon = 0 <= days_to_earnings <= 7
+            except Exception:
+                pass
 
         # Price history (last 30 days)
         recent_hist = hist.tail(30)
@@ -183,9 +348,9 @@ def fetch_stock_data(symbol, meta):
             "eps": round(float(info.get("trailingEps") or 0), 2),
             "dividend_yield": round(float(info.get("dividendYield") or 0) * 100, 2),
             "roe": round(float(info.get("returnOnEquity") or 0) * 100, 2),
-            "debt_to_equity": round(float(info.get("debtToEquity") or 0), 2),
-            "week52_high": round(float(info.get("fiftyTwoWeekHigh") or 0), 2),
-            "week52_low": round(float(info.get("fiftyTwoWeekLow") or 0), 2),
+            "debt_to_equity": debt_to_equity,
+            "week52_high": week52_high,
+            "week52_low": week52_low,
             "technicals": {
                 "rsi": rsi,
                 "macd": macd_line,
@@ -197,6 +362,23 @@ def fetch_stock_data(symbol, meta):
                 "bb_middle": bb_middle,
                 "bb_lower": bb_lower,
             },
+            "risk_metrics": {
+                "risk_score": risk_score,
+                "beta": beta,
+                "atr": atr,
+                "volatility_30d": volatility,
+                "max_drawdown": max_drawdown,
+                "sharpe_ratio": sharpe,
+                "support": support,
+                "resistance": resistance,
+                "relative_strength": relative_strength,
+                "near_52w_high": near_52w_high,
+                "near_52w_low": near_52w_low,
+                "payout_ratio": payout_ratio,
+                "ex_dividend_date": ex_div_date,
+                "next_earnings_date": next_earnings,
+                "earnings_soon": earnings_soon,
+            },
             "price_history": price_history,
         }
     except Exception as e:
@@ -205,19 +387,20 @@ def fetch_stock_data(symbol, meta):
 
 
 def fetch_nifty_index():
-    """Fetch Nifty50 index data."""
+    """Fetch Nifty50 index data with 3mo history for beta calculation."""
     try:
         nifty = yf.Ticker("^NSEI")
         info = nifty.info or {}
-        hist = nifty.history(period="1mo")
+        hist = nifty.history(period="3mo")
         current = float(hist["Close"].iloc[-1]) if not hist.empty else 0
         prev = float(info.get("previousClose") or info.get("regularMarketPreviousClose") or 0)
         change = current - prev if prev else 0
         change_pct = (change / prev * 100) if prev else 0
 
+        closes_list = hist["Close"].values.tolist() if not hist.empty else []
         trend = [
             {"date": d.strftime("%Y-%m-%d"), "close": round(float(r["Close"]), 2)}
-            for d, r in hist.iterrows()
+            for d, r in hist.tail(30).iterrows()
         ]
 
         return {
@@ -226,10 +409,11 @@ def fetch_nifty_index():
             "change_pct": round(change_pct, 2),
             "prev_close": round(prev, 2),
             "trend": trend,
+            "_closes": closes_list,  # Internal: for beta calculation
         }
     except Exception as e:
         print(f"  Error fetching Nifty index: {e}")
-        return {"value": 0, "change": 0, "change_pct": 0, "prev_close": 0, "trend": []}
+        return {"value": 0, "change": 0, "change_pct": 0, "prev_close": 0, "trend": [], "_closes": []}
 
 
 def fetch_news(query, max_items=5):
@@ -332,15 +516,18 @@ def main():
     nifty_index = fetch_nifty_index()
     print(f"  Nifty50: {nifty_index['value']} ({nifty_index['change_pct']:+.2f}%)")
 
+    nifty_closes = nifty_index.get("_closes", [])
+
     # Fetch all stocks
     print("\nFetching stock data...")
     stocks = []
     for symbol, meta in NIFTY50.items():
         print(f"  {meta['name']}...", end=" ", flush=True)
-        data = fetch_stock_data(symbol, meta)
+        data = fetch_stock_data(symbol, meta, nifty_closes)
         if data:
             stocks.append(data)
-            print(f"Rs.{data['price']} ({data['change_pct']:+.2f}%)")
+            rs = data.get("risk_metrics", {}).get("risk_score", "?")
+            print(f"Rs.{data['price']} ({data['change_pct']:+.2f}%) Risk:{rs}")
         else:
             print("FAILED")
         time.sleep(0.3)  # Be gentle with Yahoo Finance
@@ -374,10 +561,11 @@ def main():
         sectors[sec]["total_change"] += s["change_pct"]
     sector_perf = {k: round(v["total_change"] / v["stocks"], 2) for k, v in sectors.items()}
 
-    # Build output
+    # Build output (strip internal fields)
+    nifty_output = {k: v for k, v in nifty_index.items() if not k.startswith("_")}
     output = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "nifty_index": nifty_index,
+        "nifty_index": nifty_output,
         "stocks": stocks,
         "market_news": market_news,
         "sector_performance": sector_perf,

@@ -155,6 +155,52 @@ select { padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius:
 .news-card h4 a:hover { color: var(--accent); }
 .news-card .news-date { font-size: 0.72rem; color: var(--text-light); }
 
+/* Risk badge */
+.risk-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+.risk-badge.low { background: rgba(34,197,94,0.15); color: var(--green); }
+.risk-badge.medium { background: rgba(245,158,11,0.15); color: var(--yellow); }
+.risk-badge.high { background: rgba(239,68,68,0.15); color: var(--red); }
+
+/* Alert badges */
+.alert-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.65rem; font-weight: 600; background: rgba(245,158,11,0.15); color: var(--yellow); margin-left: 0.3rem; }
+.alert-badge.earnings { background: rgba(139,92,246,0.15); color: #8b5cf6; }
+
+/* Relative strength */
+.rs-badge { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.65rem; font-weight: 600; }
+.rs-badge.outperform { background: rgba(34,197,94,0.1); color: var(--green); }
+.rs-badge.underperform { background: rgba(239,68,68,0.1); color: var(--red); }
+
+/* Portfolio section */
+.portfolio-section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; margin-bottom: 2rem; }
+.portfolio-controls { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1rem; align-items: center; }
+.portfolio-controls select, .portfolio-controls input { padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; background: var(--bg); color: var(--text); }
+.portfolio-controls input { width: 100px; }
+.portfolio-summary { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; font-size: 0.85rem; }
+.portfolio-summary .ps-item { display: flex; flex-direction: column; }
+.portfolio-summary .ps-label { font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; }
+.portfolio-summary .ps-value { font-size: 1.1rem; font-weight: 700; }
+.portfolio-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; }
+.portfolio-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.portfolio-table th { text-align: left; padding: 0.4rem; border-bottom: 1px solid var(--border); color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; }
+.portfolio-table td { padding: 0.4rem; border-bottom: 1px solid var(--border); }
+.portfolio-table .remove-btn { background: none; border: none; color: var(--red); cursor: pointer; font-size: 0.9rem; }
+.portfolio-chart-wrapper { display: flex; flex-direction: column; gap: 0.5rem; }
+.diversification-score { text-align: center; font-size: 0.85rem; padding: 0.5rem; border-radius: 8px; background: var(--bg); }
+.sector-warn { color: var(--yellow); font-size: 0.75rem; margin-top: 0.3rem; }
+
+/* Modal */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 1000; display: flex; align-items: center; justify-content: center; }
+.modal.hidden { display: none; }
+.modal-content { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; width: 90%; max-width: 900px; max-height: 80vh; overflow-y: auto; }
+.modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.2rem; border-bottom: 1px solid var(--border); }
+.modal-header h3 { font-size: 1rem; }
+.modal-close { background: none; border: none; color: var(--text-light); font-size: 1.5rem; cursor: pointer; }
+.comparison-body { padding: 1rem; overflow-x: auto; }
+.comparison-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.comparison-table th { text-align: left; padding: 0.5rem; border-bottom: 1px solid var(--border); color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; position: sticky; top: 0; background: var(--card-bg); }
+.comparison-table td { padding: 0.5rem; border-bottom: 1px solid var(--border); }
+.comparison-table tr:hover { background: var(--card-hover); }
+
 /* Footer */
 footer { text-align: center; padding: 2rem 1rem; border-top: 1px solid var(--border); }
 footer p { font-size: 0.8rem; color: var(--text-light); }

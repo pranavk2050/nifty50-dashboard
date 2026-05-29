@@ -55,8 +55,18 @@
     let chartInstances = {};
     let miniCharts = {};
     let watchlist = new Set(JSON.parse(localStorage.getItem("nifty_watchlist") || "[]"));
+    let portfolio = JSON.parse(localStorage.getItem("nifty_portfolio") || "[]");
 
     function saveWatchlist() { localStorage.setItem("nifty_watchlist", JSON.stringify([...watchlist])); }
+    function savePortfolio() { localStorage.setItem("nifty_portfolio", JSON.stringify(portfolio)); }
+
+    // --- Helpers ---
+    function riskLabel(score) {
+        if (score <= 3) return "low";
+        if (score <= 6) return "medium";
+        return "high";
+    }
+    function fmtMcap(v) { return v >= 1e12 ? (v/1e12).toFixed(2)+"T" : v >= 1e9 ? (v/1e9).toFixed(0)+"B" : "--"; }
 
     // --- Data Loading ---
     function loadData() {
@@ -73,6 +83,7 @@
                     renderHeatmap();
                     renderStocks();
                     renderNews();
+                    initPortfolio();
                 } catch (e) {
                     document.getElementById("stocks-grid").innerHTML = '<p class="loading">Error loading data.</p>';
                 }
@@ -89,10 +100,8 @@
         const pct = idx.change_pct || 0;
         changeEl.textContent = `${pct >= 0 ? "+" : ""}${pct.toFixed(2)}% (${pct >= 0 ? "+" : ""}${(idx.change || 0).toFixed(2)})`;
         changeEl.className = "market-change " + (pct >= 0 ? "green" : "red");
-
         const ts = stockData.last_updated || "";
         document.getElementById("last-updated").textContent = ts ? new Date(ts).toLocaleString("en-IN") : "--";
-
         const s = stockData.summary || {};
         document.getElementById("gainers-count").textContent = s.gainers || 0;
         document.getElementById("losers-count").textContent = s.losers || 0;
@@ -109,25 +118,31 @@
         let filtered = allStocks.filter(s => {
             if (activeSector === "watchlist" && !watchlist.has(s.symbol)) return false;
             if (activeSector !== "all" && activeSector !== "watchlist" && s.sector !== activeSector) return false;
-            if (signalFilter !== "all" && s.ai && s.ai.signal !== signalFilter) return false;
+            const rm = s.risk_metrics || {};
+            if (signalFilter === "52w_high" && !rm.near_52w_high) return false;
+            if (signalFilter === "52w_low" && !rm.near_52w_low) return false;
+            if (signalFilter === "earnings" && !rm.earnings_soon) return false;
+            if (["Buy","Hold","Sell"].includes(signalFilter) && s.ai && s.ai.signal !== signalFilter) return false;
             if (query && !`${s.symbol} ${s.name} ${s.sector}`.toLowerCase().includes(query)) return false;
             return true;
         });
 
-        // Sort
-        const [field, dir] = sortBy.split("_");
+        const parts = sortBy.split("_");
+        const dir = parts.pop();
+        const field = parts.join("_");
         const asc = dir === "asc";
         filtered.sort((a, b) => {
             let va, vb;
-            if (field === "change") { va = a.change_pct; vb = b.change_pct; }
+            if (field === "change_pct") { va = a.change_pct; vb = b.change_pct; }
             else if (field === "name") { va = a.name; vb = b.name; return asc ? va.localeCompare(vb) : vb.localeCompare(va); }
             else if (field === "pe") { va = a.pe_ratio || 999; vb = b.pe_ratio || 999; }
             else if (field === "dividend") { va = a.dividend_yield; vb = b.dividend_yield; }
-            else if (field === "market") { va = a.market_cap; vb = b.market_cap; }
+            else if (field === "market_cap") { va = a.market_cap; vb = b.market_cap; }
+            else if (field === "risk") { va = (a.risk_metrics||{}).risk_score||5; vb = (b.risk_metrics||{}).risk_score||5; }
+            else if (field === "sharpe") { va = (a.risk_metrics||{}).sharpe_ratio||0; vb = (b.risk_metrics||{}).sharpe_ratio||0; }
             else { va = a.change_pct; vb = b.change_pct; }
             return asc ? va - vb : vb - va;
         });
-
         return filtered;
     }
 
@@ -136,18 +151,25 @@
         const grid = document.getElementById("stocks-grid");
         const filtered = getFilteredStocks();
         document.getElementById("stocks-heading").textContent = `Stocks (${filtered.length})`;
-
-        if (!filtered.length) {
-            grid.innerHTML = '<p class="loading">No stocks match your filters.</p>';
-            return;
-        }
+        if (!filtered.length) { grid.innerHTML = '<p class="loading">No stocks match your filters.</p>'; return; }
 
         grid.innerHTML = filtered.map(s => {
             const ai = s.ai || {};
+            const rm = s.risk_metrics || {};
             const chgClass = s.change_pct >= 0 ? "green" : "red";
             const sigClass = (ai.signal || "hold").toLowerCase();
             const isWatched = watchlist.has(s.symbol);
-            const mcap = s.market_cap ? (s.market_cap >= 1e12 ? (s.market_cap / 1e12).toFixed(2) + "T" : (s.market_cap / 1e9).toFixed(0) + "B") : "--";
+            const riskClass = riskLabel(rm.risk_score || 5);
+
+            // Alert badges
+            let alerts = "";
+            if (rm.near_52w_high) alerts += '<span class="alert-badge">52W High</span>';
+            if (rm.near_52w_low) alerts += '<span class="alert-badge">52W Low</span>';
+            if (rm.earnings_soon) alerts += '<span class="alert-badge earnings">Earnings Soon</span>';
+            if (rm.relative_strength != null) {
+                const rsClass = rm.relative_strength >= 0 ? "outperform" : "underperform";
+                alerts += `<span class="rs-badge ${rsClass}">${rm.relative_strength >= 0 ? "+" : ""}${rm.relative_strength}% vs Nifty</span>`;
+            }
 
             return `
             <div class="stock-card" data-symbol="${s.symbol}" onclick="window.__expandStock(this)">
@@ -156,9 +178,10 @@
                         <div class="stock-name-row">
                             <span class="stock-symbol">${s.symbol}</span>
                             <span class="signal-badge ${sigClass}">${ai.signal || "Hold"}</span>
-                            <button class="watchlist-btn ${isWatched ? "active" : ""}" onclick="event.stopPropagation();window.__toggleWatch('${s.symbol}')" title="${isWatched ? "Remove from watchlist" : "Add to watchlist"}">${isWatched ? "&#9733;" : "&#9734;"}</button>
+                            <span class="risk-badge ${riskClass}" title="Risk Score: ${rm.risk_score || "?"}/10">R:${rm.risk_score || "?"}</span>
+                            <button class="watchlist-btn ${isWatched ? "active" : ""}" onclick="event.stopPropagation();window.__toggleWatch('${s.symbol}')">${isWatched ? "&#9733;" : "&#9734;"}</button>
                         </div>
-                        <span class="stock-name">${s.name} <span class="sector-badge">${s.sector}</span></span>
+                        <span class="stock-name">${s.name} <span class="sector-badge">${s.sector}</span> ${alerts}</span>
                     </div>
                     <div class="stock-price-row">
                         <span class="stock-price">&#8377;${s.price.toLocaleString("en-IN")}</span>
@@ -167,7 +190,7 @@
                 </div>
                 <div class="stock-card-meta">
                     <span><span class="label">P/E</span> <span class="value">${s.pe_ratio || "--"}</span></span>
-                    <span><span class="label">MCap</span> <span class="value">${mcap}</span></span>
+                    <span><span class="label">MCap</span> <span class="value">${fmtMcap(s.market_cap)}</span></span>
                     <span><span class="label">Div</span> <span class="value">${s.dividend_yield}%</span></span>
                     <span><span class="label">52W</span> <span class="value">${s.week52_low}-${s.week52_high}</span></span>
                 </div>
@@ -179,7 +202,7 @@
                             <div class="detail-item"><span class="label">Open</span> <span class="value">&#8377;${s.open}</span></div>
                             <div class="detail-item"><span class="label">High</span> <span class="value">&#8377;${s.high}</span></div>
                             <div class="detail-item"><span class="label">Low</span> <span class="value">&#8377;${s.low}</span></div>
-                            <div class="detail-item"><span class="label">Volume</span> <span class="value">${(s.volume / 1e6).toFixed(2)}M</span></div>
+                            <div class="detail-item"><span class="label">Volume</span> <span class="value">${(s.volume/1e6).toFixed(2)}M</span></div>
                             <div class="detail-item"><span class="label">EPS</span> <span class="value">&#8377;${s.eps}</span></div>
                             <div class="detail-item"><span class="label">P/B</span> <span class="value">${s.pb_ratio}</span></div>
                             <div class="detail-item"><span class="label">ROE</span> <span class="value">${s.roe}%</span></div>
@@ -188,6 +211,19 @@
                             <div class="detail-item"><span class="label">MACD</span> <span class="value">${s.technicals?.macd || "--"}</span></div>
                             <div class="detail-item"><span class="label">SMA20</span> <span class="value">${s.technicals?.sma20 || "--"}</span></div>
                             <div class="detail-item"><span class="label">SMA50</span> <span class="value">${s.technicals?.sma50 || "--"}</span></div>
+                        </div>
+                        <div class="detail-grid" style="margin-top:0.5rem;border-top:1px solid var(--border);padding-top:0.5rem">
+                            <div class="detail-item"><span class="label">Beta</span> <span class="value">${rm.beta ?? "--"}</span></div>
+                            <div class="detail-item"><span class="label">ATR</span> <span class="value">${rm.atr ?? "--"}</span></div>
+                            <div class="detail-item"><span class="label">Volatility</span> <span class="value">${rm.volatility_30d ? rm.volatility_30d+"%" : "--"}</span></div>
+                            <div class="detail-item"><span class="label">Max Drawdown</span> <span class="value ${(rm.max_drawdown||0) < -10 ? 'red' : ''}">${rm.max_drawdown ? rm.max_drawdown+"%" : "--"}</span></div>
+                            <div class="detail-item"><span class="label">Sharpe Ratio</span> <span class="value">${rm.sharpe_ratio ?? "--"}</span></div>
+                            <div class="detail-item"><span class="label">Support</span> <span class="value green">&#8377;${rm.support || "--"}</span></div>
+                            <div class="detail-item"><span class="label">Resistance</span> <span class="value red">&#8377;${rm.resistance || "--"}</span></div>
+                            <div class="detail-item"><span class="label">Risk Score</span> <span class="value">${rm.risk_score || "--"}/10</span></div>
+                            ${rm.payout_ratio ? `<div class="detail-item"><span class="label">Payout Ratio</span> <span class="value">${rm.payout_ratio}%</span></div>` : ""}
+                            ${rm.ex_dividend_date ? `<div class="detail-item"><span class="label">Ex-Div Date</span> <span class="value">${rm.ex_dividend_date}</span></div>` : ""}
+                            ${rm.next_earnings_date ? `<div class="detail-item"><span class="label">Next Earnings</span> <span class="value">${rm.next_earnings_date}</span></div>` : ""}
                         </div>
                         ${ai.reasoning ? `<div class="ai-box">
                             <h4>AI Analysis</h4>
@@ -199,13 +235,14 @@
                                 <span>Risk: <span class="value">${ai.risk}</span></span>
                             </div>
                         </div>` : ""}
+                        <button class="export-btn" style="margin-top:0.6rem;width:100%" onclick="event.stopPropagation();window.__comparePeers('${s.sector}','${s.symbol}')">Compare with ${s.sector} Peers</button>
                     </div>
                 </div>
             </div>`;
         }).join("");
     }
 
-    // --- Mini Chart for Expanded Stock ---
+    // --- Mini Chart ---
     window.__expandStock = function(el) {
         const wasExpanded = el.classList.contains("expanded");
         el.classList.toggle("expanded");
@@ -213,8 +250,7 @@
             const sym = el.dataset.symbol;
             const stock = allStocks.find(s => s.symbol === sym);
             if (!stock || !stock.price_history) return;
-            const canvasId = "mini-" + sym;
-            const canvas = document.getElementById(canvasId);
+            const canvas = document.getElementById("mini-" + sym);
             if (!canvas) return;
             if (miniCharts[sym]) miniCharts[sym].destroy();
             const labels = stock.price_history.map(p => p.date.slice(5));
@@ -223,18 +259,158 @@
             miniCharts[sym] = new Chart(canvas, {
                 type: "line",
                 data: { labels, datasets: [{ data, borderColor: color, backgroundColor: color + "15", fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2 }] },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { display: true, ticks: { maxTicksLimit: 6, font: { size: 10 }, color: "#8a8f98" } }, y: { display: true, ticks: { font: { size: 10 }, color: "#8a8f98" } } } }
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { maxTicksLimit: 6, font: { size: 10 }, color: "#8a8f98" } }, y: { ticks: { font: { size: 10 }, color: "#8a8f98" } } } }
             });
         }
     };
 
     // --- Watchlist ---
     window.__toggleWatch = function(sym) {
-        if (watchlist.has(sym)) watchlist.delete(sym);
-        else watchlist.add(sym);
+        if (watchlist.has(sym)) watchlist.delete(sym); else watchlist.add(sym);
         saveWatchlist();
         renderStocks();
     };
+
+    // --- Peer Comparison (Feature 4) ---
+    window.__comparePeers = function(sector, currentSym) {
+        const peers = allStocks.filter(s => s.sector === sector);
+        const modal = document.getElementById("comparison-modal");
+        document.getElementById("comparison-title").textContent = `${sector} - Peer Comparison`;
+        document.getElementById("comparison-body").innerHTML = `
+            <table class="comparison-table">
+                <thead><tr>
+                    <th>Stock</th><th>Price</th><th>Change%</th><th>P/E</th><th>ROE</th><th>D/E</th>
+                    <th>Div%</th><th>Risk</th><th>Sharpe</th><th>Signal</th>
+                </tr></thead>
+                <tbody>${peers.map(s => {
+                    const rm = s.risk_metrics || {};
+                    const ai = s.ai || {};
+                    const highlight = s.symbol === currentSym ? 'style="background:rgba(59,130,246,0.1)"' : '';
+                    return `<tr ${highlight}>
+                        <td><strong>${s.symbol}</strong><br><small>${s.name}</small></td>
+                        <td>&#8377;${s.price}</td>
+                        <td class="${s.change_pct >= 0 ? 'green' : 'red'}">${s.change_pct.toFixed(2)}%</td>
+                        <td>${s.pe_ratio || "--"}</td>
+                        <td>${s.roe}%</td>
+                        <td>${s.debt_to_equity}</td>
+                        <td>${s.dividend_yield}%</td>
+                        <td><span class="risk-badge ${riskLabel(rm.risk_score||5)}">${rm.risk_score||"?"}</span></td>
+                        <td>${rm.sharpe_ratio ?? "--"}</td>
+                        <td><span class="signal-badge ${(ai.signal||'hold').toLowerCase()}">${ai.signal||"Hold"}</span></td>
+                    </tr>`;
+                }).join("")}</tbody>
+            </table>`;
+        modal.classList.remove("hidden");
+    };
+    window.__closeModal = function() { document.getElementById("comparison-modal").classList.add("hidden"); };
+
+    // --- Portfolio Simulator (Feature 2 & 6) ---
+    let portfolioChart = null;
+
+    function initPortfolio() {
+        const select = document.getElementById("portfolio-stock");
+        select.innerHTML = '<option value="">Select stock...</option>' +
+            allStocks.map(s => `<option value="${s.symbol}">${s.symbol} - ${s.name}</option>`).join("");
+        renderPortfolio();
+    }
+
+    function addToPortfolio() {
+        const sym = document.getElementById("portfolio-stock").value;
+        const qty = parseInt(document.getElementById("portfolio-qty").value);
+        const buyPrice = parseFloat(document.getElementById("portfolio-price").value);
+        if (!sym || !qty || !buyPrice) return;
+        portfolio.push({ symbol: sym, qty, buy_price: buyPrice });
+        savePortfolio();
+        renderPortfolio();
+        document.getElementById("portfolio-qty").value = "";
+        document.getElementById("portfolio-price").value = "";
+    }
+
+    function removeFromPortfolio(index) {
+        portfolio.splice(index, 1);
+        savePortfolio();
+        renderPortfolio();
+    }
+
+    function renderPortfolio() {
+        const wrapper = document.getElementById("portfolio-table-wrapper");
+        const summary = document.getElementById("portfolio-summary");
+        const divEl = document.getElementById("portfolio-diversification");
+
+        if (!portfolio.length) {
+            wrapper.innerHTML = '<p style="color:var(--text-light);font-size:0.85rem">No stocks in portfolio. Add above.</p>';
+            summary.innerHTML = "";
+            divEl.innerHTML = "";
+            return;
+        }
+
+        let totalInvested = 0, totalCurrent = 0;
+        const sectorAlloc = {};
+        const rows = portfolio.map((p, i) => {
+            const stock = allStocks.find(s => s.symbol === p.symbol);
+            const curPrice = stock ? stock.price : p.buy_price;
+            const sector = stock ? stock.sector : "Unknown";
+            const invested = p.qty * p.buy_price;
+            const current = p.qty * curPrice;
+            const pnl = current - invested;
+            const pnlPct = (pnl / invested * 100).toFixed(2);
+            totalInvested += invested;
+            totalCurrent += current;
+            sectorAlloc[sector] = (sectorAlloc[sector] || 0) + current;
+            return `<tr>
+                <td><strong>${p.symbol}</strong></td>
+                <td>${p.qty}</td>
+                <td>&#8377;${p.buy_price}</td>
+                <td>&#8377;${curPrice.toFixed(2)}</td>
+                <td class="${pnl >= 0 ? 'green' : 'red'}">&#8377;${pnl.toFixed(0)} (${pnlPct}%)</td>
+                <td>${(current / Math.max(totalCurrent, 1) * 100).toFixed(1)}%</td>
+                <td><button class="remove-btn" onclick="window.__removePortfolio(${i})">&#10005;</button></td>
+            </tr>`;
+        });
+
+        const totalPnl = totalCurrent - totalInvested;
+        const totalPnlPct = totalInvested > 0 ? (totalPnl / totalInvested * 100).toFixed(2) : 0;
+
+        summary.innerHTML = `
+            <div class="ps-item"><span class="ps-label">Invested</span><span class="ps-value">&#8377;${totalInvested.toLocaleString("en-IN")}</span></div>
+            <div class="ps-item"><span class="ps-label">Current Value</span><span class="ps-value">&#8377;${totalCurrent.toLocaleString("en-IN")}</span></div>
+            <div class="ps-item"><span class="ps-label">P&L</span><span class="ps-value ${totalPnl >= 0 ? 'green' : 'red'}">&#8377;${totalPnl.toFixed(0)} (${totalPnlPct}%)</span></div>
+        `;
+
+        wrapper.innerHTML = `<table class="portfolio-table">
+            <thead><tr><th>Stock</th><th>Qty</th><th>Buy</th><th>CMP</th><th>P&L</th><th>Alloc</th><th></th></tr></thead>
+            <tbody>${rows.join("")}</tbody>
+        </table>`;
+
+        // Diversification score
+        const sectorCount = Object.keys(sectorAlloc).length;
+        const maxAlloc = Math.max(...Object.values(sectorAlloc)) / totalCurrent * 100;
+        const divScore = Math.min(10, Math.round(sectorCount * 1.5 + (maxAlloc < 30 ? 3 : maxAlloc < 50 ? 1 : 0)));
+        let warns = [];
+        for (const [sec, val] of Object.entries(sectorAlloc)) {
+            if (val / totalCurrent > 0.3) warns.push(`${sec} > 30%`);
+        }
+        divEl.innerHTML = `<div class="diversification-score">
+            Diversification: <strong>${divScore}/10</strong> (${sectorCount} sectors)
+            ${warns.length ? `<div class="sector-warn">Warning: ${warns.join(", ")}</div>` : ""}
+        </div>`;
+
+        // Pie chart
+        if (typeof Chart !== "undefined") {
+            const canvas = document.getElementById("portfolio-pie");
+            if (portfolioChart) portfolioChart.destroy();
+            const labels = Object.keys(sectorAlloc);
+            const data = Object.values(sectorAlloc).map(v => Math.round(v));
+            const colors = ["#3b82f6","#22c55e","#ef4444","#f59e0b","#8b5cf6","#ec4899","#14b8a6","#f97316","#6366f1","#84cc16"];
+            portfolioChart = new Chart(canvas, {
+                type: "doughnut",
+                data: { labels, datasets: [{ data, backgroundColor: colors.slice(0, labels.length), borderWidth: 0 }] },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { color: "#8a8f98", boxWidth: 10, font: { size: 10 } } } } }
+            });
+        }
+    }
+
+    window.__removePortfolio = function(i) { removeFromPortfolio(i); };
 
     // --- Charts ---
     function renderCharts() {
@@ -242,7 +418,6 @@
         Object.values(chartInstances).forEach(c => c.destroy());
         chartInstances = {};
 
-        // Nifty trend
         const trend = (stockData.nifty_index || {}).trend || [];
         if (trend.length) {
             chartInstances.nifty = new Chart(document.getElementById("nifty-trend-chart"), {
@@ -252,20 +427,17 @@
             });
         }
 
-        // Sector performance
         const sp = stockData.sector_performance || {};
         const secLabels = Object.keys(sp);
         const secData = Object.values(sp);
-        const secColors = secData.map(v => v >= 0 ? "#22c55e" : "#ef4444");
         if (secLabels.length) {
             chartInstances.sector = new Chart(document.getElementById("sector-chart"), {
                 type: "bar",
-                data: { labels: secLabels, datasets: [{ data: secData, backgroundColor: secColors, borderRadius: 4 }] },
+                data: { labels: secLabels, datasets: [{ data: secData, backgroundColor: secData.map(v => v >= 0 ? "#22c55e" : "#ef4444"), borderRadius: 4 }] },
                 options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: "#8a8f98", callback: v => v + "%" } }, y: { ticks: { color: "#8a8f98", font: { size: 11 } } } } }
             });
         }
 
-        // Signal distribution
         const sum = stockData.summary || {};
         chartInstances.signal = new Chart(document.getElementById("signal-chart"), {
             type: "doughnut",
@@ -273,8 +445,7 @@
             options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { color: "#8a8f98", boxWidth: 12, padding: 8 } } } }
         });
 
-        // Top picks
-        const buys = allStocks.filter(s => s.ai && s.ai.signal === "Buy" && s.ai.confidence === "High").slice(0, 8);
+        const buys = allStocks.filter(s => s.ai && s.ai.signal === "Buy").sort((a,b) => (b.risk_metrics?.sharpe_ratio||0) - (a.risk_metrics?.sharpe_ratio||0)).slice(0, 8);
         if (buys.length) {
             chartInstances.picks = new Chart(document.getElementById("picks-chart"), {
                 type: "bar",
@@ -287,10 +458,9 @@
     // --- Heatmap ---
     function renderHeatmap() {
         const sp = stockData.sector_performance || {};
-        const el = document.getElementById("sector-heatmap");
-        el.innerHTML = Object.entries(sp).map(([name, change]) => {
+        document.getElementById("sector-heatmap").innerHTML = Object.entries(sp).map(([name, change]) => {
             const intensity = Math.min(Math.abs(change) * 30, 200);
-            const bg = change >= 0 ? `rgba(34,197,94,${intensity / 255})` : `rgba(239,68,68,${intensity / 255})`;
+            const bg = change >= 0 ? `rgba(34,197,94,${intensity/255})` : `rgba(239,68,68,${intensity/255})`;
             const textColor = intensity > 100 ? "#fff" : (change >= 0 ? "#22c55e" : "#ef4444");
             return `<div class="heatmap-cell" style="background:${bg};color:${textColor}" onclick="window.__filterSector('${name}')">
                 <span class="sector-name">${name}</span>
@@ -311,21 +481,19 @@
     function renderNews() {
         const news = stockData.market_news || [];
         document.getElementById("news-grid").innerHTML = news.map(n =>
-            `<div class="news-card">
-                <h4><a href="${n.link}" target="_blank" rel="noopener">${n.title}</a></h4>
-                <span class="news-date">${n.date}</span>
-            </div>`
+            `<div class="news-card"><h4><a href="${n.link}" target="_blank" rel="noopener">${n.title}</a></h4><span class="news-date">${n.date}</span></div>`
         ).join("") || '<p class="loading">No news available.</p>';
     }
 
-    // --- CSV Export ---
+    // --- CSV Export (updated with risk metrics) ---
     function exportCSV() {
         const filtered = getFilteredStocks();
         if (!filtered.length) return;
-        const h = ["Symbol", "Name", "Sector", "Price", "Change%", "P/E", "Div Yield", "Signal", "Confidence", "Target", "Stop Loss", "Reasoning"];
+        const h = ["Symbol","Name","Sector","Price","Change%","P/E","Div Yield","Risk Score","Beta","Volatility","Sharpe","Support","Resistance","Signal","Confidence","Target","Stop Loss","Reasoning"];
         const csv = [h.join(","), ...filtered.map(s => {
             const ai = s.ai || {};
-            return [s.symbol, `"${s.name}"`, s.sector, s.price, s.change_pct, s.pe_ratio, s.dividend_yield, ai.signal, ai.confidence, ai.target_price, ai.stop_loss, `"${(ai.reasoning || "").replace(/"/g, '""')}"`].join(",");
+            const rm = s.risk_metrics || {};
+            return [s.symbol,`"${s.name}"`,s.sector,s.price,s.change_pct,s.pe_ratio,s.dividend_yield,rm.risk_score||"",rm.beta||"",rm.volatility_30d||"",rm.sharpe_ratio||"",rm.support||"",rm.resistance||"",ai.signal,ai.confidence,ai.target_price,ai.stop_loss,`"${(ai.reasoning||"").replace(/"/g,'""')}"`].join(",");
         })].join("\n");
         const blob = new Blob([csv], { type: "text/csv" });
         const a = document.createElement("a");
@@ -350,6 +518,8 @@
     document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
     document.getElementById("logout-btn").addEventListener("click", () => { localStorage.removeItem("auth_token"); location.reload(); });
     document.getElementById("export-csv").addEventListener("click", exportCSV);
+    document.getElementById("portfolio-add").addEventListener("click", addToPortfolio);
+    document.getElementById("comparison-modal").addEventListener("click", e => { if (e.target.id === "comparison-modal") window.__closeModal(); });
 
     loadData();
 })();
