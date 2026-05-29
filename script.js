@@ -554,19 +554,50 @@
         a.click();
     }
 
-    // --- Event Listeners ---
-    document.querySelectorAll(".tab").forEach(tab => {
+    // --- Nav Tab Switching ---
+    document.querySelectorAll(".nav-tab").forEach(navTab => {
+        navTab.addEventListener("click", () => {
+            document.querySelectorAll(".nav-tab").forEach(t => t.classList.remove("active"));
+            navTab.classList.add("active");
+            const section = navTab.dataset.section;
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            const panel = document.getElementById("panel-" + section);
+            if (panel) panel.classList.add("active");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+
+    // --- Sector Tab Listeners (both overview and stocks panels) ---
+    document.querySelectorAll(".sector-tabs .tab").forEach(tab => {
         tab.addEventListener("click", () => {
-            document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+            // Update active state within the same parent
+            tab.closest(".sector-tabs").querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
             tab.classList.add("active");
             activeSector = tab.dataset.sector;
             renderStocks();
         });
     });
 
+    // Overview panel controls
     document.getElementById("search").addEventListener("input", renderStocks);
     document.getElementById("signal-filter").addEventListener("change", renderStocks);
     document.getElementById("sort-by").addEventListener("change", renderStocks);
+
+    // Stocks panel controls
+    document.getElementById("search-stocks").addEventListener("input", () => {
+        document.getElementById("search").value = document.getElementById("search-stocks").value;
+        renderStocks();
+    });
+    document.getElementById("signal-filter-stocks").addEventListener("change", () => {
+        document.getElementById("signal-filter").value = document.getElementById("signal-filter-stocks").value;
+        renderStocks();
+    });
+    document.getElementById("sort-by-stocks").addEventListener("change", () => {
+        document.getElementById("sort-by").value = document.getElementById("sort-by-stocks").value;
+        renderStocks();
+    });
+    document.getElementById("export-csv-stocks").addEventListener("click", exportCSV);
+
     document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
     document.getElementById("logout-btn").addEventListener("click", () => { localStorage.removeItem("auth_token"); location.reload(); });
     document.getElementById("export-csv").addEventListener("click", exportCSV);

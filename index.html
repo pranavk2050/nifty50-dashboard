@@ -57,7 +57,18 @@
         </div>
     </header>
 
+    <!-- Sticky Nav -->
+    <nav class="main-nav" id="main-nav">
+        <button class="nav-tab active" data-section="overview">Overview</button>
+        <button class="nav-tab" data-section="stocks">Stocks</button>
+        <button class="nav-tab" data-section="portfolio">Portfolio</button>
+        <button class="nav-tab" data-section="news">News</button>
+    </nav>
+
     <main>
+        <!-- === OVERVIEW TAB === -->
+        <div class="tab-panel active" id="panel-overview">
+
         <!-- Controls -->
         <div class="controls">
             <div class="filter-row">
@@ -130,6 +141,65 @@
             <div id="sector-heatmap" class="sector-heatmap"></div>
         </section>
 
+        </div><!-- end panel-overview -->
+
+        <!-- === STOCKS TAB === -->
+        <div class="tab-panel" id="panel-stocks">
+
+        <!-- Stock Filters (duplicated for stocks tab) -->
+        <div class="controls">
+            <div class="filter-row">
+                <div class="sector-tabs" id="sector-tabs-stocks">
+                    <button class="tab active" data-sector="all">All</button>
+                    <button class="tab" data-sector="watchlist">&#9733; Watchlist</button>
+                    <button class="tab" data-sector="IT">IT</button>
+                    <button class="tab" data-sector="Banking">Banking</button>
+                    <button class="tab" data-sector="Pharma">Pharma</button>
+                    <button class="tab" data-sector="Auto">Auto</button>
+                    <button class="tab" data-sector="FMCG">FMCG</button>
+                    <button class="tab" data-sector="Energy">Energy</button>
+                    <button class="tab" data-sector="Metals">Metals</button>
+                    <button class="tab" data-sector="Financial Services">Fin Services</button>
+                    <button class="tab" data-sector="Infrastructure">Infra</button>
+                    <button class="tab" data-sector="Others">Others</button>
+                </div>
+                <div class="controls-right">
+                    <input type="text" id="search-stocks" placeholder="Search stocks...">
+                    <select id="signal-filter-stocks">
+                        <option value="all">All Signals</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Hold">Hold</option>
+                        <option value="Sell">Sell</option>
+                        <option value="52w_high">Near 52W High</option>
+                        <option value="52w_low">Near 52W Low</option>
+                        <option value="earnings">Earnings Soon</option>
+                    </select>
+                    <select id="sort-by-stocks">
+                        <option value="change_pct_desc">Top Gainers</option>
+                        <option value="change_pct_asc">Top Losers</option>
+                        <option value="risk_asc">Low Risk First</option>
+                        <option value="risk_desc">High Risk First</option>
+                        <option value="sharpe_desc">Best Sharpe</option>
+                        <option value="name_asc">Name A-Z</option>
+                        <option value="pe_asc">P/E Low-High</option>
+                        <option value="dividend_desc">Dividend High</option>
+                        <option value="market_cap_desc">Market Cap</option>
+                    </select>
+                    <button id="export-csv-stocks" class="export-btn">CSV</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="stocks-heading">Stocks</h2>
+        <div id="stocks-grid" class="stocks-grid">
+            <p class="loading">Loading stock data...</p>
+        </div>
+
+        </div><!-- end panel-stocks -->
+
+        <!-- === PORTFOLIO TAB === -->
+        <div class="tab-panel" id="panel-portfolio">
+
         <!-- Portfolio Simulator -->
         <section class="portfolio-section" id="portfolio-section">
             <div class="portfolio-header">
@@ -186,17 +256,16 @@
             </div>
         </div>
 
-        <!-- Stock Grid -->
-        <h2 class="section-title" id="stocks-heading">Stocks</h2>
-        <div id="stocks-grid" class="stocks-grid">
-            <p class="loading">Loading stock data...</p>
-        </div>
+        </div><!-- end panel-portfolio -->
 
-        <!-- News Section -->
+        <!-- === NEWS TAB === -->
+        <div class="tab-panel" id="panel-news">
         <section class="news-section">
             <h2 class="section-title">Market News</h2>
             <div id="news-grid" class="news-grid"></div>
         </section>
+        </div><!-- end panel-news -->
+
     </main>
 
     <footer>
