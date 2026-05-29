@@ -56,7 +56,7 @@ NIFTY50 = {
     "SHRIRAMFIN.NS": {"name": "Shriram Finance", "sector": "Financial Services"},
     "SUNPHARMA.NS": {"name": "Sun Pharma", "sector": "Pharma"},
     "TATACONSUM.NS": {"name": "Tata Consumer", "sector": "FMCG"},
-    "TATAMTRDVR.NS": {"name": "Tata Motors", "sector": "Auto"},
+    "TMPV.NS": {"name": "Tata Motors PV", "sector": "Auto"},
     "TATASTEEL.NS": {"name": "Tata Steel", "sector": "Metals"},
     "TCS.NS": {"name": "TCS", "sector": "IT"},
     "TECHM.NS": {"name": "Tech Mahindra", "sector": "IT"},
