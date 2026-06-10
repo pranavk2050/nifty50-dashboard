@@ -1,15 +1,11 @@
 {
-  "last_updated": "2026-06-10T11:12:36Z",
+  "last_updated": "2026-06-10T13:57:43Z",
   "nifty_index": {
     "value": 23214.95,
     "change": -27.15,
     "change_pct": -0.12,
     "prev_close": 23242.1,
     "trend": [
-      {
-        "date": "2026-04-27",
-        "close": 24092.7
-      },
       {
         "date": "2026-04-28",
         "close": 23995.7
@@ -123,6 +119,10 @@
         "close": 23123.0
       },
       {
+        "date": "2026-06-09",
+        "close": 23242.1
+      },
+      {
         "date": "2026-06-10",
         "close": 23214.95
       }
@@ -162,14 +162,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": -0.13,
+        "beta": 0.18,
         "atr": 84.65,
         "volatility_30d": 39.45,
         "max_drawdown": -12.38,
         "sharpe_ratio": 4.32,
         "support": 2689.8,
         "resistance": 3048.2,
-        "relative_strength": 25.35,
+        "relative_strength": 24.96,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 1.71,
@@ -332,7 +332,7 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Adani Enterprises' current price is near its 20-day SMA, indicating a potential support level, while its RSI is in the neutral zone, suggesting a pause in the downtrend. However, the high debt-to-equity ratio and relatively high P/E ratio are concerns, and the recent price drop may be a sign of market caution. The dividend yield is attractive, but overall, the stock's fundamentals and technicals suggest a hold rather than a buy or sell.",
+        "reasoning": "Adani Enterprises' current price is near its 20-day moving average, and the RSI indicates a neutral trend, while the company's high debt-to-equity ratio and rich valuations are concerns, but the dividend yield and return on equity are positives",
         "target_price": 3050.0,
         "stop_loss": 2650.0,
         "risk": "Medium"
@@ -371,14 +371,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.15,
+        "beta": 0.23,
         "atr": 37.05,
         "volatility_30d": 26.26,
         "max_drawdown": -8.46,
         "sharpe_ratio": 2.97,
         "support": 1762.8,
         "resistance": 1826.4,
-        "relative_strength": 13.53,
+        "relative_strength": 13.14,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 12.02,
@@ -541,7 +541,7 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Adani Ports' current price is near its 52-week high and has a relatively high P/E ratio, but its strong ROE and dividend yield are positives, and the RSI suggests it's not overbought, however the debt/equity ratio is a concern, overall the stock is fairly valued",
+        "reasoning": "Adani Ports' current price is near its 52-week high and has a relatively high P/E ratio, but its strong ROE and dividend yield are positive factors, and the RSI indicates a neutral trend, suggesting a hold strategy for now as the stock is not showing strong buy or sell signals",
         "target_price": 1850.0,
         "stop_loss": 1650.0,
         "risk": "Medium"
@@ -580,14 +580,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.28,
+        "beta": 0.23,
         "atr": 162.61,
         "volatility_30d": 18.51,
         "max_drawdown": -8.43,
         "sharpe_ratio": 4.73,
         "support": 8020.5,
         "resistance": 8524.0,
-        "relative_strength": 14.8,
+        "relative_strength": 14.41,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 14.81,
@@ -750,8 +750,8 @@
       "ai": {
         "signal": "Buy",
         "confidence": "High",
-        "reasoning": "Apollo Hospitals' strong fundamental factors such as high ROE and dividend yield, combined with its relatively low RSI of 34.58, indicate a potential buying opportunity. The stock's price is also above its SMA20 and SMA50, suggesting a positive trend. With a decent debt-to-equity ratio, the company's financial health is stable.",
-        "target_price": 9000.0,
+        "reasoning": "Apollo Hospitals' strong fundamentals, including a high ROE of 21.5% and a decent dividend yield of 0.23%, are supported by its recent technical indicators, such as a low RSI of 34.58, indicating a potential rebound from its current price, and a positive MACD of 141.55, suggesting a bullish trend",
+        "target_price": 9200.0,
         "stop_loss": 7800.0,
         "risk": "Medium"
       }
@@ -789,14 +789,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.07,
+        "beta": 0.24,
         "atr": 58.78,
         "volatility_30d": 22.2,
         "max_drawdown": -6.98,
         "sharpe_ratio": 3.88,
         "support": 2598.6,
         "resistance": 2715.1,
-        "relative_strength": 14.71,
+        "relative_strength": 14.32,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 55.53,
@@ -959,8 +959,8 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Asian Paints' current price is near its 20-day SMA, indicating a potential short-term support, while its high P/E and P/B ratios suggest a premium valuation, and the RSI is at 45.62, which is not oversold, combining these technical and fundamental factors, the stock may consolidate in the near term. The company's strong ROE and low debt/equity ratio are positives. However, the dividend yield is unusually high, which may indicate a one-time payout or an error in the data.",
-        "target_price": 2850.0,
+        "reasoning": "Asian Paints' current price is near its 20-day SMA, indicating a potential support level, while its high P/E and P/B ratios suggest overvaluation, and the RSI is in neutral territory, combining these technical and fundamental factors suggests a hold strategy",
+        "target_price": 2800.0,
         "stop_loss": 2550.0,
         "risk": "Medium"
       }
@@ -998,14 +998,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.23,
+        "beta": 0.24,
         "atr": 26.33,
         "volatility_30d": 19.95,
         "max_drawdown": -11.67,
         "sharpe_ratio": 1.38,
         "support": 1237.9,
         "resistance": 1314.5,
-        "relative_strength": 7.29,
+        "relative_strength": 6.9,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 1.18,
@@ -1168,7 +1168,7 @@
       "ai": {
         "signal": "Buy",
         "confidence": "High",
-        "reasoning": "Axis Bank's current price is near its 20-day and 50-day moving averages, indicating a potential rebound, while its dividend yield of 8.0% and ROE of 13.15% suggest strong fundamental health, making it an attractive investment opportunity. The RSI of 34.8 indicates that the stock is not overbought, providing further support for a buy signal. With a low debt-to-equity ratio, the bank's financials appear stable.",
+        "reasoning": "Axis Bank's current price is near its 52-week low and has a relatively low RSI of 34.8, indicating a potential buying opportunity, while its strong fundamental factors such as high dividend yield and low debt/equity ratio support a bullish outlook. The stock's P/E ratio of 15.55 is also reasonable compared to its peers. With a strong ROE of 13.15%, Axis Bank is expected to perform well in the long term.",
         "target_price": 1400.0,
         "stop_loss": 1200.0,
         "risk": "Medium"
@@ -1207,14 +1207,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": 0.02,
+        "beta": 0.4,
         "atr": 210.79,
         "volatility_30d": 25.35,
         "max_drawdown": -8.86,
         "sharpe_ratio": 0.95,
         "support": 10056.97,
         "resistance": 10658.5,
-        "relative_strength": 6.57,
+        "relative_strength": 6.18,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 54.63,
@@ -1377,7 +1377,7 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Bajaj Auto's current price is near its 52-week high, and the RSI of 36.49 indicates a neutral trend, while its strong fundamental factors like high ROE and dividend yield provide support, but the high P/E and debt/equity ratio are concerns",
+        "reasoning": "Bajaj Auto's current price is near its 52-week high, and the RSI of 36.49 indicates a neutral trend, while its strong fundamental factors like high ROE and dividend yield are balanced by a high P/E ratio, suggesting a hold strategy for now. The debt-to-equity ratio is a concern, but the company's overall financial health is stable. The MACD and SMA indicators suggest a potential rebound, but caution is advised due to market volatility.",
         "target_price": 10500.0,
         "stop_loss": 9500.0,
         "risk": "Medium"
@@ -1416,14 +1416,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": -0.41,
+        "beta": 0.14,
         "atr": 21.57,
         "volatility_30d": 23.9,
         "max_drawdown": -14.71,
         "sharpe_ratio": -2.24,
         "support": 871.1,
         "resistance": 941.9,
-        "relative_strength": -2.0,
+        "relative_strength": -2.39,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 14.42,
@@ -1586,7 +1586,7 @@
       "ai": {
         "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Bajaj Finance's low RSI of 33.15 indicates a potential oversold condition, while its strong ROE of 17.91% and reasonable P/E of 28.98 suggest a fundamentally sound company. The stock's price is also near its 52-week low, making it an attractive entry point. The dividend yield of 61.0% is unusually high and may be a one-time anomaly, but the overall financials remain strong.",
+        "reasoning": "Bajaj Finance's current price is near its 52-week low and the RSI indicates overselling, suggesting a potential rebound, while its strong ROE and dividend yield provide fundamental support, despite high debt-equity ratio",
         "target_price": 950.0,
         "stop_loss": 820.0,
         "risk": "Medium"
@@ -1625,14 +1625,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": -0.2,
+        "beta": 0.18,
         "atr": 32.5,
         "volatility_30d": 19.67,
         "max_drawdown": -12.64,
         "sharpe_ratio": -2.35,
         "support": 1664.2,
         "resistance": 1809.1,
-        "relative_strength": -1.11,
+        "relative_strength": -1.5,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 1.64,
@@ -1795,7 +1795,7 @@
       "ai": {
         "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Bajaj Finserv's low RSI of 27.93 indicates overselling, while its high dividend yield of 8.0% and decent ROE of 14.6% make it a fundamentally strong stock. The stock's current price is near its 52-week low, making it a potential value buy. However, its high debt-to-equity ratio of 256.36 is a concern that tempers the recommendation.",
+        "reasoning": "Bajaj Finserv's current price is near its 52-week low, and the RSI indicates overselling, suggesting a potential rebound. The company's strong ROE and dividend yield are positive fundamental factors, but the high debt-to-equity ratio is a concern. The MACD and SMA indicators also suggest a potential trend reversal.",
         "target_price": 1800.0,
         "stop_loss": 1550.0,
         "risk": "Medium"
@@ -1834,14 +1834,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": -0.31,
+        "beta": 0.05,
         "atr": 33.97,
         "volatility_30d": 25.61,
         "max_drawdown": -8.41,
         "sharpe_ratio": -2.15,
         "support": 1775.2,
         "resistance": 1938.1,
-        "relative_strength": -2.27,
+        "relative_strength": -2.66,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 36.06,
@@ -2002,10 +2002,10 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
+        "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Bharti Airtel's current price is near its 52-week low, with a relatively high dividend yield, which may indicate a potential buying opportunity, but the high debt-to-equity ratio and declining stock price trend warrant caution. The RSI is below 40, suggesting the stock may be oversold, while the MACD is negative, indicating a bearish trend. The high P/E ratio also suggests the stock may be overvalued, making a hold recommendation more suitable at this time.",
-        "target_price": 1850.0,
+        "reasoning": "Bharti Airtel's current price is near its 52-week low, and the RSI indicates a potential oversold condition, while its strong ROE and dividend yield suggest a fundamentally sound company. The MACD is negative, but the SMA20 and SMA50 are above the current price, indicating a possible rebound. The debt-to-equity ratio is high, but the company's market position and growth prospects make it an attractive investment opportunity.",
+        "target_price": 1900.0,
         "stop_loss": 1650.0,
         "risk": "Medium"
       }
@@ -2043,14 +2043,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": -0.35,
+        "beta": 0.53,
         "atr": 7.12,
         "volatility_30d": 33.02,
         "max_drawdown": -16.87,
         "sharpe_ratio": -1.13,
         "support": 280.8,
         "resistance": 308.25,
-        "relative_strength": -0.5,
+        "relative_strength": -0.89,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 37.2,
@@ -2212,10 +2212,10 @@
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "Medium",
-        "reasoning": "BPCL's low P/E ratio of 4.76 and high ROE of 28.47% indicate undervaluation and strong profitability, while its low RSI of 23.78 suggests a potential rebound from oversold levels, making it an attractive investment opportunity. The stock's dividend yield of 692.0% is unusually high and may be due to a one-time dividend payout, but its debt-to-equity ratio of 54.33 is a concern. Overall, the stock's technical and fundamental factors suggest a potential upside.",
-        "target_price": 310.0,
-        "stop_loss": 265.0,
+        "confidence": "High",
+        "reasoning": "BPCL's low P/E ratio of 4.76 and high ROE of 28.47% indicate undervaluation and strong profitability, while its low RSI of 23.78 suggests a potential rebound from oversold levels, making it an attractive investment opportunity. The stock's dividend yield of 692.0% is exceptionally high, although this may be due to the low stock price. The MACD and SMA indicators also suggest a potential buy signal.",
+        "target_price": 320.0,
+        "stop_loss": 260.0,
         "risk": "Medium"
       }
     },
@@ -2252,14 +2252,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.33,
+        "beta": 0.28,
         "atr": 23.87,
         "volatility_30d": 30.01,
         "max_drawdown": -10.58,
         "sharpe_ratio": 1.64,
         "support": 1362.42,
         "resistance": 1423.35,
-        "relative_strength": 9.78,
+        "relative_strength": 9.39,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 27.08,
@@ -2421,10 +2421,10 @@
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "Medium",
-        "reasoning": "Cipla's low RSI of 19.01 indicates overselling, suggesting a potential rebound, while its stable pharma sector and decent ROE of 11.74% support its fundamental strength. The current price is also closer to its 52-week low, making it an attractive entry point. However, the high debt-to-equity ratio of 1.78 is a concern that needs to be monitored.",
-        "target_price": 1450.0,
-        "stop_loss": 1300.0,
+        "confidence": "High",
+        "reasoning": "Cipla's low RSI of 19.01 indicates a potential oversold condition, while its strong fundamental factors such as a decent ROE of 11.74% and a reasonable P/E of 28.66 support a bullish outlook. The stock's recent price action is also near its 52-week low, making it an attractive entry point. With a decent dividend yield and a relatively stable pharma sector, Cipla is poised for a rebound.",
+        "target_price": 1500.0,
+        "stop_loss": 1250.0,
         "risk": "Medium"
       }
     },
@@ -2461,14 +2461,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": 0.02,
+        "beta": 0.01,
         "atr": 14.13,
         "volatility_30d": 21.19,
         "max_drawdown": -7.95,
         "sharpe_ratio": -2.83,
         "support": 451.0,
         "resistance": 481.65,
-        "relative_strength": -2.68,
+        "relative_strength": -3.07,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 52.32,
@@ -2631,7 +2631,7 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Coal India's current price is near its SMA20 and SMA50, indicating a neutral trend, while its high dividend yield and ROE are positive fundamental factors, but the stock's debt-to-equity ratio and declining price change are concerns",
+        "reasoning": "Coal India's current price is near its 52-week average, with a relatively low P/E ratio and high dividend yield, indicating a stable investment, but the recent decline and moderate RSI value suggest a neutral stance, while its high ROE and moderate debt-to-equity ratio support its fundamental strength",
         "target_price": 470.0,
         "stop_loss": 420.0,
         "risk": "Medium"
@@ -2670,14 +2670,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.25,
+        "beta": -0.05,
         "atr": 164.21,
         "volatility_30d": 21.27,
         "max_drawdown": -8.65,
         "sharpe_ratio": 0.45,
         "support": 6521.0,
         "resistance": 6921.5,
-        "relative_strength": 5.24,
+        "relative_strength": 4.85,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 31.01,
@@ -2840,10 +2840,10 @@
       "ai": {
         "signal": "Buy",
         "confidence": "High",
-        "reasoning": "Divi's Labs' strong fundamental factors such as high ROE and low debt/equity ratio, combined with its oversold technical indicators like RSI of 23.66, suggest a potential reversal in the stock price. The dividend yield of 44.0% is also attractive, indicating a relatively stable income stream. With a P/E of 68.74, the stock may be overvalued, but its growth prospects and industry position justify a buy signal.",
+        "reasoning": "Divi's Labs is currently undervalued with an RSI of 23.66, indicating a potential rebound, and its strong fundamental factors such as high ROE and low debt-to-equity ratio support long-term growth, while the recent price drop presents a buying opportunity",
         "target_price": 7200.0,
         "stop_loss": 6200.0,
-        "risk": "Medium"
+        "risk": "Low"
       }
     },
     {
@@ -2879,14 +2879,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.17,
+        "beta": 0.31,
         "atr": 24.4,
         "volatility_30d": 20.27,
         "max_drawdown": -10.12,
         "sharpe_ratio": -1.88,
         "support": 1263.3,
         "resistance": 1336.7,
-        "relative_strength": -0.23,
+        "relative_strength": -0.62,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 15.56,
@@ -3048,10 +3048,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (32.85) and price position relative to SMA50 (1279.11). Technical analysis only — verify with fundamentals.",
-        "target_price": 1335.29,
-        "stop_loss": 1208.12,
+        "confidence": "Medium",
+        "reasoning": "Dr Reddy's stock is currently undervalued with a low RSI of 32.85, indicating a potential rebound, but the pharma sector's growth prospects are moderate, and the company's debt-to-equity ratio is relatively high at 20.33, which may impact its future performance. The stock's dividend yield is high at 63.0%, but the ROE is moderate at 11.83%. The stock is trading near its SMA50, indicating a neutral trend.",
+        "target_price": 1350.0,
+        "stop_loss": 1200.0,
         "risk": "Medium"
       }
     },
@@ -3088,14 +3088,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.24,
+        "beta": 0.47,
         "atr": 169.54,
         "volatility_30d": 26.03,
         "max_drawdown": -12.61,
         "sharpe_ratio": 0.39,
         "support": 6849.5,
         "resistance": 7419.0,
-        "relative_strength": 5.2,
+        "relative_strength": 4.81,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 34.87,
@@ -3256,11 +3256,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Eicher Motors' current price is near its SMA20 and SMA50, indicating a neutral trend, while its high P/E and P/B ratios suggest overvaluation, but strong fundamentals like high ROE and dividend yield provide support, making it a hold for now",
-        "target_price": 7500.0,
-        "stop_loss": 6800.0,
+        "signal": "Buy",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (36.42) and price position relative to SMA50 (7106.03). Technical analysis only — verify with fundamentals.",
+        "target_price": 7580.48,
+        "stop_loss": 6858.52,
         "risk": "Medium"
       }
     },
@@ -3297,14 +3297,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.26,
+        "beta": 0.13,
         "atr": 53.11,
         "volatility_30d": 23.26,
         "max_drawdown": -7.76,
         "sharpe_ratio": 3.32,
         "support": 2933.8,
         "resistance": 3171.6,
-        "relative_strength": 13.54,
+        "relative_strength": 13.16,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 13.67,
@@ -3467,7 +3467,7 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Grasim's current price is near its 20-day SMA, and the RSI is at 40.32, indicating a neutral stance, while its high debt-to-equity ratio and low ROE are concerns, but the dividend yield is attractive, suggesting a hold strategy for now. The MACD is slightly positive, which could lead to a short-term uptrend. However, the high P/E ratio and debt levels warrant caution.",
+        "reasoning": "Grasim's current price is near its 20-day SMA, and the MACD indicates a potential bullish crossover, but the high debt-to-equity ratio and low ROE are concerns, while the dividend yield is attractive, suggesting a hold strategy for now. The RSI is at 40.32, indicating a neutral stance. The stock's valuation multiples, such as P/E and P/B, are relatively high, which may limit upside potential.",
         "target_price": 3150.0,
         "stop_loss": 2850.0,
         "risk": "Medium"
@@ -3506,14 +3506,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.33,
+        "beta": -0.03,
         "atr": 26.68,
         "volatility_30d": 26.51,
         "max_drawdown": -21.8,
         "sharpe_ratio": -1.96,
         "support": 1124.0,
         "resistance": 1243.5,
-        "relative_strength": -1.94,
+        "relative_strength": -2.33,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 88.01,
@@ -3676,7 +3676,7 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "HCL Tech's current price is near its 52-week low, and the RSI indicates a neutral position, while the MACD suggests a bearish trend, but the company's strong fundamentals such as high ROE and low debt/equity ratio support a hold stance. The dividend yield is unusually high, which may be due to the recent price drop, and the P/E ratio is relatively reasonable. The stock may see a short-term bounce back, but overall trend remains bearish.",
+        "reasoning": "HCL Tech's current price is near its 52-week low, and the RSI indicates a neutral trend, while the company's strong fundamental factors such as high ROE and low debt/equity ratio suggest a potential for long-term growth, but the current market sentiment and MACD signal a short-term bearish trend",
         "target_price": 1200.0,
         "stop_loss": 1050.0,
         "risk": "Medium"
@@ -3693,7 +3693,7 @@
       "high": 755.95,
       "low": 736.4,
       "volume": 44457151,
-      "market_cap": 11498670784512,
+      "market_cap": 11499653300224,
       "pe_ratio": 16.66,
       "pb_ratio": 1.96,
       "eps": 44.82,
@@ -3715,14 +3715,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.54,
+        "beta": 0.16,
         "atr": 15.27,
         "volatility_30d": 21.54,
         "max_drawdown": -13.88,
         "sharpe_ratio": -1.5,
         "support": 738.35,
         "resistance": 786.85,
-        "relative_strength": 0.42,
+        "relative_strength": 0.03,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 21.76,
@@ -3885,10 +3885,10 @@
       "ai": {
         "signal": "Buy",
         "confidence": "High",
-        "reasoning": "HDFC Bank's strong fundamental factors such as high ROE and zero debt/equity ratio, combined with its oversold technical indicators like RSI at 29.51, suggest a potential rebound in the stock price. The current price is also near its 52-week low, making it an attractive entry point. Additionally, the bank's consistent dividend yield and stable earnings per share support a bullish outlook.",
+        "reasoning": "HDFC Bank's strong fundamental factors such as high ROE and zero debt, combined with its low RSI of 29.51, indicate a potential rebound from its current price, making it an attractive investment opportunity. The stock's P/E ratio of 16.66 is also relatively reasonable compared to its peers. With a dividend yield of 176.0%, it provides a stable income stream for investors",
         "target_price": 820.0,
         "stop_loss": 710.0,
-        "risk": "Medium"
+        "risk": "Low"
       }
     },
     {
@@ -3924,14 +3924,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.35,
+        "beta": 0.49,
         "atr": 12.4,
         "volatility_30d": 21.39,
         "max_drawdown": -16.24,
         "sharpe_ratio": -2.84,
         "support": 549.55,
         "resistance": 620.0,
-        "relative_strength": -2.72,
+        "relative_strength": -3.11,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 23.7,
@@ -4092,11 +4092,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (24.01) and price position relative to SMA50 (598.33). Technical analysis only — verify with fundamentals.",
-        "target_price": 577.03,
-        "stop_loss": 522.07,
+        "signal": "Buy",
+        "confidence": "Medium",
+        "reasoning": "HDFC Life's current price is near its 52-week low, with an RSI of 24.01 indicating oversold conditions, and its dividend yield of 37.0% is attractive, while its ROE of 11.28% and low debt-to-equity ratio suggest a stable financial foundation",
+        "target_price": 580.0,
+        "stop_loss": 520.0,
         "risk": "Medium"
       }
     },
@@ -4133,14 +4133,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.49,
+        "beta": 0.66,
         "atr": 116.59,
         "volatility_30d": 22.75,
         "max_drawdown": -16.39,
         "sharpe_ratio": -1.99,
         "support": 4775.5,
         "resistance": 5077.0,
-        "relative_strength": -1.11,
+        "relative_strength": -1.5,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 61.04,
@@ -4303,7 +4303,7 @@
       "ai": {
         "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Hero MotoCorp's current price is near its 52-week low and the RSI indicates overselling, suggesting a potential rebound, while its strong fundamental factors like high ROE and dividend yield also support a buy signal",
+        "reasoning": "Hero MotoCorp's current price is near its 52-week low and the RSI indicates overselling, while its strong fundamental factors like high ROE and decent dividend yield make it an attractive investment opportunity, despite the current debt-to-equity ratio being a concern",
         "target_price": 5200.0,
         "stop_loss": 4500.0,
         "risk": "Medium"
@@ -4342,14 +4342,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.33,
+        "beta": 0.12,
         "atr": 31.59,
         "volatility_30d": 31.67,
         "max_drawdown": -13.35,
         "sharpe_ratio": -0.02,
         "support": 1039.3,
         "resistance": 1149.7,
-        "relative_strength": 3.77,
+        "relative_strength": 3.38,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 8.31,
@@ -4512,8 +4512,8 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Hindalco's current price is near its SMA50, indicating a potential support level, while its RSI is at 40.16, suggesting a neutral stance. The stock's dividend yield is high at 46.0%, but its debt-to-equity ratio is also high at 72.6, which may pose a risk. Considering these factors, a hold recommendation is suitable for now.",
-        "target_price": 1100.0,
+        "reasoning": "Hindalco's current price is near its 50-day moving average, and the RSI indicates a neutral position, while the dividend yield is high and the debt-to-equity ratio is a concern, suggesting a hold strategy until the metal sector trends become clearer. The stock's fundamentals, such as ROE and EPS, are relatively stable. The recent decline in stock price may be a buying opportunity, but caution is advised due to the high debt levels.",
+        "target_price": 1120.0,
         "stop_loss": 950.0,
         "risk": "Medium"
       }
@@ -4551,14 +4551,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.06,
+        "beta": 0.23,
         "atr": 43.52,
         "volatility_30d": 21.38,
         "max_drawdown": -12.22,
         "sharpe_ratio": -1.79,
         "support": 2079.4,
         "resistance": 2272.2,
-        "relative_strength": 0.03,
+        "relative_strength": -0.36,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 95.03,
@@ -4719,12 +4719,12 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "HUL's current price is near its 52-week low, and the RSI indicates a relatively oversold condition, which could lead to a potential bounce-back, but the high P/E and P/B ratios suggest that the stock is still overvalued, and the recent MACD reading of -30.0 indicates a bearish trend, therefore, a cautious approach is recommended",
-        "target_price": 2250.0,
-        "stop_loss": 2000.0,
-        "risk": "Medium"
+        "signal": "Buy",
+        "confidence": "High",
+        "reasoning": "HUL's strong fundamentals, including a high ROE of 21.6% and a stable dividend yield, are complemented by its current technical position, with an RSI of 34.24 indicating a potential oversold bounce, while its debt-to-equity ratio of 3.02 suggests manageable leverage. The stock's P/E of 47.98 is relatively high, but the company's consistent performance and market dominance in the FMCG sector justify a premium valuation. With a MACD of -30.0, a potential trend reversal could be on the horizon.",
+        "target_price": 2350.0,
+        "stop_loss": 2050.0,
+        "risk": "Low"
       }
     },
     {
@@ -4760,14 +4760,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.03,
+        "beta": 0.19,
         "atr": 25.59,
         "volatility_30d": 18.43,
         "max_drawdown": -11.65,
         "sharpe_ratio": 0.85,
         "support": 1226.6,
         "resistance": 1293.3,
-        "relative_strength": 6.01,
+        "relative_strength": 5.62,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 14.71,
@@ -4930,10 +4930,10 @@
       "ai": {
         "signal": "Buy",
         "confidence": "High",
-        "reasoning": "ICICI Bank's current price is near its 52-week low and the RSI is at 30.61, indicating a potential oversold condition, while its strong fundamental factors such as a high ROE of 16.36% and low debt/equity ratio of 0.0 support a bullish outlook. The MACD is also showing a potential buy signal with a value of -0.62. The stock's dividend yield of 86.0% is also attractive, making it a good investment opportunity.",
+        "reasoning": "ICICI Bank's current price is near its 52-week low and the RSI indicates overselling, suggesting a potential rebound. The bank's strong fundamental factors, such as a high ROE and zero debt, support its long-term growth prospects. With a reasonable P/E ratio of 17.31, the stock appears undervalued, making it an attractive investment opportunity.",
         "target_price": 1400.0,
         "stop_loss": 1200.0,
-        "risk": "Low"
+        "risk": "Medium"
       }
     },
     {
@@ -4969,14 +4969,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.36,
+        "beta": 0.28,
         "atr": 22.6,
         "volatility_30d": 27.03,
         "max_drawdown": -16.27,
         "sharpe_ratio": -1.23,
         "support": 883.95,
         "resistance": 932.3,
-        "relative_strength": 0.14,
+        "relative_strength": -0.25,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 0.0,
@@ -5139,9 +5139,9 @@
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "IndusInd Bank's current price is near its 52-week low and the RSI indicates overselling, but the high P/E ratio and low ROE are concerns, meanwhile the dividend yield is attractive, so a hold strategy is recommended",
+        "reasoning": "IndusInd Bank's current price is near its 52-week low and the RSI indicates a potential oversold condition, but the high P/E ratio and low ROE are concerns, while the dividend yield is attractive, suggesting a hold strategy for now. The MACD is slightly positive, indicating a potential trend reversal. The stock's debt-to-equity ratio is 0, which is a positive sign, but the overall banking sector outlook needs to be considered.",
         "target_price": 920.0,
-        "stop_loss": 820.0,
+        "stop_loss": 830.0,
         "risk": "Medium"
       }
     },
@@ -5178,14 +5178,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.33,
+        "beta": 0.06,
         "atr": 31.29,
         "volatility_30d": 32.18,
         "max_drawdown": -18.66,
         "sharpe_ratio": -0.31,
         "support": 1071.81,
         "resistance": 1243.88,
-        "relative_strength": 2.65,
+        "relative_strength": 2.26,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 64.65,
@@ -5347,10 +5347,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Infosys' current price is near its 52-week low, and the RSI indicates a neutral trend, while its strong fundamental factors like high ROE and low debt/equity ratio suggest a potential for rebound, but the current market sentiment and MACD signal a cautious approach",
-        "target_price": 1200.0,
-        "stop_loss": 1100.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (46.14) and price position relative to SMA50 (1187.4). Technical analysis only — verify with fundamentals.",
+        "target_price": 1202.57,
+        "stop_loss": 1088.03,
         "risk": "Medium"
       }
     },
@@ -5387,14 +5387,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.31,
+        "beta": 0.21,
         "atr": 5.56,
         "volatility_30d": 16.54,
         "max_drawdown": -10.02,
         "sharpe_ratio": -4.31,
         "support": 277.0,
         "resistance": 302.07,
-        "relative_strength": -3.83,
+        "relative_strength": -4.22,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 86.92,
@@ -5555,12 +5555,12 @@
         }
       ],
       "ai": {
-        "signal": "Buy",
-        "confidence": "High",
-        "reasoning": "ITC's low RSI of 33.74 indicates a potential oversold condition, while its strong fundamental factors such as high ROE and stable dividend yield suggest a promising investment opportunity. The stock's current price is near its 52-week low, making it an attractive entry point. With a reasonable P/E ratio of 17.17, ITC is likely to rebound in the short term.",
-        "target_price": 310.0,
-        "stop_loss": 265.0,
-        "risk": "Low"
+        "signal": "Hold",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (33.74) and price position relative to SMA50 (293.72). Technical analysis only — verify with fundamentals.",
+        "target_price": 297.83,
+        "stop_loss": 269.47,
+        "risk": "Medium"
       }
     },
     {
@@ -5596,14 +5596,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.18,
+        "beta": 0.21,
         "atr": 24.43,
         "volatility_30d": 17.26,
         "max_drawdown": -8.62,
         "sharpe_ratio": -0.08,
         "support": 1260.7,
         "resistance": 1312.9,
-        "relative_strength": 4.06,
+        "relative_strength": 3.67,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 3.07,
@@ -5764,11 +5764,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "JSW Steel's current price is near its 52-week high, and the RSI indicates a neutral position, while the company's strong ROE and dividend yield are positives, but the high debt-to-equity ratio is a concern, suggesting a hold strategy to monitor the stock's movement",
-        "target_price": 1300.0,
-        "stop_loss": 1200.0,
+        "signal": "Buy",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (40.81) and price position relative to SMA50 (1256.33). Technical analysis only — verify with fundamentals.",
+        "target_price": 1333.29,
+        "stop_loss": 1206.31,
         "risk": "Medium"
       }
     },
@@ -5805,14 +5805,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.38,
+        "beta": 0.18,
         "atr": 7.57,
         "volatility_30d": 18.96,
         "max_drawdown": -9.81,
         "sharpe_ratio": 0.32,
         "support": 377.1,
         "resistance": 392.85,
-        "relative_strength": 4.9,
+        "relative_strength": 4.51,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 2.58,
@@ -5974,10 +5974,10 @@
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "High",
-        "reasoning": "Kotak Bank's low RSI of 29.5 indicates a potential oversold condition, while its strong fundamental metrics such as high dividend yield and zero debt/equity ratio support a bullish outlook. The stock's price is also above its SMA20 and SMA50, suggesting a positive trend. With a reasonable P/E of 20.02 and high ROE of 11.39%, the stock is attractive for long-term investment.",
-        "target_price": 420.0,
-        "stop_loss": 360.0,
+        "confidence": "Medium",
+        "reasoning": "Based on RSI (29.5) and price position relative to SMA50 (378.21). Technical analysis only — verify with fundamentals.",
+        "target_price": 407.51,
+        "stop_loss": 368.69,
         "risk": "Medium"
       }
     },
@@ -6014,14 +6014,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.43,
+        "beta": 0.22,
         "atr": 69.1,
         "volatility_30d": 18.1,
         "max_drawdown": -13.77,
         "sharpe_ratio": -1.01,
         "support": 3871.19,
         "resistance": 4076.5,
-        "relative_strength": 2.19,
+        "relative_strength": 1.8,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 29.09,
@@ -6183,10 +6183,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "L&T's current price is near its SMA50, indicating a stable trend, and its ROE of 16.95% is respectable, but the high debt/equity ratio and declining RSI value of 40.6 are concerns, suggesting a cautious approach, while the dividend yield is unusually high and may be a one-time anomaly",
-        "target_price": 4050.0,
-        "stop_loss": 3750.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (40.6) and price position relative to SMA50 (3929.3). Technical analysis only — verify with fundamentals.",
+        "target_price": 4113.38,
+        "stop_loss": 3721.62,
         "risk": "Medium"
       }
     },
@@ -6223,14 +6223,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": -0.41,
+        "beta": 0.26,
         "atr": 71.22,
         "volatility_30d": 25.74,
         "max_drawdown": -12.41,
         "sharpe_ratio": -1.74,
         "support": 2952.5,
         "resistance": 3173.9,
-        "relative_strength": -1.04,
+        "relative_strength": -1.43,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 16.63,
@@ -6392,10 +6392,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "M&M's current price is near its 52-week low, and the RSI indicates a neutral position, while the MACD suggests a bearish trend, but the company's strong fundamental factors like ROE and dividend yield provide a cushion, making it a hold for now",
-        "target_price": 3100.0,
-        "stop_loss": 2800.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (40.42) and price position relative to SMA50 (3118.26). Technical analysis only — verify with fundamentals.",
+        "target_price": 3100.12,
+        "stop_loss": 2804.88,
         "risk": "Medium"
       }
     },
@@ -6432,14 +6432,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.24,
+        "beta": 0.25,
         "atr": 260.0,
         "volatility_30d": 17.4,
         "max_drawdown": -11.26,
         "sharpe_ratio": -1.18,
         "support": 12912.0,
         "resistance": 13364.0,
-        "relative_strength": 1.83,
+        "relative_strength": 1.44,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 28.91,
@@ -6600,11 +6600,11 @@
         }
       ],
       "ai": {
-        "signal": "Buy",
-        "confidence": "Medium",
-        "reasoning": "Maruti Suzuki's current price is near its 52-week low, and the RSI indicates overselling, suggesting a potential rebound. The company's strong fundamental factors, such as a high ROE and low debt-to-equity ratio, support a positive outlook. With a dividend yield of 107%, the stock offers attractive returns for investors.",
-        "target_price": 14000.0,
-        "stop_loss": 12000.0,
+        "signal": "Hold",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (29.99) and price position relative to SMA50 (13183.08). Technical analysis only — verify with fundamentals.",
+        "target_price": 13726.65,
+        "stop_loss": 12419.35,
         "risk": "Medium"
       }
     },
@@ -6641,14 +6641,14 @@
       },
       "risk_metrics": {
         "risk_score": 3,
-        "beta": -0.21,
+        "beta": 0.27,
         "atr": 28.13,
         "volatility_30d": 14.12,
         "max_drawdown": -6.94,
         "sharpe_ratio": -1.23,
         "support": 1382.9,
         "resistance": 1459.6,
-        "relative_strength": 2.25,
+        "relative_strength": 1.86,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 66.12,
@@ -6810,11 +6810,11 @@
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "High",
-        "reasoning": "Nestle India's strong ROE and low debt-to-equity ratio indicate a fundamentally sound company, while its current RSI of 33.59 suggests a potential oversold bounce, supported by its recent price movement and SMA20 and SMA50 trends",
-        "target_price": 1520.0,
-        "stop_loss": 1350.0,
-        "risk": "Low"
+        "confidence": "Low",
+        "reasoning": "Based on RSI (33.59) and price position relative to SMA50 (1379.12). Technical analysis only — verify with fundamentals.",
+        "target_price": 1510.21,
+        "stop_loss": 1366.38,
+        "risk": "Medium"
       }
     },
     {
@@ -6850,14 +6850,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": 0.11,
+        "beta": 0.26,
         "atr": 8.62,
         "volatility_30d": 19.04,
         "max_drawdown": -14.27,
         "sharpe_ratio": -5.91,
         "support": 351.65,
         "resistance": 398.15,
-        "relative_strength": -8.26,
+        "relative_strength": -8.65,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 29.07,
@@ -7019,10 +7019,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "NTPC's current price is near its 52-week low, and the RSI indicates a neutral position, while the dividend yield is high but the debt-to-equity ratio is a concern, suggesting a hold strategy until the company's financials improve",
-        "target_price": 370.0,
-        "stop_loss": 320.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (40.54) and price position relative to SMA50 (386.63). Technical analysis only — verify with fundamentals.",
+        "target_price": 369.23,
+        "stop_loss": 334.07,
         "risk": "Medium"
       }
     },
@@ -7059,14 +7059,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.29,
+        "beta": 0.0,
         "atr": 6.73,
         "volatility_30d": 27.79,
         "max_drawdown": -16.42,
         "sharpe_ratio": -5.4,
         "support": 251.9,
         "resistance": 300.9,
-        "relative_strength": -12.26,
+        "relative_strength": -12.65,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 41.0,
@@ -7227,11 +7227,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
+        "signal": "Sell",
         "confidence": "Medium",
-        "reasoning": "ONGC's current price is near its 52-week low, and the dividend yield is exceptionally high, indicating potential value, but the RSI and MACD suggest a recent downtrend, so a hold is recommended until the trend reverses, considering its reasonable P/E and P/B ratios",
-        "target_price": 265.0,
-        "stop_loss": 235.0,
+        "reasoning": "Based on RSI (70.12) and price position relative to SMA50 (284.16). Technical analysis only — verify with fundamentals.",
+        "target_price": 264.5,
+        "stop_loss": 239.31,
         "risk": "Medium"
       }
     },
@@ -7268,14 +7268,14 @@
       },
       "risk_metrics": {
         "risk_score": 7,
-        "beta": 0.0,
+        "beta": 0.34,
         "atr": 6.85,
         "volatility_30d": 20.01,
         "max_drawdown": -12.08,
         "sharpe_ratio": -4.61,
         "support": 282.15,
         "resistance": 305.85,
-        "relative_strength": -6.14,
+        "relative_strength": -6.53,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 44.75,
@@ -7437,10 +7437,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Power Grid's current price is near its 52-week low and has a relatively low RSI, indicating potential for a rebound, but its high debt-to-equity ratio and declining MACD signal caution, while its strong dividend yield and ROE provide fundamental support",
-        "target_price": 305.0,
-        "stop_loss": 265.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (40.87) and price position relative to SMA50 (303.25). Technical analysis only — verify with fundamentals.",
+        "target_price": 301.56,
+        "stop_loss": 272.84,
         "risk": "Medium"
       }
     },
@@ -7477,14 +7477,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": 0.01,
+        "beta": 0.08,
         "atr": 22.48,
         "volatility_30d": 19.12,
         "max_drawdown": -13.6,
         "sharpe_ratio": -5.79,
         "support": 1258.8,
         "resistance": 1360.71,
-        "relative_strength": -7.97,
+        "relative_strength": -8.36,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 9.21,
@@ -7646,10 +7646,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Reliance's current price is near its 52-week low, and the RSI indicates a neutral position, while the MACD suggests a bearish trend, however, the company's strong fundamental factors such as a decent ROE and dividend yield provide a cushion, making it a hold for now",
-        "target_price": 1300.0,
-        "stop_loss": 1200.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (40.95) and price position relative to SMA50 (1348.37). Technical analysis only — verify with fundamentals.",
+        "target_price": 1321.74,
+        "stop_loss": 1195.86,
         "risk": "Medium"
       }
     },
@@ -7686,14 +7686,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.11,
+        "beta": 0.05,
         "atr": 18.72,
         "volatility_30d": 29.07,
         "max_drawdown": -14.01,
         "sharpe_ratio": -1.41,
         "support": 939.4,
         "resistance": 1003.25,
-        "relative_strength": -0.77,
+        "relative_strength": -1.16,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 17.44,
@@ -7854,11 +7854,11 @@
         }
       ],
       "ai": {
-        "signal": "Buy",
-        "confidence": "High",
-        "reasoning": "SBI's current price is near its 52-week low and has a low RSI of 34.19, indicating a potential oversold condition, while its fundamental factors such as a high ROE of 15.48% and low debt-to-equity ratio of 0.0 suggest a strong financial position, making it an attractive investment opportunity",
-        "target_price": 1100.0,
-        "stop_loss": 950.0,
+        "signal": "Hold",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (34.19) and price position relative to SMA50 (1009.94). Technical analysis only — verify with fundamentals.",
+        "target_price": 1053.41,
+        "stop_loss": 953.09,
         "risk": "Medium"
       }
     },
@@ -7895,14 +7895,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.34,
+        "beta": 0.25,
         "atr": 33.6,
         "volatility_30d": 17.33,
         "max_drawdown": -12.8,
         "sharpe_ratio": -2.79,
         "support": 1728.7,
         "resistance": 1901.9,
-        "relative_strength": -1.32,
+        "relative_strength": -1.71,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 10.97,
@@ -8063,11 +8063,11 @@
         }
       ],
       "ai": {
-        "signal": "Buy",
-        "confidence": "Medium",
-        "reasoning": "SBI Life's low RSI of 25.7 indicates oversold conditions, while its strong fundamental factors such as zero debt and a high ROE of 13.7% make it an attractive investment opportunity. The recent price drop presents a buying chance, considering its high dividend yield of 15.0% and relatively stable financials. With a P/E of 70.3, the stock may be overvalued, but its growth prospects and industry position support a potential rebound.",
-        "target_price": 1850.0,
-        "stop_loss": 1650.0,
+        "signal": "Hold",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (25.7) and price position relative to SMA50 (1849.21). Technical analysis only — verify with fundamentals.",
+        "target_price": 1815.14,
+        "stop_loss": 1642.26,
         "risk": "Medium"
       }
     },
@@ -8104,14 +8104,14 @@
       },
       "risk_metrics": {
         "risk_score": 8,
-        "beta": -0.17,
+        "beta": 0.44,
         "atr": 23.65,
         "volatility_30d": 30.05,
         "max_drawdown": -17.95,
         "sharpe_ratio": -1.33,
         "support": 896.65,
         "resistance": 963.2,
-        "relative_strength": -0.62,
+        "relative_strength": -1.01,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 14.65,
@@ -8313,14 +8313,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.08,
+        "beta": -0.09,
         "atr": 34.73,
         "volatility_30d": 17.1,
         "max_drawdown": -11.25,
         "sharpe_ratio": -0.94,
         "support": 1779.0,
         "resistance": 1905.8,
-        "relative_strength": 2.43,
+        "relative_strength": 2.04,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 34.52,
@@ -8522,14 +8522,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.07,
+        "beta": 0.2,
         "atr": 26.33,
         "volatility_30d": 30.25,
         "max_drawdown": -12.21,
         "sharpe_ratio": -0.76,
         "support": 1106.5,
         "resistance": 1223.65,
-        "relative_strength": 1.26,
+        "relative_strength": 0.88,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 52.95,
@@ -8691,10 +8691,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Tata Consumer's current price is near its 52-week low and the RSI indicates a relatively oversold condition, which could lead to a potential bounce, but the high P/E ratio and low ROE are concerns, suggesting a hold rather than a buy, considering the overall market and sector trends",
-        "target_price": 1150.0,
-        "stop_loss": 1050.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (34.21) and price position relative to SMA50 (1142.11). Technical analysis only — verify with fundamentals.",
+        "target_price": 1163.4,
+        "stop_loss": 1052.6,
         "risk": "Medium"
       }
     },
@@ -8711,7 +8711,7 @@
       "volume": 7250908,
       "market_cap": 1403007926272,
       "pe_ratio": 0.0,
-      "pb_ratio": 1.25,
+      "pb_ratio": 1.27,
       "eps": -4.42,
       "dividend_yield": 77.0,
       "roe": -1.12,
@@ -8731,14 +8731,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": 0.02,
+        "beta": 0.43,
         "atr": 11.49,
         "volatility_30d": 34.68,
         "max_drawdown": -14.19,
         "sharpe_ratio": 2.8,
         "support": 338.75,
         "resistance": 400.95,
-        "relative_strength": 15.19,
+        "relative_strength": 14.8,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 56.44,
@@ -8940,14 +8940,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.28,
+        "beta": 0.08,
         "atr": 4.49,
         "volatility_30d": 23.69,
         "max_drawdown": -9.87,
         "sharpe_ratio": -2.33,
         "support": 199.31,
         "resistance": 221.13,
-        "relative_strength": -2.06,
+        "relative_strength": -2.45,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 41.62,
@@ -9149,14 +9149,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.4,
+        "beta": 0.18,
         "atr": 69.13,
         "volatility_30d": 35.68,
         "max_drawdown": -16.48,
         "sharpe_ratio": -2.98,
         "support": 2151.0,
         "resistance": 2446.9,
-        "relative_strength": -8.11,
+        "relative_strength": -8.5,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 46.32,
@@ -9358,14 +9358,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.35,
+        "beta": 0.08,
         "atr": 43.22,
         "volatility_30d": 34.17,
         "max_drawdown": -11.12,
         "sharpe_ratio": 0.08,
         "support": 1343.4,
         "resistance": 1571.4,
-        "relative_strength": 4.01,
+        "relative_strength": 3.62,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 83.04,
@@ -9567,14 +9567,14 @@
       },
       "risk_metrics": {
         "risk_score": 8,
-        "beta": -0.23,
+        "beta": 0.45,
         "atr": 91.41,
         "volatility_30d": 31.73,
         "max_drawdown": -11.08,
         "sharpe_ratio": -2.24,
         "support": 4024.6,
         "resistance": 4260.2,
-        "relative_strength": -4.18,
+        "relative_strength": -4.57,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 19.23,
@@ -9776,14 +9776,14 @@
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.22,
+        "beta": 0.1,
         "atr": 77.44,
         "volatility_30d": 24.21,
         "max_drawdown": -11.29,
         "sharpe_ratio": -0.26,
         "support": 2688.2,
         "resistance": 2866.67,
-        "relative_strength": 3.34,
+        "relative_strength": 2.95,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 10.34,
@@ -9985,14 +9985,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.45,
+        "beta": 0.41,
         "atr": 205.57,
         "volatility_30d": 19.37,
         "max_drawdown": -11.47,
         "sharpe_ratio": -3.19,
         "support": 10795.0,
         "resistance": 11726.0,
-        "relative_strength": -2.57,
+        "relative_strength": -2.96,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 27.93,
@@ -10174,7 +10174,7 @@
       "volume": 16921151,
       "market_cap": 1877040955392,
       "pe_ratio": 14.26,
-      "pb_ratio": 2.13,
+      "pb_ratio": 2.09,
       "eps": 12.55,
       "dividend_yield": 936.0,
       "roe": 15.44,
@@ -10194,14 +10194,14 @@
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": -0.2,
+        "beta": 0.3,
         "atr": 6.65,
         "volatility_30d": 32.09,
         "max_drawdown": -14.9,
         "sharpe_ratio": -3.08,
         "support": 178.93,
         "resistance": 209.84,
-        "relative_strength": -7.18,
+        "relative_strength": -7.57,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 87.58,
@@ -10403,14 +10403,14 @@
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.2,
+        "beta": 0.17,
         "atr": 79.18,
         "volatility_30d": 19.77,
         "max_drawdown": -15.15,
         "sharpe_ratio": -4.64,
         "support": 5064.0,
         "resistance": 5416.5,
-        "relative_strength": -6.05,
+        "relative_strength": -6.44,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 71.31,
@@ -10646,9 +10646,9 @@
   },
   "summary": {
     "total": 50,
-    "buy": 20,
-    "hold": 30,
-    "sell": 0,
+    "buy": 21,
+    "hold": 28,
+    "sell": 1,
     "gainers": 20,
     "losers": 30
   }
