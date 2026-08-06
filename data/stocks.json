@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-06T05:51:33Z",
+  "last_updated": "2026-08-06T08:36:59Z",
   "nifty_index": {
-    "value": 24656.65,
-    "change": 32.0,
-    "change_pct": 0.13,
+    "value": 24642.55,
+    "change": 17.9,
+    "change_pct": 0.07,
     "prev_close": 24624.65,
     "trend": [
       {
@@ -124,7 +124,7 @@
       },
       {
         "date": "2026-08-06",
-        "close": 24656.65
+        "close": 24642.55
       }
     ]
   },
@@ -133,16 +133,16 @@
       "symbol": "ADANIENT",
       "name": "Adani Enterprises",
       "sector": "Infrastructure",
-      "price": 3069.4,
-      "change": 19.4,
-      "change_pct": 0.64,
+      "price": 3040.7,
+      "change": -9.3,
+      "change_pct": -0.3,
       "open": 3050.0,
-      "high": 3070.5,
-      "low": 3036.0,
-      "volume": 259153,
-      "market_cap": 4367674507264,
-      "pe_ratio": 53.24,
-      "pb_ratio": 4.9,
+      "high": 3072.4,
+      "low": 3031.8,
+      "volume": 523632,
+      "market_cap": 4326835355648,
+      "pe_ratio": 52.74,
+      "pb_ratio": 4.86,
       "eps": 57.65,
       "dividend_yield": 4.0,
       "roe": 0.0,
@@ -151,25 +151,25 @@
       "week52_low": 1753.0,
       "technicals": {
         "rsi": 76.6,
-        "macd": 6.1,
-        "macd_signal": 6.1,
-        "sma20": 3095.46,
-        "sma50": 3034.37,
+        "macd": -2.6,
+        "macd_signal": -2.6,
+        "sma20": 3093.36,
+        "sma50": 3047.22,
         "sma200": null,
-        "bb_upper": 3231.5,
-        "bb_middle": 3095.46,
-        "bb_lower": 2959.42
+        "bb_upper": 3230.73,
+        "bb_middle": 3093.36,
+        "bb_lower": 2955.99
       },
       "risk_metrics": {
         "risk_score": 8,
-        "beta": -0.4,
-        "atr": 65.05,
-        "volatility_30d": 30.76,
+        "beta": -0.19,
+        "atr": 63.11,
+        "volatility_30d": 25.85,
         "max_drawdown": -6.53,
-        "sharpe_ratio": 0.04,
+        "sharpe_ratio": -0.09,
         "support": 3002.3,
-        "resistance": 3206.6,
-        "relative_strength": -2.18,
+        "resistance": 3188.9,
+        "relative_strength": -2.35,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 2.26,
@@ -178,26 +178,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 3059.6,
-          "volume": 1726452
-        },
-        {
-          "date": "2026-06-23",
-          "close": 2962.9,
-          "volume": 1620658
-        },
-        {
-          "date": "2026-06-24",
-          "close": 3069.7,
-          "volume": 2527812
-        },
-        {
-          "date": "2026-06-25",
-          "close": 3038.0,
-          "volume": 1719600
-        },
         {
           "date": "2026-06-26",
           "close": 3038.0,
@@ -279,9 +259,19 @@
           "volume": 1021302
         },
         {
+          "date": "2026-07-20",
+          "close": 3183.3,
+          "volume": 994778
+        },
+        {
           "date": "2026-07-21",
           "close": 3182.7,
           "volume": 951463
+        },
+        {
+          "date": "2026-07-22",
+          "close": 3147.7,
+          "volume": 977224
         },
         {
           "date": "2026-07-23",
@@ -324,17 +314,27 @@
           "volume": 891429
         },
         {
+          "date": "2026-08-04",
+          "close": 3050.0,
+          "volume": 854172
+        },
+        {
+          "date": "2026-08-05",
+          "close": 3050.0,
+          "volume": 870914
+        },
+        {
           "date": "2026-08-06",
-          "close": 3069.4,
-          "volume": 259153
+          "close": 3040.7,
+          "volume": 523632
         }
       ],
       "ai": {
-        "signal": "Sell",
+        "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Based on RSI (76.6) and price position relative to SMA50 (3034.37). Technical analysis only — verify with fundamentals.",
-        "target_price": 3222.87,
-        "stop_loss": 2915.93,
+        "reasoning": "Adani Enterprises' high P/E and debt/equity ratio raise concerns, but its strong dividend yield and recent price stability near the SMA50 level suggest a hold strategy, considering the infrastructure sector's potential for growth, despite the stock's high RSI indicating overbought conditions",
+        "target_price": 3150.0,
+        "stop_loss": 2800.0,
         "risk": "Medium"
       }
     },
@@ -342,16 +342,16 @@
       "symbol": "ADANIPORTS",
       "name": "Adani Ports",
       "sector": "Infrastructure",
-      "price": 1702.2,
-      "change": 2.2,
-      "change_pct": 0.13,
+      "price": 1694.1,
+      "change": -5.9,
+      "change_pct": -0.35,
       "open": 1704.0,
       "high": 1706.0,
       "low": 1685.8,
-      "volume": 376007,
-      "market_cap": 3921799020544,
-      "pe_ratio": 29.19,
-      "pb_ratio": 4.09,
+      "volume": 822859,
+      "market_cap": 3903136989184,
+      "pe_ratio": 29.05,
+      "pb_ratio": 4.07,
       "eps": 58.31,
       "dividend_yield": 44.0,
       "roe": 0.0,
@@ -360,25 +360,25 @@
       "week52_low": 1290.5,
       "technicals": {
         "rsi": 59.54,
-        "macd": -30.18,
-        "macd_signal": -30.18,
-        "sma20": 1783.26,
-        "sma50": 1800.75,
+        "macd": -32.69,
+        "macd_signal": -32.69,
+        "sma20": 1771.85,
+        "sma50": 1797.33,
         "sma200": null,
-        "bb_upper": 1896.59,
-        "bb_middle": 1783.26,
-        "bb_lower": 1669.93
+        "bb_upper": 1891.26,
+        "bb_middle": 1771.85,
+        "bb_lower": 1652.45
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.59,
-        "atr": 40.42,
-        "volatility_30d": 24.55,
+        "beta": -0.0,
+        "atr": 38.05,
+        "volatility_30d": 21.87,
         "max_drawdown": -11.63,
-        "sharpe_ratio": -2.6,
+        "sharpe_ratio": -2.46,
         "support": 1664.1,
-        "resistance": 1864.4,
-        "relative_strength": -9.34,
+        "resistance": 1846.5,
+        "relative_strength": -8.11,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 12.8,
@@ -387,26 +387,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 1827.2,
-          "volume": 1524494
-        },
-        {
-          "date": "2026-06-23",
-          "close": 1784.0,
-          "volume": 3309685
-        },
-        {
-          "date": "2026-06-24",
-          "close": 1813.3,
-          "volume": 2141905
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1796.0,
-          "volume": 1850390
-        },
         {
           "date": "2026-06-26",
           "close": 1796.0,
@@ -488,9 +468,19 @@
           "volume": 962152
         },
         {
+          "date": "2026-07-20",
+          "close": 1844.0,
+          "volume": 754950
+        },
+        {
           "date": "2026-07-21",
           "close": 1846.5,
           "volume": 1372166
+        },
+        {
+          "date": "2026-07-22",
+          "close": 1819.4,
+          "volume": 1436881
         },
         {
           "date": "2026-07-23",
@@ -533,17 +523,27 @@
           "volume": 1664693
         },
         {
+          "date": "2026-08-04",
+          "close": 1706.7,
+          "volume": 1099071
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1700.0,
+          "volume": 2333361
+        },
+        {
           "date": "2026-08-06",
-          "close": 1702.2,
-          "volume": 376242
+          "close": 1694.1,
+          "volume": 822859
         }
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (59.54) and price position relative to SMA50 (1800.75). Technical analysis only — verify with fundamentals.",
-        "target_price": 1787.31,
-        "stop_loss": 1617.09,
+        "confidence": "Medium",
+        "reasoning": "Adani Ports' current price is near its 20-day and 50-day moving averages, indicating a neutral trend, while its high debt-to-equity ratio and zero ROE are concerns, but the company's strong position in the infrastructure sector and decent dividend yield provide some support",
+        "target_price": 1750.0,
+        "stop_loss": 1550.0,
         "risk": "Medium"
       }
     },
@@ -551,16 +551,16 @@
       "symbol": "APOLLOHOSP",
       "name": "Apollo Hospitals",
       "sector": "Pharma",
-      "price": 8970.0,
-      "change": 60.0,
-      "change_pct": 0.67,
+      "price": 8936.5,
+      "change": 26.5,
+      "change_pct": 0.3,
       "open": 8947.0,
       "high": 9015.0,
-      "low": 8916.0,
-      "volume": 160136,
-      "market_cap": 1289748348928,
-      "pe_ratio": 66.52,
-      "pb_ratio": 13.6,
+      "low": 8880.0,
+      "volume": 293759,
+      "market_cap": 1285290983424,
+      "pe_ratio": 66.29,
+      "pb_ratio": 13.56,
       "eps": 134.85,
       "dividend_yield": 23.0,
       "roe": 21.5,
@@ -569,25 +569,25 @@
       "week52_low": 6696.5,
       "technicals": {
         "rsi": 71.26,
-        "macd": 85.53,
-        "macd_signal": 85.53,
-        "sma20": 8896.05,
-        "sma50": 8653.99,
+        "macd": 76.79,
+        "macd_signal": 76.79,
+        "sma20": 8897.6,
+        "sma50": 8666.07,
         "sma200": null,
-        "bb_upper": 9029.08,
-        "bb_middle": 8896.05,
-        "bb_lower": 8763.02
+        "bb_upper": 9025.85,
+        "bb_middle": 8897.6,
+        "bb_lower": 8769.35
       },
       "risk_metrics": {
-        "risk_score": 6,
-        "beta": 0.12,
-        "atr": 137.79,
-        "volatility_30d": 14.52,
+        "risk_score": 7,
+        "beta": -0.18,
+        "atr": 146.43,
+        "volatility_30d": 15.04,
         "max_drawdown": -3.74,
-        "sharpe_ratio": 2.17,
+        "sharpe_ratio": 1.89,
         "support": 8782.5,
         "resistance": 9050.0,
-        "relative_strength": 1.9,
+        "relative_strength": 1.57,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 14.81,
@@ -596,11 +596,6 @@
         "earnings_soon": true
       },
       "price_history": [
-        {
-          "date": "2026-06-25",
-          "close": 8592.0,
-          "volume": 378450
-        },
         {
           "date": "2026-06-26",
           "close": 8592.0,
@@ -742,15 +737,20 @@
           "volume": 259286
         },
         {
+          "date": "2026-08-05",
+          "close": 8910.0,
+          "volume": 288978
+        },
+        {
           "date": "2026-08-06",
-          "close": 8970.0,
-          "volume": 160136
+          "close": 8936.5,
+          "volume": 293778
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Apollo Hospitals' high P/E and P/B ratios indicate a premium valuation, but its strong ROE and dividend yield suggest a stable financial foundation. The stock's RSI is approaching overbought territory, which may lead to a short-term correction, while the MACD and SMA indicators suggest a bullish trend. However, the high debt-to-equity ratio is a concern, warranting a cautious approach.",
+        "reasoning": "Apollo Hospitals' high P/E and P/B ratios indicate a premium valuation, but its strong ROE and dividend yield are positives. The stock's RSI is in overbought territory, suggesting a potential correction, while the MACD and SMA trends are bullish. Given the mixed technical and fundamental signals, a hold recommendation is warranted.",
         "target_price": 9200.0,
         "stop_loss": 8500.0,
         "risk": "Medium"
@@ -760,16 +760,16 @@
       "symbol": "ASIANPAINT",
       "name": "Asian Paints",
       "sector": "Others",
-      "price": 2752.8,
-      "change": -7.2,
-      "change_pct": -0.26,
+      "price": 2747.2,
+      "change": -12.8,
+      "change_pct": -0.46,
       "open": 2788.0,
       "high": 2788.0,
-      "low": 2747.0,
-      "volume": 291377,
-      "market_cap": 2638955937792,
-      "pe_ratio": 55.72,
-      "pb_ratio": 12.36,
+      "low": 2741.6,
+      "volume": 529562,
+      "market_cap": 2633587490816,
+      "pe_ratio": 55.61,
+      "pb_ratio": 12.33,
       "eps": 49.4,
       "dividend_yield": 99.0,
       "roe": 0.0,
@@ -778,25 +778,25 @@
       "week52_low": 2115.0,
       "technicals": {
         "rsi": 65.9,
-        "macd": 23.86,
-        "macd_signal": 23.86,
-        "sma20": 2704.06,
-        "sma50": 2682.33,
+        "macd": 24.8,
+        "macd_signal": 24.8,
+        "sma20": 2708.92,
+        "sma50": 2692.07,
         "sma200": null,
-        "bb_upper": 2795.29,
-        "bb_middle": 2704.06,
-        "bb_lower": 2612.84
+        "bb_upper": 2802.84,
+        "bb_middle": 2708.92,
+        "bb_lower": 2615.0
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.2,
-        "atr": 61.7,
-        "volatility_30d": 20.09,
+        "beta": 0.37,
+        "atr": 60.43,
+        "volatility_30d": 18.12,
         "max_drawdown": -4.25,
-        "sharpe_ratio": 0.46,
+        "sharpe_ratio": 1.52,
         "support": 2637.9,
         "resistance": 2810.0,
-        "relative_strength": -0.89,
+        "relative_strength": 1.42,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 55.34,
@@ -805,31 +805,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-19",
-          "close": 2709.39,
-          "volume": 838991
-        },
-        {
-          "date": "2026-06-22",
-          "close": 2651.0,
-          "volume": 1033475
-        },
-        {
-          "date": "2026-06-23",
-          "close": 2661.2,
-          "volume": 1182151
-        },
-        {
-          "date": "2026-06-24",
-          "close": 2667.5,
-          "volume": 1264476
-        },
-        {
-          "date": "2026-06-25",
-          "close": 2645.2,
-          "volume": 2050810
-        },
         {
           "date": "2026-06-26",
           "close": 2645.2,
@@ -911,9 +886,19 @@
           "volume": 452284
         },
         {
+          "date": "2026-07-20",
+          "close": 2691.4,
+          "volume": 571087
+        },
+        {
           "date": "2026-07-21",
           "close": 2692.4,
           "volume": 1000078
+        },
+        {
+          "date": "2026-07-22",
+          "close": 2692.8,
+          "volume": 528096
         },
         {
           "date": "2026-07-23",
@@ -946,20 +931,35 @@
           "volume": 2387024
         },
         {
+          "date": "2026-07-31",
+          "close": 2747.3,
+          "volume": 891738
+        },
+        {
           "date": "2026-08-03",
           "close": 2810.0,
           "volume": 1040453
         },
         {
+          "date": "2026-08-04",
+          "close": 2775.0,
+          "volume": 820097
+        },
+        {
+          "date": "2026-08-05",
+          "close": 2760.0,
+          "volume": 688876
+        },
+        {
           "date": "2026-08-06",
-          "close": 2752.8,
-          "volume": 291377
+          "close": 2747.2,
+          "volume": 529562
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Asian Paints' current price is near its 20-day SMA, indicating a potential short-term consolidation, while its high P/E and P/B ratios suggest a rich valuation, however, the company's strong brand and market position in the paint industry support its growth prospects. The RSI is in the neutral zone, and the MACD is positive, indicating a potential trend reversal. The dividend yield is high, but the ROE is 0.0%, which is a concern.",
+        "reasoning": "Asian Paints' current price is near its 52-week high, and the RSI indicates a slightly overbought condition, but the company's strong fundamentals, including a high ROE and low debt-to-equity ratio, support a hold recommendation. The stock's dividend yield is also attractive, but the high P/E ratio is a concern. The MACD and SMA indicators suggest a short-term consolidation phase.",
         "target_price": 2850.0,
         "stop_loss": 2600.0,
         "risk": "Medium"
@@ -969,14 +969,14 @@
       "symbol": "AXISBANK",
       "name": "Axis Bank",
       "sector": "Banking",
-      "price": 1256.2,
-      "change": 2.3,
+      "price": 1256.1,
+      "change": 2.2,
       "change_pct": 0.18,
       "open": 1256.1,
       "high": 1259.9,
       "low": 1248.3,
-      "volume": 1139212,
-      "market_cap": 3908854087680,
+      "volume": 3098753,
+      "market_cap": 3908542922752,
       "pe_ratio": 14.23,
       "pb_ratio": 1.75,
       "eps": 88.27,
@@ -987,13 +987,13 @@
       "week52_low": 1042.5,
       "technicals": {
         "rsi": 51.71,
-        "macd": -17.72,
-        "macd_signal": -17.72,
-        "sma20": 1265.04,
+        "macd": -17.73,
+        "macd_signal": -17.73,
+        "sma20": 1265.03,
         "sma50": 1302.81,
         "sma200": null,
-        "bb_upper": 1340.01,
-        "bb_middle": 1265.04,
+        "bb_upper": 1340.0,
+        "bb_middle": 1265.03,
         "bb_lower": 1190.06
       },
       "risk_metrics": {
@@ -1005,7 +1005,7 @@
         "sharpe_ratio": -3.41,
         "support": 1223.0,
         "resistance": 1328.5,
-        "relative_strength": -11.21,
+        "relative_strength": -11.16,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 0.0,
@@ -1161,14 +1161,14 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1256.2,
-          "volume": 1139212
+          "close": 1256.1,
+          "volume": 3098753
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Axis Bank's current price is near its 20-day SMA, indicating a potential support level, while its P/E ratio is relatively reasonable compared to its peers, but the recent MACD crossover suggests a short-term bearish trend, hence a hold recommendation, considering its strong ROE and dividend yield",
+        "reasoning": "Axis Bank's current price is near its 20-day moving average, and the RSI is at 51.71, indicating a neutral trend, while its fundamental factors like ROE and dividend yield are strong, but the debt/equity ratio is 0, which may not be sustainable, hence a hold recommendation",
         "target_price": 1300.0,
         "stop_loss": 1200.0,
         "risk": "Medium"
@@ -1178,17 +1178,17 @@
       "symbol": "BAJAJ-AUTO",
       "name": "Bajaj Auto",
       "sector": "Auto",
-      "price": 11687.0,
-      "change": -113.0,
-      "change_pct": -0.96,
+      "price": 11607.0,
+      "change": -193.0,
+      "change_pct": -1.64,
       "open": 11748.0,
       "high": 11778.0,
-      "low": 11672.0,
-      "volume": 90280,
-      "market_cap": 3211632574464,
-      "pe_ratio": 27.77,
-      "pb_ratio": 8.41,
-      "eps": 420.89,
+      "low": 11557.0,
+      "volume": 170896,
+      "market_cap": 3181678952448,
+      "pe_ratio": 27.5,
+      "pb_ratio": 8.33,
+      "eps": 421.08,
       "dividend_yield": 127.0,
       "roe": 0.0,
       "debt_to_equity": 56.35,
@@ -1196,25 +1196,25 @@
       "week52_low": 7858.5,
       "technicals": {
         "rsi": 56.75,
-        "macd": 404.39,
-        "macd_signal": 404.39,
-        "sma20": 10723.77,
-        "sma50": 10358.99,
+        "macd": 409.57,
+        "macd_signal": 409.57,
+        "sma20": 10924.2,
+        "sma50": 10416.36,
         "sma200": null,
-        "bb_upper": 11904.87,
-        "bb_middle": 10723.77,
-        "bb_lower": 9542.68
+        "bb_upper": 12095.72,
+        "bb_middle": 10924.2,
+        "bb_lower": 9752.68
       },
       "risk_metrics": {
-        "risk_score": 7,
-        "beta": -0.16,
-        "atr": 264.46,
-        "volatility_30d": 32.71,
+        "risk_score": 6,
+        "beta": 0.29,
+        "atr": 268.29,
+        "volatility_30d": 27.37,
         "max_drawdown": -9.65,
-        "sharpe_ratio": 3.56,
-        "support": 10036.5,
+        "sharpe_ratio": 5.07,
+        "support": 10155.0,
         "resistance": 11856.0,
-        "relative_strength": 12.18,
+        "relative_strength": 15.48,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 35.66,
@@ -1223,21 +1223,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 10191.0,
-          "volume": 834191
-        },
-        {
-          "date": "2026-06-23",
-          "close": 10025.0,
-          "volume": 551711
-        },
-        {
-          "date": "2026-06-24",
-          "close": 9750.0,
-          "volume": 426013
-        },
         {
           "date": "2026-06-25",
           "close": 9843.0,
@@ -1334,6 +1319,11 @@
           "volume": 834319
         },
         {
+          "date": "2026-07-22",
+          "close": 10998.5,
+          "volume": 1448948
+        },
+        {
           "date": "2026-07-23",
           "close": 11283.5,
           "volume": 1025555
@@ -1369,15 +1359,25 @@
           "volume": 281232
         },
         {
+          "date": "2026-08-04",
+          "close": 11600.0,
+          "volume": 307958
+        },
+        {
+          "date": "2026-08-05",
+          "close": 11800.0,
+          "volume": 382721
+        },
+        {
           "date": "2026-08-06",
-          "close": 11687.0,
-          "volume": 90280
+          "close": 11607.0,
+          "volume": 132111
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Bajaj Auto's current price is near its 52-week high, with a relatively high P/E ratio, indicating potential overvaluation, but its strong dividend yield and improving technical indicators like RSI and MACD suggest a hold position, considering the auto sector's growth prospects",
+        "reasoning": "Bajaj Auto's current price is near its 52-week high, with a relatively high P/E and P/B ratio, indicating potential overvaluation, but its strong dividend yield and improving technical indicators like RSI and MACD suggest a hold position, as the stock may consolidate before further upside",
         "target_price": 12000.0,
         "stop_loss": 11000.0,
         "risk": "Medium"
@@ -1387,16 +1387,16 @@
       "symbol": "BAJFINANCE",
       "name": "Bajaj Finance",
       "sector": "Financial Services",
-      "price": 1157.9,
-      "change": -0.9,
-      "change_pct": -0.08,
+      "price": 1150.7,
+      "change": -8.1,
+      "change_pct": -0.7,
       "open": 1155.5,
       "high": 1160.2,
       "low": 1144.6,
-      "volume": 2630782,
-      "market_cap": 7203195453440,
-      "pe_ratio": 35.31,
-      "pb_ratio": 6.32,
+      "volume": 4737607,
+      "market_cap": 7172712824832,
+      "pe_ratio": 35.16,
+      "pb_ratio": 6.29,
       "eps": 32.79,
       "dividend_yield": 47.0,
       "roe": 0.0,
@@ -1405,25 +1405,25 @@
       "week52_low": 787.9,
       "technicals": {
         "rsi": 35.74,
-        "macd": 38.76,
-        "macd_signal": 38.76,
-        "sma20": 1051.46,
-        "sma50": 981.64,
+        "macd": 40.63,
+        "macd_signal": 40.63,
+        "sma20": 1068.42,
+        "sma50": 995.91,
         "sma200": null,
-        "bb_upper": 1142.17,
-        "bb_middle": 1051.46,
-        "bb_lower": 960.75
+        "bb_upper": 1169.05,
+        "bb_middle": 1068.42,
+        "bb_lower": 967.78
       },
       "risk_metrics": {
-        "risk_score": 9,
-        "beta": 0.03,
-        "atr": 31.39,
-        "volatility_30d": 33.4,
+        "risk_score": 8,
+        "beta": 0.7,
+        "atr": 29.72,
+        "volatility_30d": 32.09,
         "max_drawdown": -11.24,
-        "sharpe_ratio": 4.72,
-        "support": 1003.8,
-        "resistance": 1157.9,
-        "relative_strength": 17.82,
+        "sharpe_ratio": 4.41,
+        "support": 1006.6,
+        "resistance": 1158.8,
+        "relative_strength": 15.65,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 16.58,
@@ -1432,26 +1432,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 962.38,
-          "volume": 5680845
-        },
-        {
-          "date": "2026-06-23",
-          "close": 956.52,
-          "volume": 8202516
-        },
-        {
-          "date": "2026-06-24",
-          "close": 984.9,
-          "volume": 9873777
-        },
-        {
-          "date": "2026-06-25",
-          "close": 974.41,
-          "volume": 12807092
-        },
         {
           "date": "2026-06-26",
           "close": 974.41,
@@ -1533,9 +1513,19 @@
           "volume": 12882360
         },
         {
+          "date": "2026-07-20",
+          "close": 1064.0,
+          "volume": 9348760
+        },
+        {
           "date": "2026-07-21",
           "close": 1069.2,
           "volume": 6970658
+        },
+        {
+          "date": "2026-07-22",
+          "close": 1060.3,
+          "volume": 6757716
         },
         {
           "date": "2026-07-23",
@@ -1578,15 +1568,25 @@
           "volume": 13758012
         },
         {
+          "date": "2026-08-04",
+          "close": 1149.0,
+          "volume": 9437990
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1158.8,
+          "volume": 5154683
+        },
+        {
           "date": "2026-08-06",
-          "close": 1157.9,
-          "volume": 2630782
+          "close": 1150.7,
+          "volume": 3913939
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "High",
-        "reasoning": "Bajaj Finance's strong financials, with a high ROE and low debt, combined with its current undervaluation as indicated by the RSI of 35.74, suggest a potential for upward movement. The stock's dividend yield of 0.47% and high P/E ratio of 35.31 also indicate a strong growth potential. The MACD and SMA20 and SMA50 trends also indicate a bullish trend",
+        "reasoning": "Bajaj Finance's strong financials, including a high ROE and low debt, combined with its relatively low RSI of 35.74, indicate a potential buying opportunity. The stock's price is also above its SMA20 and SMA50, suggesting a bullish trend. With a dividend yield of 0.47%, the stock offers a decent return on investment",
         "target_price": 1250.0,
         "stop_loss": 1050.0,
         "risk": "Medium"
@@ -1596,16 +1596,16 @@
       "symbol": "BAJAJFINSV",
       "name": "Bajaj Finserv",
       "sector": "Financial Services",
-      "price": 2081.8,
-      "change": -4.2,
-      "change_pct": -0.2,
+      "price": 2100.0,
+      "change": 14.0,
+      "change_pct": 0.67,
       "open": 2070.0,
-      "high": 2097.9,
+      "high": 2101.0,
       "low": 2068.6,
-      "volume": 219560,
-      "market_cap": 3332509532160,
-      "pe_ratio": 33.28,
-      "pb_ratio": 4.27,
+      "volume": 868643,
+      "market_cap": 3360513851392,
+      "pe_ratio": 33.56,
+      "pb_ratio": 4.31,
       "eps": 62.58,
       "dividend_yield": 6.0,
       "roe": 0.0,
@@ -1614,26 +1614,26 @@
       "week52_low": 1597.0,
       "technicals": {
         "rsi": 43.26,
-        "macd": 56.76,
-        "macd_signal": 56.76,
-        "sma20": 1913.58,
-        "sma50": 1823.92,
+        "macd": 68.15,
+        "macd_signal": 68.15,
+        "sma20": 1936.54,
+        "sma50": 1835.8,
         "sma200": null,
-        "bb_upper": 2055.37,
-        "bb_middle": 1913.58,
-        "bb_lower": 1771.79
+        "bb_upper": 2114.88,
+        "bb_middle": 1936.54,
+        "bb_lower": 1758.21
       },
       "risk_metrics": {
         "risk_score": 8,
-        "beta": 0.35,
-        "atr": 45.42,
-        "volatility_30d": 27.44,
+        "beta": 0.79,
+        "atr": 45.7,
+        "volatility_30d": 27.19,
         "max_drawdown": -10.4,
-        "sharpe_ratio": 4.81,
+        "sharpe_ratio": 5.42,
         "support": 1838.6,
-        "resistance": 2096.0,
-        "relative_strength": 14.53,
-        "near_52w_high": false,
+        "resistance": 2105.0,
+        "relative_strength": 16.67,
+        "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 2.06,
         "ex_dividend_date": "2026-06-30",
@@ -1641,16 +1641,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-24",
-          "close": 1778.98,
-          "volume": 891924
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1763.1,
-          "volume": 1108117
-        },
         {
           "date": "2026-06-26",
           "close": 1763.1,
@@ -1787,16 +1777,26 @@
           "volume": 2850085
         },
         {
+          "date": "2026-08-04",
+          "close": 2105.0,
+          "volume": 1959197
+        },
+        {
+          "date": "2026-08-05",
+          "close": 2086.0,
+          "volume": 2447845
+        },
+        {
           "date": "2026-08-06",
-          "close": 2081.8,
-          "volume": 219592
+          "close": 2100.0,
+          "volume": 868643
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Bajaj Finserv's current price is near its 52-week high, and the RSI of 43.26 indicates a neutral trend, while the high debt-to-equity ratio and zero ROE are concerns, but the dividend yield of 6.0% provides some support, making it a hold for now",
-        "target_price": 2150.0,
+        "reasoning": "Bajaj Finserv's current price is near its 52-week high, and the RSI indicates a neutral position, while the MACD suggests a bullish trend, but the high debt-to-equity ratio and low ROE are concerns, thus making it a hold for now",
+        "target_price": 2200.0,
         "stop_loss": 1900.0,
         "risk": "Medium"
       }
@@ -1805,16 +1805,16 @@
       "symbol": "BHARTIARTL",
       "name": "Bharti Airtel",
       "sector": "Others",
-      "price": 1966.2,
-      "change": -11.8,
-      "change_pct": -0.6,
+      "price": 1955.0,
+      "change": -23.0,
+      "change_pct": -1.16,
       "open": 1969.0,
-      "high": 1969.0,
-      "low": 1955.0,
-      "volume": 1295515,
-      "market_cap": 12266449666048,
-      "pe_ratio": 40.9,
-      "pb_ratio": 8.03,
+      "high": 1970.0,
+      "low": 1952.9,
+      "volume": 3656491,
+      "market_cap": 12196576755712,
+      "pe_ratio": 40.67,
+      "pb_ratio": 7.99,
       "eps": 48.07,
       "dividend_yield": 122.0,
       "roe": 19.36,
@@ -1823,25 +1823,25 @@
       "week52_low": 1740.5,
       "technicals": {
         "rsi": 51.77,
-        "macd": 28.1,
-        "macd_signal": 28.1,
-        "sma20": 1914.61,
-        "sma50": 1860.38,
+        "macd": 26.9,
+        "macd_signal": 26.9,
+        "sma20": 1924.72,
+        "sma50": 1869.26,
         "sma200": null,
-        "bb_upper": 1976.08,
-        "bb_middle": 1914.61,
-        "bb_lower": 1853.13
+        "bb_upper": 1988.19,
+        "bb_middle": 1924.72,
+        "bb_lower": 1861.25
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": 0.0,
-        "atr": 30.99,
-        "volatility_30d": 17.71,
+        "beta": 0.07,
+        "atr": 32.95,
+        "volatility_30d": 16.43,
         "max_drawdown": -8.41,
-        "sharpe_ratio": 1.57,
-        "support": 1864.63,
-        "resistance": 1972.0,
-        "relative_strength": 1.38,
+        "sharpe_ratio": 3.2,
+        "support": 1878.16,
+        "resistance": 1978.0,
+        "relative_strength": 4.53,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 36.06,
@@ -1850,26 +1850,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 1892.78,
-          "volume": 3798060
-        },
-        {
-          "date": "2026-06-23",
-          "close": 1877.97,
-          "volume": 5155908
-        },
-        {
-          "date": "2026-06-24",
-          "close": 1853.97,
-          "volume": 8957457
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1827.7,
-          "volume": 8521503
-        },
         {
           "date": "2026-06-26",
           "close": 1827.7,
@@ -1951,9 +1931,19 @@
           "volume": 4715613
         },
         {
+          "date": "2026-07-20",
+          "close": 1915.99,
+          "volume": 6437294
+        },
+        {
           "date": "2026-07-21",
           "close": 1924.18,
           "volume": 5061312
+        },
+        {
+          "date": "2026-07-22",
+          "close": 1924.78,
+          "volume": 6589708
         },
         {
           "date": "2026-07-23",
@@ -1996,16 +1986,26 @@
           "volume": 4361200
         },
         {
+          "date": "2026-08-04",
+          "close": 1970.1,
+          "volume": 4977391
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1978.0,
+          "volume": 14286999
+        },
+        {
           "date": "2026-08-06",
-          "close": 1966.2,
-          "volume": 1295515
+          "close": 1955.0,
+          "volume": 3656532
         }
       ],
       "ai": {
-        "signal": "Buy",
+        "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Bharti Airtel's strong ROE of 19.36% and relatively stable RSI of 51.77 indicate a positive outlook, while its high debt-to-equity ratio is a concern, the company's ability to maintain a high dividend yield is a testament to its financial stability, and the recent price drop presents a buying opportunity",
-        "target_price": 2100.0,
+        "reasoning": "Bharti Airtel's current price is near its 20-day SMA, indicating a potential support level, and its ROE is strong at 19.36%, but the high debt-to-equity ratio and rich valuations with a P/E of 40.67 may limit upside potential, while the RSI is at 51.77, not indicating a strong trend",
+        "target_price": 2050.0,
         "stop_loss": 1850.0,
         "risk": "Medium"
       }
@@ -2014,16 +2014,16 @@
       "symbol": "BPCL",
       "name": "BPCL",
       "sector": "Energy",
-      "price": 324.35,
-      "change": -1.9,
-      "change_pct": -0.58,
+      "price": 325.0,
+      "change": -1.25,
+      "change_pct": -0.38,
       "open": 326.5,
       "high": 327.0,
       "low": 322.7,
-      "volume": 1052549,
-      "market_cap": 1385812983808,
-      "pe_ratio": 8.03,
-      "pb_ratio": 1.38,
+      "volume": 2385200,
+      "market_cap": 1388590137344,
+      "pe_ratio": 8.05,
+      "pb_ratio": 1.39,
       "eps": 40.39,
       "dividend_yield": 606.0,
       "roe": 0.0,
@@ -2032,25 +2032,25 @@
       "week52_low": 266.6,
       "technicals": {
         "rsi": 44.4,
-        "macd": 4.6,
-        "macd_signal": 4.6,
-        "sma20": 316.23,
-        "sma50": 308.48,
+        "macd": 4.66,
+        "macd_signal": 4.66,
+        "sma20": 316.26,
+        "sma50": 308.49,
         "sma200": null,
-        "bb_upper": 329.16,
-        "bb_middle": 316.23,
-        "bb_lower": 303.3
+        "bb_upper": 329.27,
+        "bb_middle": 316.26,
+        "bb_lower": 303.25
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": 0.44,
         "atr": 7.54,
-        "volatility_30d": 22.92,
+        "volatility_30d": 22.87,
         "max_drawdown": -10.59,
-        "sharpe_ratio": 1.56,
+        "sharpe_ratio": 1.63,
         "support": 305.35,
         "resistance": 329.95,
-        "relative_strength": 2.22,
+        "relative_strength": 2.49,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 56.11,
@@ -2206,14 +2206,14 @@
         },
         {
           "date": "2026-08-06",
-          "close": 324.35,
-          "volume": 1052549
+          "close": 325.0,
+          "volume": 2385200
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "BPCL's current price is near its 20-day and 50-day moving averages, indicating a neutral trend, while its low P/E ratio and high dividend yield are positives, but the high debt-to-equity ratio and low ROE are concerns, making it a hold for now",
+        "reasoning": "BPCL's current price is near its 20-day and 50-day moving averages, indicating a neutral trend, while its low P/E ratio and high dividend yield are attractive, but the high debt-equity ratio and low ROE are concerns, suggesting a hold strategy",
         "target_price": 340.0,
         "stop_loss": 300.0,
         "risk": "Medium"
@@ -2223,43 +2223,43 @@
       "symbol": "CIPLA",
       "name": "Cipla",
       "sector": "Pharma",
-      "price": 1485.9,
-      "change": 27.1,
-      "change_pct": 1.86,
+      "price": 1476.8,
+      "change": 18.0,
+      "change_pct": 1.23,
       "open": 1461.0,
-      "high": 1487.8,
+      "high": 1488.1,
       "low": 1461.0,
-      "volume": 626151,
-      "market_cap": 1200389095424,
-      "pe_ratio": 35.62,
-      "pb_ratio": 3.49,
-      "eps": 41.72,
-      "dividend_yield": 89.0,
+      "volume": 1173170,
+      "market_cap": 1193037660160,
+      "pe_ratio": 35.39,
+      "pb_ratio": 3.46,
+      "eps": 41.73,
+      "dividend_yield": 88.0,
       "roe": 0.0,
       "debt_to_equity": 1.78,
       "week52_high": 1673.0,
       "week52_low": 1165.7,
       "technicals": {
         "rsi": 59.58,
-        "macd": 13.73,
-        "macd_signal": 13.73,
-        "sma20": 1439.22,
-        "sma50": 1419.68,
+        "macd": 12.7,
+        "macd_signal": 12.7,
+        "sma20": 1441.05,
+        "sma50": 1421.67,
         "sma200": null,
-        "bb_upper": 1487.77,
-        "bb_middle": 1439.22,
-        "bb_lower": 1390.68
+        "bb_upper": 1489.43,
+        "bb_middle": 1441.05,
+        "bb_lower": 1392.68
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": 0.21,
-        "atr": 34.26,
-        "volatility_30d": 15.68,
+        "beta": -0.47,
+        "atr": 34.24,
+        "volatility_30d": 16.2,
         "max_drawdown": -5.39,
-        "sharpe_ratio": 1.46,
+        "sharpe_ratio": 1.02,
         "support": 1393.0,
-        "resistance": 1485.9,
-        "relative_strength": 0.84,
+        "resistance": 1476.8,
+        "relative_strength": 0.11,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 31.18,
@@ -2268,16 +2268,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-24",
-          "close": 1437.9,
-          "volume": 2145293
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1440.1,
-          "volume": 1217683
-        },
         {
           "date": "2026-06-26",
           "close": 1440.1,
@@ -2414,15 +2404,25 @@
           "volume": 811745
         },
         {
+          "date": "2026-08-04",
+          "close": 1460.0,
+          "volume": 947279
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1458.8,
+          "volume": 973585
+        },
+        {
           "date": "2026-08-06",
-          "close": 1485.9,
-          "volume": 626151
+          "close": 1476.8,
+          "volume": 1173170
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Cipla's current price is near its 20-day SMA, indicating a potential short-term consolidation, while its P/E ratio is slightly elevated, suggesting a cautious approach, and the dividend yield is unusually high, which may not be sustainable",
+        "reasoning": "Cipla's current price is near its SMA20 and SMA50, indicating a stable trend, but the high P/E ratio and debt/equity ratio are concerns, while the dividend yield is unusually high and may be unsustainable, thus a hold recommendation is given considering the mixed technical and fundamental factors",
         "target_price": 1520.0,
         "stop_loss": 1400.0,
         "risk": "Medium"
@@ -2432,15 +2432,15 @@
       "symbol": "COALINDIA",
       "name": "Coal India",
       "sector": "Energy",
-      "price": 414.4,
-      "change": -1.1,
-      "change_pct": -0.26,
+      "price": 413.0,
+      "change": -2.5,
+      "change_pct": -0.6,
       "open": 414.5,
-      "high": 415.0,
-      "low": 412.55,
-      "volume": 855888,
-      "market_cap": 2553834635264,
-      "pe_ratio": 8.24,
+      "high": 415.75,
+      "low": 412.45,
+      "volume": 3248047,
+      "market_cap": 2545206951936,
+      "pe_ratio": 8.21,
       "pb_ratio": 2.14,
       "eps": 50.28,
       "dividend_yield": 505.0,
@@ -2450,25 +2450,25 @@
       "week52_low": 368.65,
       "technicals": {
         "rsi": 38.87,
-        "macd": -6.16,
-        "macd_signal": -6.16,
-        "sma20": 419.48,
-        "sma50": 435.7,
+        "macd": -5.26,
+        "macd_signal": -5.26,
+        "sma20": 418.66,
+        "sma50": 433.47,
         "sma200": null,
-        "bb_upper": 431.94,
-        "bb_middle": 419.48,
-        "bb_lower": 407.02
+        "bb_upper": 430.96,
+        "bb_middle": 418.66,
+        "bb_lower": 406.36
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.42,
-        "atr": 6.36,
-        "volatility_30d": 17.2,
+        "beta": 0.0,
+        "atr": 6.22,
+        "volatility_30d": 16.62,
         "max_drawdown": -14.87,
-        "sharpe_ratio": -3.12,
+        "sharpe_ratio": -2.33,
         "support": 404.64,
         "resistance": 425.56,
-        "relative_strength": -7.99,
+        "relative_strength": -6.32,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 52.23,
@@ -2477,21 +2477,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 438.49,
-          "volume": 3512212
-        },
-        {
-          "date": "2026-06-24",
-          "close": 435.93,
-          "volume": 4169224
-        },
-        {
-          "date": "2026-06-25",
-          "close": 429.66,
-          "volume": 7046971
-        },
         {
           "date": "2026-06-26",
           "close": 429.66,
@@ -2583,6 +2568,11 @@
           "volume": 4612497
         },
         {
+          "date": "2026-07-22",
+          "close": 422.75,
+          "volume": 5625202
+        },
+        {
           "date": "2026-07-23",
           "close": 421.42,
           "volume": 6064005
@@ -2623,17 +2613,27 @@
           "volume": 5371911
         },
         {
+          "date": "2026-08-04",
+          "close": 417.6,
+          "volume": 4057342
+        },
+        {
+          "date": "2026-08-05",
+          "close": 415.5,
+          "volume": 5429514
+        },
+        {
           "date": "2026-08-06",
-          "close": 414.4,
-          "volume": 855888
+          "close": 413.0,
+          "volume": 3248047
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Coal India's current price is near its 52-week low and has a relatively low P/E ratio, but the high dividend yield is a concern as it may not be sustainable, and the technical indicators such as RSI and MACD suggest a neutral to slightly bearish trend, hence a hold strategy is recommended",
-        "target_price": 435.0,
-        "stop_loss": 380.0,
+        "reasoning": "Coal India's current price is near its 52-week low and has a relatively low P/E ratio, but the high dividend yield is a concern as it may indicate a potential cut in dividends, and the technical indicators such as RSI and MACD suggest a neutral to bearish trend, hence a hold recommendation is given",
+        "target_price": 420.0,
+        "stop_loss": 390.0,
         "risk": "Medium"
       }
     },
@@ -2641,43 +2641,43 @@
       "symbol": "DIVISLAB",
       "name": "Divi's Labs",
       "sector": "Pharma",
-      "price": 8440.0,
-      "change": 52.0,
-      "change_pct": 0.62,
+      "price": 8373.0,
+      "change": -15.0,
+      "change_pct": -0.18,
       "open": 8408.0,
       "high": 8448.0,
-      "low": 8380.0,
-      "volume": 105062,
-      "market_cap": 2240554729472,
-      "pe_ratio": 87.6,
-      "pb_ratio": 13.37,
+      "low": 8371.5,
+      "volume": 213411,
+      "market_cap": 2222768259072,
+      "pe_ratio": 86.9,
+      "pb_ratio": 13.26,
       "eps": 96.35,
-      "dividend_yield": 35.0,
+      "dividend_yield": 36.0,
       "roe": 0.0,
       "debt_to_equity": 0.04,
       "week52_high": 8585.0,
       "week52_low": 5636.5,
       "technicals": {
         "rsi": 52.87,
-        "macd": 373.66,
-        "macd_signal": 373.66,
-        "sma20": 7407.15,
-        "sma50": 6952.62,
+        "macd": 401.58,
+        "macd_signal": 401.58,
+        "sma20": 7566.49,
+        "sma50": 7015.81,
         "sma200": null,
-        "bb_upper": 8393.71,
-        "bb_middle": 7407.15,
-        "bb_lower": 6420.6
+        "bb_upper": 8594.11,
+        "bb_middle": 7566.49,
+        "bb_lower": 6538.86
       },
       "risk_metrics": {
-        "risk_score": 6,
-        "beta": -0.07,
-        "atr": 200.23,
-        "volatility_30d": 29.27,
+        "risk_score": 5,
+        "beta": 0.41,
+        "atr": 206.58,
+        "volatility_30d": 29.71,
         "max_drawdown": -5.79,
-        "sharpe_ratio": 6.6,
-        "support": 6727.26,
+        "sharpe_ratio": 6.45,
+        "support": 6807.93,
         "resistance": 8585.0,
-        "relative_strength": 22.99,
+        "relative_strength": 22.79,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 31.01,
@@ -2686,16 +2686,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-24",
-          "close": 6725.77,
-          "volume": 252591
-        },
-        {
-          "date": "2026-06-25",
-          "close": 6685.93,
-          "volume": 222828
-        },
         {
           "date": "2026-06-26",
           "close": 6685.93,
@@ -2832,15 +2822,25 @@
           "volume": 1798150
         },
         {
+          "date": "2026-08-04",
+          "close": 8378.0,
+          "volume": 970329
+        },
+        {
+          "date": "2026-08-05",
+          "close": 8388.0,
+          "volume": 316801
+        },
+        {
           "date": "2026-08-06",
-          "close": 8440.0,
-          "volume": 105062
+          "close": 8373.0,
+          "volume": 213411
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Divi's Labs is trading near its 52-week high with a high P/E ratio, indicating a potentially overvalued stock, but its strong dividend yield and low debt-to-equity ratio suggest a stable financial position, and the MACD and RSI indicators show a neutral trend",
+        "reasoning": "Divi's Labs is currently trading near its 52-week high with a high P/E ratio, indicating a potentially overvalued stock, but its strong dividend yield and low debt-to-equity ratio are positives, and the RSI and MACD indicators suggest a neutral to slightly bullish trend",
         "target_price": 8600.0,
         "stop_loss": 7800.0,
         "risk": "Medium"
@@ -2850,16 +2850,16 @@
       "symbol": "DRREDDY",
       "name": "Dr Reddy's",
       "sector": "Pharma",
-      "price": 1166.4,
-      "change": -9.6,
-      "change_pct": -0.82,
+      "price": 1171.0,
+      "change": -5.0,
+      "change_pct": -0.43,
       "open": 1174.0,
       "high": 1174.4,
-      "low": 1164.5,
-      "volume": 284329,
-      "market_cap": 971611308032,
-      "pe_ratio": 29.26,
-      "pb_ratio": 2.53,
+      "low": 1163.0,
+      "volume": 646894,
+      "market_cap": 975443066880,
+      "pe_ratio": 29.37,
+      "pb_ratio": 2.54,
       "eps": 39.87,
       "dividend_yield": 68.0,
       "roe": 8.84,
@@ -2868,25 +2868,25 @@
       "week52_low": 1101.0,
       "technicals": {
         "rsi": 54.64,
-        "macd": -31.19,
-        "macd_signal": -31.19,
-        "sma20": 1186.83,
-        "sma50": 1253.08,
+        "macd": -30.82,
+        "macd_signal": -30.82,
+        "sma20": 1187.06,
+        "sma50": 1253.17,
         "sma200": null,
         "bb_upper": 1259.27,
-        "bb_middle": 1186.83,
-        "bb_lower": 1114.39
+        "bb_middle": 1187.06,
+        "bb_lower": 1114.85
       },
       "risk_metrics": {
         "risk_score": 4,
         "beta": -0.02,
-        "atr": 26.29,
-        "volatility_30d": 24.1,
+        "atr": 26.4,
+        "volatility_30d": 24.08,
         "max_drawdown": -16.93,
-        "sharpe_ratio": -5.11,
+        "sharpe_ratio": -4.97,
         "support": 1135.6,
         "resistance": 1246.2,
-        "relative_strength": -15.58,
+        "relative_strength": -15.18,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 20.14,
@@ -3042,16 +3042,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1166.4,
-          "volume": 284329
+          "close": 1171.0,
+          "volume": 646894
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Dr Reddy's current price is near its 52-week low, and the RSI indicates a neutral trend, while the MACD suggests a bearish crossover, but the company's dividend yield and ROE are relatively stable, suggesting a hold strategy",
+        "reasoning": "Dr Reddy's stock is currently trading near its 52-week low, with a relatively high P/E ratio and low ROE, indicating potential overvaluation, but its dividend yield and low debt-to-equity ratio suggest stability, and the RSI and MACD indicators show a neutral trend, hence a hold recommendation is suitable",
         "target_price": 1220.0,
-        "stop_loss": 1100.0,
+        "stop_loss": 1120.0,
         "risk": "Medium"
       }
     },
@@ -3059,16 +3059,16 @@
       "symbol": "EICHERMOT",
       "name": "Eicher Motors",
       "sector": "Auto",
-      "price": 8015.0,
-      "change": 28.5,
-      "change_pct": 0.36,
+      "price": 7928.0,
+      "change": -58.5,
+      "change_pct": -0.73,
       "open": 7986.5,
       "high": 8044.0,
-      "low": 7958.0,
-      "volume": 124048,
-      "market_cap": 2200291508224,
-      "pe_ratio": 38.12,
-      "pb_ratio": 8.76,
+      "low": 7896.5,
+      "volume": 292107,
+      "market_cap": 2176407961600,
+      "pe_ratio": 37.7,
+      "pb_ratio": 8.66,
       "eps": 210.28,
       "dividend_yield": 102.0,
       "roe": 0.0,
@@ -3077,25 +3077,25 @@
       "week52_low": 5588.0,
       "technicals": {
         "rsi": 52.68,
-        "macd": 169.39,
-        "macd_signal": 169.39,
-        "sma20": 7558.86,
-        "sma50": 7387.8,
+        "macd": 168.39,
+        "macd_signal": 168.39,
+        "sma20": 7620.63,
+        "sma50": 7414.52,
         "sma200": null,
-        "bb_upper": 8055.7,
-        "bb_middle": 7558.86,
-        "bb_lower": 7062.02
+        "bb_upper": 8127.27,
+        "bb_middle": 7620.63,
+        "bb_lower": 7113.99
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.03,
-        "atr": 153.49,
-        "volatility_30d": 23.96,
+        "beta": 0.69,
+        "atr": 158.42,
+        "volatility_30d": 24.35,
         "max_drawdown": -7.41,
-        "sharpe_ratio": 2.24,
+        "sharpe_ratio": 1.72,
         "support": 7204.06,
         "resistance": 8050.0,
-        "relative_strength": 4.38,
+        "relative_strength": 3.0,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 33.31,
@@ -3104,21 +3104,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 7499.47,
-          "volume": 365865
-        },
-        {
-          "date": "2026-06-24",
-          "close": 7493.53,
-          "volume": 324328
-        },
-        {
-          "date": "2026-06-25",
-          "close": 7519.26,
-          "volume": 673579
-        },
         {
           "date": "2026-06-26",
           "close": 7519.26,
@@ -3200,6 +3185,11 @@
           "volume": 489811
         },
         {
+          "date": "2026-07-20",
+          "close": 7485.12,
+          "volume": 266324
+        },
+        {
           "date": "2026-07-21",
           "close": 7609.81,
           "volume": 451075
@@ -3250,15 +3240,25 @@
           "volume": 1009396
         },
         {
+          "date": "2026-08-04",
+          "close": 7935.0,
+          "volume": 599769
+        },
+        {
+          "date": "2026-08-05",
+          "close": 7986.5,
+          "volume": 424429
+        },
+        {
           "date": "2026-08-06",
-          "close": 8015.0,
-          "volume": 124048
+          "close": 7928.0,
+          "volume": 292107
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Eicher Motors' current price is near its 52-week high, and the RSI is at 52.68, indicating a neutral trend, while the company's high P/E and P/B ratios suggest overvaluation, but the strong brand presence and growth prospects of Royal Enfield balance out the analysis",
+        "reasoning": "Eicher Motors' current price is near its 52-week high, and the RSI is at 52.68, indicating a neutral trend, while its high P/E and P/B ratios suggest overvaluation, but the company's strong brand and market position in the auto sector are positives, hence a hold recommendation is given",
         "target_price": 8200.0,
         "stop_loss": 7500.0,
         "risk": "Medium"
@@ -3268,16 +3268,16 @@
       "symbol": "GRASIM",
       "name": "Grasim",
       "sector": "Infrastructure",
-      "price": 3217.0,
-      "change": -7.0,
-      "change_pct": -0.22,
+      "price": 3192.4,
+      "change": -31.6,
+      "change_pct": -0.98,
       "open": 3223.1,
       "high": 3232.8,
-      "low": 3202.2,
-      "volume": 115964,
-      "market_cap": 2181939068928,
-      "pe_ratio": 44.0,
-      "pb_ratio": 2.11,
+      "low": 3183.6,
+      "volume": 258941,
+      "market_cap": 2171154857984,
+      "pe_ratio": 43.78,
+      "pb_ratio": 2.1,
       "eps": 73.12,
       "dividend_yield": 31.0,
       "roe": 6.29,
@@ -3286,25 +3286,25 @@
       "week52_low": 2502.5,
       "technicals": {
         "rsi": 76.81,
-        "macd": 13.78,
-        "macd_signal": 13.78,
-        "sma20": 3147.85,
-        "sma50": 3135.13,
+        "macd": 15.08,
+        "macd_signal": 15.08,
+        "sma20": 3144.24,
+        "sma50": 3134.84,
         "sma200": null,
-        "bb_upper": 3251.82,
-        "bb_middle": 3147.85,
-        "bb_lower": 3043.88
+        "bb_upper": 3244.13,
+        "bb_middle": 3144.24,
+        "bb_lower": 3044.36
       },
       "risk_metrics": {
-        "risk_score": 7,
-        "beta": -0.18,
-        "atr": 63.04,
-        "volatility_30d": 22.6,
+        "risk_score": 8,
+        "beta": 0.65,
+        "atr": 65.61,
+        "volatility_30d": 25.21,
         "max_drawdown": -4.38,
-        "sharpe_ratio": 0.63,
+        "sharpe_ratio": 0.58,
         "support": 3072.9,
         "resistance": 3260.0,
-        "relative_strength": -0.35,
+        "relative_strength": -0.33,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 13.67,
@@ -3313,26 +3313,6 @@
         "earnings_soon": true
       },
       "price_history": [
-        {
-          "date": "2026-06-19",
-          "close": 3149.5,
-          "volume": 534084
-        },
-        {
-          "date": "2026-06-22",
-          "close": 3175.2,
-          "volume": 368611
-        },
-        {
-          "date": "2026-06-23",
-          "close": 3144.3,
-          "volume": 705875
-        },
-        {
-          "date": "2026-06-24",
-          "close": 3127.9,
-          "volume": 706788
-        },
         {
           "date": "2026-06-25",
           "close": 3126.6,
@@ -3419,9 +3399,19 @@
           "volume": 622540
         },
         {
+          "date": "2026-07-20",
+          "close": 3143.8,
+          "volume": 349776
+        },
+        {
           "date": "2026-07-21",
           "close": 3179.8,
           "volume": 659160
+        },
+        {
+          "date": "2026-07-22",
+          "close": 3166.3,
+          "volume": 396629
         },
         {
           "date": "2026-07-23",
@@ -3459,16 +3449,26 @@
           "volume": 393816
         },
         {
+          "date": "2026-08-04",
+          "close": 3138.0,
+          "volume": 770936
+        },
+        {
+          "date": "2026-08-05",
+          "close": 3224.0,
+          "volume": 692531
+        },
+        {
           "date": "2026-08-06",
-          "close": 3217.0,
-          "volume": 115964
+          "close": 3192.4,
+          "volume": 166880
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Grasim's high P/E and debt-to-equity ratio are concerns, but its strong dividend yield and recent price stability near the 52-week high suggest a hold strategy, considering the RSI indicates a slightly overbought condition which may lead to a correction, while its fundamental strengths in the infrastructure sector are still intact",
-        "target_price": 3350.0,
+        "reasoning": "Grasim's current price is near its 52-week high, with a high RSI indicating potential overbought conditions, while its fundamental factors such as high P/E and debt/equity ratio raise concerns, however, the dividend yield is attractive, suggesting a hold strategy",
+        "target_price": 3250.0,
         "stop_loss": 3000.0,
         "risk": "Medium"
       }
@@ -3477,16 +3477,16 @@
       "symbol": "HCLTECH",
       "name": "HCL Tech",
       "sector": "IT",
-      "price": 1338.5,
-      "change": -11.5,
-      "change_pct": -0.85,
+      "price": 1340.0,
+      "change": -10.0,
+      "change_pct": -0.74,
       "open": 1349.9,
       "high": 1363.2,
-      "low": 1334.5,
-      "volume": 1011949,
-      "market_cap": 3621668782080,
-      "pe_ratio": 21.14,
-      "pb_ratio": 4.91,
+      "low": 1332.5,
+      "volume": 2449738,
+      "market_cap": 3636550434816,
+      "pe_ratio": 21.23,
+      "pb_ratio": 4.93,
       "eps": 63.32,
       "dividend_yield": 438.0,
       "roe": 24.07,
@@ -3495,25 +3495,25 @@
       "week52_low": 1030.0,
       "technicals": {
         "rsi": 42.07,
-        "macd": 57.08,
-        "macd_signal": 57.08,
-        "sma20": 1267.96,
-        "sma50": 1182.13,
+        "macd": 57.2,
+        "macd_signal": 57.2,
+        "sma20": 1268.03,
+        "sma50": 1182.16,
         "sma200": null,
-        "bb_upper": 1420.18,
-        "bb_middle": 1267.96,
-        "bb_lower": 1115.74
+        "bb_upper": 1420.4,
+        "bb_middle": 1268.03,
+        "bb_lower": 1115.67
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": 0.63,
-        "atr": 32.38,
-        "volatility_30d": 35.54,
+        "atr": 32.52,
+        "volatility_30d": 35.5,
         "max_drawdown": -16.83,
-        "sharpe_ratio": 4.97,
+        "sharpe_ratio": 5.0,
         "support": 1152.34,
         "resistance": 1377.0,
-        "relative_strength": 20.35,
+        "relative_strength": 20.55,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 93.39,
@@ -3669,16 +3669,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1338.5,
-          "volume": 1011949
+          "close": 1340.0,
+          "volume": 2066299
         }
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "Medium",
-        "reasoning": "HCL Tech's current price is near its SMA20 and SMA50, indicating a potential bounce back, while its strong fundamental factors like high ROE and low debt/equity ratio support its growth prospects, despite the recent decline",
-        "target_price": 1450.0,
-        "stop_loss": 1250.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (42.07) and price position relative to SMA50 (1182.16). Technical analysis only — verify with fundamentals.",
+        "target_price": 1407.0,
+        "stop_loss": 1273.0,
         "risk": "Medium"
       }
     },
@@ -3686,15 +3686,15 @@
       "symbol": "HDFCBANK",
       "name": "HDFC Bank",
       "sector": "Banking",
-      "price": 734.95,
-      "change": -0.05,
-      "change_pct": -0.01,
+      "price": 735.65,
+      "change": 0.65,
+      "change_pct": 0.09,
       "open": 739.0,
       "high": 740.5,
       "low": 733.55,
-      "volume": 14426206,
-      "market_cap": 11325044424704,
-      "pe_ratio": 16.21,
+      "volume": 35699512,
+      "market_cap": 11335060422656,
+      "pe_ratio": 16.22,
       "pb_ratio": 1.87,
       "eps": 45.35,
       "dividend_yield": 173.0,
@@ -3704,25 +3704,25 @@
       "week52_low": 726.65,
       "technicals": {
         "rsi": 42.34,
-        "macd": -13.53,
-        "macd_signal": -13.53,
-        "sma20": 768.41,
-        "sma50": 771.32,
+        "macd": -13.47,
+        "macd_signal": -13.47,
+        "sma20": 768.44,
+        "sma50": 771.34,
         "sma200": null,
-        "bb_upper": 833.74,
-        "bb_middle": 768.41,
-        "bb_lower": 703.07
+        "bb_upper": 833.71,
+        "bb_middle": 768.44,
+        "bb_lower": 703.17
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": 0.29,
         "atr": 13.68,
-        "volatility_30d": 23.26,
-        "max_drawdown": -11.44,
-        "sharpe_ratio": -3.1,
-        "support": 734.95,
+        "volatility_30d": 23.27,
+        "max_drawdown": -11.43,
+        "sharpe_ratio": -3.06,
+        "support": 735.0,
         "resistance": 824.95,
-        "relative_strength": -10.2,
+        "relative_strength": -10.05,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 24.04,
@@ -3878,15 +3878,15 @@
         },
         {
           "date": "2026-08-06",
-          "close": 734.95,
-          "volume": 14426303
+          "close": 735.65,
+          "volume": 35699545
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "HDFC Bank's current price is near its 52-week low, and the RSI indicates a potential oversold condition, but the MACD and SMA trends suggest a bearish momentum, while fundamentally, the bank's strong ROE and zero debt/equity ratio provide a stable foundation, thus making it a hold for now",
-        "target_price": 770.0,
+        "reasoning": "HDFC Bank's current price is near its 52-week low, with a relatively low RSI of 42.34, indicating potential for a bounce-back, but the MACD is in negative territory, suggesting caution. The bank's fundamental factors such as ROE and dividend yield are strong, but the current market sentiment is weak. The stock's P/E and P/B ratios are reasonable, but not extremely attractive, given the current market conditions.",
+        "target_price": 780.0,
         "stop_loss": 700.0,
         "risk": "Medium"
       }
@@ -3895,16 +3895,16 @@
       "symbol": "HDFCLIFE",
       "name": "HDFC Life",
       "sector": "Financial Services",
-      "price": 541.0,
-      "change": -4.0,
-      "change_pct": -0.73,
+      "price": 541.5,
+      "change": -3.5,
+      "change_pct": -0.64,
       "open": 545.0,
       "high": 545.0,
       "low": 538.3,
-      "volume": 675915,
-      "market_cap": 1175016964096,
-      "pe_ratio": 58.05,
-      "pb_ratio": 5.97,
+      "volume": 1930874,
+      "market_cap": 1176102895616,
+      "pe_ratio": 58.1,
+      "pb_ratio": 5.98,
       "eps": 9.32,
       "dividend_yield": 38.0,
       "roe": 10.8,
@@ -3913,25 +3913,25 @@
       "week52_low": 538.3,
       "technicals": {
         "rsi": 56.96,
-        "macd": -8.01,
-        "macd_signal": -8.01,
-        "sma20": 558.19,
-        "sma50": 571.77,
+        "macd": -8.1,
+        "macd_signal": -8.1,
+        "sma20": 555.94,
+        "sma50": 566.77,
         "sma200": null,
-        "bb_upper": 575.66,
-        "bb_middle": 558.19,
-        "bb_lower": 540.72
+        "bb_upper": 575.22,
+        "bb_middle": 555.94,
+        "bb_lower": 536.66
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.21,
-        "atr": 12.86,
-        "volatility_30d": 21.75,
-        "max_drawdown": -13.19,
-        "sharpe_ratio": -4.11,
-        "support": 541.0,
+        "beta": 0.56,
+        "atr": 9.31,
+        "volatility_30d": 22.7,
+        "max_drawdown": -14.0,
+        "sharpe_ratio": -3.1,
+        "support": 535.95,
         "resistance": 573.4,
-        "relative_strength": -11.9,
+        "relative_strength": -9.95,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 22.95,
@@ -3940,26 +3940,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 597.15,
-          "volume": 2915552
-        },
-        {
-          "date": "2026-06-23",
-          "close": 597.45,
-          "volume": 3300891
-        },
-        {
-          "date": "2026-06-24",
-          "close": 591.75,
-          "volume": 2209081
-        },
-        {
-          "date": "2026-06-25",
-          "close": 585.45,
-          "volume": 1537033
-        },
         {
           "date": "2026-06-26",
           "close": 585.45,
@@ -4041,9 +4021,19 @@
           "volume": 3978771
         },
         {
+          "date": "2026-07-20",
+          "close": 564.65,
+          "volume": 1252168
+        },
+        {
           "date": "2026-07-21",
           "close": 561.0,
           "volume": 2529706
+        },
+        {
+          "date": "2026-07-22",
+          "close": 553.1,
+          "volume": 1766190
         },
         {
           "date": "2026-07-23",
@@ -4086,15 +4076,25 @@
           "volume": 2516331
         },
         {
+          "date": "2026-08-04",
+          "close": 535.95,
+          "volume": 9286204
+        },
+        {
+          "date": "2026-08-05",
+          "close": 545.0,
+          "volume": 8073174
+        },
+        {
           "date": "2026-08-06",
-          "close": 541.0,
-          "volume": 675915
+          "close": 541.5,
+          "volume": 1930874
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "HDFC Life's current price is near its 52-week low, and the RSI indicates a neutral trend, while the MACD suggests a bearish crossover, however, the company's strong fundamentals such as a high dividend yield and decent ROE support a hold position",
+        "reasoning": "HDFC Life's current price is near its 52-week low, and the RSI indicates a neutral position, while the MACD suggests a bearish trend, but the company's strong financials, including a high dividend yield and decent ROE, provide a cushion, making it a hold for now",
         "target_price": 570.0,
         "stop_loss": 520.0,
         "risk": "Medium"
@@ -4104,16 +4104,16 @@
       "symbol": "HEROMOTOCO",
       "name": "Hero MotoCorp",
       "sector": "Auto",
-      "price": 5645.0,
-      "change": -45.0,
-      "change_pct": -0.79,
+      "price": 5592.0,
+      "change": -98.0,
+      "change_pct": -1.72,
       "open": 5680.0,
       "high": 5755.0,
-      "low": 5613.5,
-      "volume": 227099,
-      "market_cap": 1129524625408,
-      "pe_ratio": 19.19,
-      "pb_ratio": 5.23,
+      "low": 5585.0,
+      "volume": 384210,
+      "market_cap": 1118919720960,
+      "pe_ratio": 19.01,
+      "pb_ratio": 5.18,
       "eps": 294.17,
       "dividend_yield": 339.0,
       "roe": 28.03,
@@ -4122,25 +4122,25 @@
       "week52_low": 4422.3,
       "technicals": {
         "rsi": 38.8,
-        "macd": 188.82,
-        "macd_signal": 188.82,
-        "sma20": 5119.95,
-        "sma50": 4946.38,
+        "macd": 184.59,
+        "macd_signal": 184.59,
+        "sma20": 5117.3,
+        "sma50": 4945.32,
         "sma200": null,
-        "bb_upper": 5688.74,
-        "bb_middle": 5119.95,
-        "bb_lower": 4551.17
+        "bb_upper": 5676.7,
+        "bb_middle": 5117.3,
+        "bb_lower": 4557.91
       },
       "risk_metrics": {
         "risk_score": 4,
         "beta": 0.44,
-        "atr": 127.81,
-        "volatility_30d": 22.19,
+        "atr": 129.84,
+        "volatility_30d": 22.81,
         "max_drawdown": -10.62,
-        "sharpe_ratio": 5.9,
+        "sharpe_ratio": 5.38,
         "support": 4805.51,
         "resistance": 5690.0,
-        "relative_strength": 14.49,
+        "relative_strength": 13.46,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 61.04,
@@ -4296,15 +4296,15 @@
         },
         {
           "date": "2026-08-06",
-          "close": 5645.0,
-          "volume": 227099
+          "close": 5592.0,
+          "volume": 384210
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Hero MotoCorp's current price is near its SMA20 and SMA50, indicating a potential support zone, while its high dividend yield and strong ROE are positive fundamental factors, but the stock's high debt-to-equity ratio and recent price decline are causes for caution. The RSI is at 38.8, which is not overly bearish, and the MACD is positive, suggesting a potential trend reversal. However, the stock's valuation multiples, such as P/E and P/B, are relatively high, which may limit upside potential.",
-        "target_price": 5900.0,
+        "reasoning": "Hero MotoCorp's current price is near its SMA20 and SMA50, indicating a potential support zone, while its high dividend yield and ROE are positives, but the debt/equity ratio is a concern, and the RSI suggests the stock is not oversold, making a hold recommendation more suitable at this time",
+        "target_price": 5800.0,
         "stop_loss": 5200.0,
         "risk": "Medium"
       }
@@ -4313,15 +4313,15 @@
       "symbol": "HINDALCO",
       "name": "Hindalco",
       "sector": "Metals",
-      "price": 1023.8,
-      "change": -16.2,
-      "change_pct": -1.56,
+      "price": 1023.6,
+      "change": -16.4,
+      "change_pct": -1.58,
       "open": 1044.0,
       "high": 1044.0,
       "low": 1016.0,
-      "volume": 3247074,
-      "market_cap": 2272669204480,
-      "pe_ratio": 16.69,
+      "volume": 4796787,
+      "market_cap": 2272225394688,
+      "pe_ratio": 16.68,
       "pb_ratio": 1.66,
       "eps": 61.36,
       "dividend_yield": 49.0,
@@ -4331,25 +4331,25 @@
       "week52_low": 657.5,
       "technicals": {
         "rsi": 61.53,
-        "macd": 8.34,
-        "macd_signal": 8.34,
-        "sma20": 969.16,
+        "macd": 8.32,
+        "macd_signal": 8.32,
+        "sma20": 969.15,
         "sma50": 995.49,
         "sma200": null,
-        "bb_upper": 1025.59,
-        "bb_middle": 969.16,
-        "bb_lower": 912.73
+        "bb_upper": 1025.54,
+        "bb_middle": 969.15,
+        "bb_lower": 912.75
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": -0.32,
         "atr": 18.7,
-        "volatility_30d": 20.68,
+        "volatility_30d": 20.7,
         "max_drawdown": -18.27,
-        "sharpe_ratio": 2.97,
+        "sharpe_ratio": 2.96,
         "support": 936.4,
         "resistance": 1040.0,
-        "relative_strength": 5.47,
+        "relative_strength": 5.51,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 8.31,
@@ -4505,15 +4505,15 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1023.8,
-          "volume": 3247074
+          "close": 1023.6,
+          "volume": 4796787
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Medium",
-        "reasoning": "Hindalco's current price is near its SMA50, indicating a potential support level, while its RSI suggests a neutral stance, and fundamentally, its dividend yield is attractive but debt-to-equity ratio is high, making it a hold for now. The MACD is positive, indicating a bullish trend, but the recent price drop warrants caution. With a reasonable P/E ratio, investors may consider holding for now.",
-        "target_price": 1100.0,
+        "reasoning": "Hindalco's current price is near its SMA50, indicating a potential support level, while its RSI is in the neutral zone, suggesting a stable momentum, but the high debt-to-equity ratio and moderate ROE raise concerns about its fundamental strength, thus a cautious hold is recommended",
+        "target_price": 1080.0,
         "stop_loss": 950.0,
         "risk": "Medium"
       }
@@ -4522,16 +4522,16 @@
       "symbol": "HINDUNILVR",
       "name": "HUL",
       "sector": "FMCG",
-      "price": 2087.8,
-      "change": 2.5,
-      "change_pct": 0.12,
+      "price": 2082.6,
+      "change": -2.7,
+      "change_pct": -0.13,
       "open": 2081.0,
-      "high": 2092.0,
+      "high": 2094.0,
       "low": 2075.2,
-      "volume": 251211,
-      "market_cap": 4905241673728,
-      "pe_ratio": 46.57,
-      "pb_ratio": 10.06,
+      "volume": 743006,
+      "market_cap": 4893259071488,
+      "pe_ratio": 46.46,
+      "pb_ratio": 10.04,
       "eps": 44.83,
       "dividend_yield": 210.0,
       "roe": 0.0,
@@ -4540,25 +4540,25 @@
       "week52_low": 2016.0,
       "technicals": {
         "rsi": 32.65,
-        "macd": -16.7,
-        "macd_signal": -16.7,
-        "sma20": 2121.09,
-        "sma50": 2135.41,
+        "macd": -17.11,
+        "macd_signal": -17.11,
+        "sma20": 2120.83,
+        "sma50": 2135.31,
         "sma200": null,
-        "bb_upper": 2188.75,
-        "bb_middle": 2121.09,
-        "bb_lower": 2053.42
+        "bb_upper": 2189.04,
+        "bb_middle": 2120.83,
+        "bb_lower": 2052.61
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": 0.86,
-        "atr": 48.37,
-        "volatility_30d": 30.83,
+        "atr": 48.51,
+        "volatility_30d": 30.82,
         "max_drawdown": -11.82,
-        "sharpe_ratio": -1.17,
+        "sharpe_ratio": -1.24,
         "support": 2022.7,
         "resistance": 2174.6,
-        "relative_strength": -6.47,
+        "relative_strength": -6.65,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 91.09,
@@ -4714,16 +4714,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 2087.8,
-          "volume": 251347
+          "close": 2082.6,
+          "volume": 743006
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (32.65) and price position relative to SMA50 (2135.41). Technical analysis only — verify with fundamentals.",
-        "target_price": 2192.19,
-        "stop_loss": 1983.41,
+        "signal": "Buy",
+        "confidence": "Medium",
+        "reasoning": "HUL's current price is near its 52-week low, and the RSI indicates a potential oversold condition, which could lead to a rebound. The company's strong brand portfolio and consistent dividend payments are fundamental positives, despite the current high P/E ratio. The MACD and SMA indicators suggest a potential trend reversal, supporting a buy signal",
+        "target_price": 2200.0,
+        "stop_loss": 2000.0,
         "risk": "Medium"
       }
     },
@@ -4731,15 +4731,15 @@
       "symbol": "ICICIBANK",
       "name": "ICICI Bank",
       "sector": "Banking",
-      "price": 1457.0,
-      "change": 6.9,
-      "change_pct": 0.48,
+      "price": 1458.0,
+      "change": 7.9,
+      "change_pct": 0.54,
       "open": 1460.0,
       "high": 1460.0,
-      "low": 1448.6,
-      "volume": 3954289,
-      "market_cap": 10451465273344,
-      "pe_ratio": 18.89,
+      "low": 1448.3,
+      "volume": 10702752,
+      "market_cap": 10458638581760,
+      "pe_ratio": 18.9,
       "pb_ratio": 2.75,
       "eps": 77.15,
       "dividend_yield": 82.0,
@@ -4749,25 +4749,25 @@
       "week52_low": 1187.6,
       "technicals": {
         "rsi": 49.86,
-        "macd": 24.37,
-        "macd_signal": 24.37,
-        "sma20": 1417.51,
-        "sma50": 1354.11,
+        "macd": 23.02,
+        "macd_signal": 23.02,
+        "sma20": 1427.17,
+        "sma50": 1364.94,
         "sma200": null,
-        "bb_upper": 1468.28,
-        "bb_middle": 1417.51,
-        "bb_lower": 1366.74
+        "bb_upper": 1469.03,
+        "bb_middle": 1427.17,
+        "bb_lower": 1385.31
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.05,
-        "atr": 24.13,
-        "volatility_30d": 17.96,
+        "beta": 0.42,
+        "atr": 23.39,
+        "volatility_30d": 15.81,
         "max_drawdown": -5.05,
-        "sharpe_ratio": 4.28,
-        "support": 1369.06,
+        "sharpe_ratio": 2.81,
+        "support": 1389.49,
         "resistance": 1460.0,
-        "relative_strength": 7.29,
+        "relative_strength": 3.53,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 14.22,
@@ -4776,21 +4776,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 1327.11,
-          "volume": 11884879
-        },
-        {
-          "date": "2026-06-24",
-          "close": 1362.12,
-          "volume": 16440708
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1375.9,
-          "volume": 17173209
-        },
         {
           "date": "2026-06-26",
           "close": 1375.9,
@@ -4882,6 +4867,11 @@
           "volume": 18269907
         },
         {
+          "date": "2026-07-22",
+          "close": 1428.66,
+          "volume": 8345136
+        },
+        {
           "date": "2026-07-23",
           "close": 1422.61,
           "volume": 12409328
@@ -4922,17 +4912,27 @@
           "volume": 7706747
         },
         {
+          "date": "2026-08-04",
+          "close": 1454.6,
+          "volume": 11458963
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1450.1,
+          "volume": 11723296
+        },
+        {
           "date": "2026-08-06",
-          "close": 1457.0,
-          "volume": 3955742
+          "close": 1458.0,
+          "volume": 10702752
         }
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (49.86) and price position relative to SMA50 (1354.11). Technical analysis only — verify with fundamentals.",
-        "target_price": 1529.85,
-        "stop_loss": 1384.15,
+        "confidence": "High",
+        "reasoning": "ICICI Bank's strong fundamentals, including a high ROE of 16.07% and zero debt-equity ratio, combined with its relatively stable technical indicators such as an RSI of 49.86, suggest a positive outlook for the stock. The current price is also close to its 52-week high, indicating a strong upward trend. With a P/E of 18.9, which is reasonable for a bank with ICICI's growth prospects, the stock appears to be a good investment opportunity.",
+        "target_price": 1520.0,
+        "stop_loss": 1400.0,
         "risk": "Medium"
       }
     },
@@ -4940,16 +4940,16 @@
       "symbol": "INDUSINDBK",
       "name": "IndusInd Bank",
       "sector": "Banking",
-      "price": 1029.1,
-      "change": 10.1,
-      "change_pct": 0.99,
+      "price": 1019.0,
+      "change": 0.0,
+      "change_pct": 0.0,
       "open": 1016.0,
-      "high": 1030.9,
+      "high": 1033.9,
       "low": 1015.0,
-      "volume": 225953,
-      "market_cap": 801805500416,
-      "pe_ratio": 61.22,
-      "pb_ratio": 1.22,
+      "volume": 482876,
+      "market_cap": 793936265216,
+      "pe_ratio": 60.62,
+      "pb_ratio": 1.21,
       "eps": 16.81,
       "dividend_yield": 15.0,
       "roe": 0.0,
@@ -4958,26 +4958,26 @@
       "week52_low": 710.6,
       "technicals": {
         "rsi": 45.02,
-        "macd": 14.23,
-        "macd_signal": 14.23,
-        "sma20": 1019.07,
-        "sma50": 966.24,
+        "macd": 13.42,
+        "macd_signal": 13.42,
+        "sma20": 1018.56,
+        "sma50": 966.03,
         "sma200": null,
-        "bb_upper": 1057.5,
-        "bb_middle": 1019.07,
-        "bb_lower": 980.64
+        "bb_upper": 1056.72,
+        "bb_middle": 1018.56,
+        "bb_lower": 980.41
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.48,
-        "atr": 24.1,
-        "volatility_30d": 29.05,
+        "beta": 0.47,
+        "atr": 24.31,
+        "volatility_30d": 29.01,
         "max_drawdown": -7.23,
-        "sharpe_ratio": 3.27,
+        "sharpe_ratio": 2.98,
         "support": 991.95,
         "resistance": 1069.3,
-        "relative_strength": 9.49,
-        "near_52w_high": true,
+        "relative_strength": 8.45,
+        "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 8.84,
         "ex_dividend_date": "2026-06-25",
@@ -5132,16 +5132,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1029.1,
-          "volume": 225953
+          "close": 1019.0,
+          "volume": 482876
         }
       ],
       "ai": {
-        "signal": "Buy",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (45.02) and price position relative to SMA50 (966.24). Technical analysis only — verify with fundamentals.",
-        "target_price": 1080.56,
-        "stop_loss": 977.64,
+        "signal": "Hold",
+        "confidence": "Medium",
+        "reasoning": "IndusInd Bank's current price is near its 20-day moving average, indicating a neutral trend, while its dividend yield of 15% is attractive, but the high P/E ratio of 60.62 and low ROE are concerns, suggesting a hold strategy until further clarity on its financial performance emerges",
+        "target_price": 1050.0,
+        "stop_loss": 950.0,
         "risk": "Medium"
       }
     },
@@ -5149,16 +5149,16 @@
       "symbol": "INFY",
       "name": "Infosys",
       "sector": "IT",
-      "price": 1167.6,
-      "change": -6.4,
-      "change_pct": -0.55,
+      "price": 1166.6,
+      "change": -7.4,
+      "change_pct": -0.63,
       "open": 1174.1,
       "high": 1185.8,
-      "low": 1166.8,
-      "volume": 2959212,
-      "market_cap": 4728924143616,
-      "pe_ratio": 15.02,
-      "pb_ratio": 5.16,
+      "low": 1163.9,
+      "volume": 6132824,
+      "market_cap": 4724874018816,
+      "pe_ratio": 15.01,
+      "pb_ratio": 5.15,
       "eps": 77.72,
       "dividend_yield": 428.0,
       "roe": 32.0,
@@ -5167,25 +5167,25 @@
       "week52_low": 982.4,
       "technicals": {
         "rsi": 50.11,
-        "macd": 23.88,
-        "macd_signal": 23.88,
-        "sma20": 1106.72,
-        "sma50": 1102.48,
+        "macd": 23.8,
+        "macd_signal": 23.8,
+        "sma20": 1106.67,
+        "sma50": 1102.46,
         "sma200": null,
-        "bb_upper": 1195.02,
-        "bb_middle": 1106.72,
-        "bb_lower": 1018.43
+        "bb_upper": 1194.84,
+        "bb_middle": 1106.67,
+        "bb_lower": 1018.51
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.55,
-        "atr": 33.54,
-        "volatility_30d": 34.82,
+        "beta": 0.56,
+        "atr": 33.74,
+        "volatility_30d": 34.84,
         "max_drawdown": -20.79,
-        "sharpe_ratio": 2.81,
+        "sharpe_ratio": 2.79,
         "support": 1040.9,
         "resistance": 1180.0,
-        "relative_strength": 9.64,
+        "relative_strength": 9.61,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 64.6,
@@ -5341,16 +5341,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1167.6,
-          "volume": 2959212
+          "close": 1166.6,
+          "volume": 6132824
         }
       ],
       "ai": {
-        "signal": "Buy",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (50.11) and price position relative to SMA50 (1102.48). Technical analysis only — verify with fundamentals.",
-        "target_price": 1225.98,
-        "stop_loss": 1109.22,
+        "signal": "Hold",
+        "confidence": "Medium",
+        "reasoning": "Infosys' current price is near its 20 and 50-day moving averages, indicating a neutral trend, while its high ROE and low debt-to-equity ratio suggest strong fundamentals, but the recent decline in price and high dividend yield may indicate a need for caution. The RSI is at 50, indicating a balanced market. The stock's valuation multiples, such as P/E and P/B, are reasonable but not extremely attractive.",
+        "target_price": 1250.0,
+        "stop_loss": 1050.0,
         "risk": "Medium"
       }
     },
@@ -5358,16 +5358,16 @@
       "symbol": "ITC",
       "name": "ITC",
       "sector": "FMCG",
-      "price": 284.5,
-      "change": -2.45,
-      "change_pct": -0.85,
+      "price": 285.2,
+      "change": -1.75,
+      "change_pct": -0.61,
       "open": 285.45,
       "high": 286.35,
       "low": 283.7,
-      "volume": 3407145,
-      "market_cap": 3564633849856,
-      "pe_ratio": 18.1,
-      "pb_ratio": 4.92,
+      "volume": 8988577,
+      "market_cap": 3573404663808,
+      "pe_ratio": 18.14,
+      "pb_ratio": 4.93,
       "eps": 15.72,
       "dividend_yield": 554.0,
       "roe": 0.0,
@@ -5376,25 +5376,25 @@
       "week52_low": 275.0,
       "technicals": {
         "rsi": 36.63,
-        "macd": -0.61,
-        "macd_signal": -0.61,
-        "sma20": 282.39,
-        "sma50": 285.31,
+        "macd": 0.07,
+        "macd_signal": 0.07,
+        "sma20": 282.69,
+        "sma50": 284.91,
         "sma200": null,
-        "bb_upper": 288.94,
-        "bb_middle": 282.39,
-        "bb_lower": 275.84
+        "bb_upper": 289.61,
+        "bb_middle": 282.69,
+        "bb_lower": 275.77
       },
       "risk_metrics": {
         "risk_score": 3,
-        "beta": 0.05,
-        "atr": 5.02,
-        "volatility_30d": 14.75,
+        "beta": 0.35,
+        "atr": 5.09,
+        "volatility_30d": 14.89,
         "max_drawdown": -8.9,
-        "sharpe_ratio": -1.47,
+        "sharpe_ratio": -1.31,
         "support": 275.55,
-        "resistance": 288.75,
-        "relative_strength": -4.39,
+        "resistance": 289.0,
+        "relative_strength": -4.09,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 91.54,
@@ -5403,21 +5403,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 290.0,
-          "volume": 9410364
-        },
-        {
-          "date": "2026-06-24",
-          "close": 290.35,
-          "volume": 6218635
-        },
-        {
-          "date": "2026-06-25",
-          "close": 290.0,
-          "volume": 11230239
-        },
         {
           "date": "2026-06-26",
           "close": 290.0,
@@ -5509,6 +5494,11 @@
           "volume": 9858768
         },
         {
+          "date": "2026-07-22",
+          "close": 280.8,
+          "volume": 12995017
+        },
+        {
           "date": "2026-07-23",
           "close": 281.3,
           "volume": 21143589
@@ -5549,17 +5539,27 @@
           "volume": 45392755
         },
         {
+          "date": "2026-08-04",
+          "close": 289.0,
+          "volume": 12689243
+        },
+        {
+          "date": "2026-08-05",
+          "close": 286.95,
+          "volume": 11771241
+        },
+        {
           "date": "2026-08-06",
-          "close": 284.5,
-          "volume": 3408331
+          "close": 285.2,
+          "volume": 8988577
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (36.63) and price position relative to SMA50 (285.31). Technical analysis only — verify with fundamentals.",
-        "target_price": 298.73,
-        "stop_loss": 270.27,
+        "signal": "Buy",
+        "confidence": "Medium",
+        "reasoning": "ITC's current price is near its 52-week low, and the RSI indicates a relatively oversold condition, suggesting a potential rebound. The company's strong fundamentals, including its diversified FMCG portfolio and stable earnings, support a bullish outlook. However, the high debt-to-equity ratio is a concern, tempering the confidence in this recommendation",
+        "target_price": 310.0,
+        "stop_loss": 265.0,
         "risk": "Medium"
       }
     },
@@ -5567,17 +5567,17 @@
       "symbol": "JSWSTEEL",
       "name": "JSW Steel",
       "sector": "Metals",
-      "price": 1323.8,
-      "change": -6.2,
-      "change_pct": -0.47,
+      "price": 1315.3,
+      "change": -14.7,
+      "change_pct": -1.11,
       "open": 1330.0,
       "high": 1335.0,
-      "low": 1316.1,
-      "volume": 647790,
-      "market_cap": 3231367036928,
-      "pe_ratio": 13.06,
-      "pb_ratio": 3.23,
-      "eps": 101.4,
+      "low": 1312.8,
+      "volume": 1418859,
+      "market_cap": 3218917818368,
+      "pe_ratio": 12.71,
+      "pb_ratio": 3.22,
+      "eps": 103.74,
       "dividend_yield": 55.0,
       "roe": 0.0,
       "debt_to_equity": 95.37,
@@ -5585,25 +5585,25 @@
       "week52_low": 1022.3,
       "technicals": {
         "rsi": 57.16,
-        "macd": 16.69,
-        "macd_signal": 16.69,
-        "sma20": 1262.48,
-        "sma50": 1258.68,
+        "macd": 16.01,
+        "macd_signal": 16.01,
+        "sma20": 1262.06,
+        "sma50": 1258.51,
         "sma200": null,
-        "bb_upper": 1320.88,
-        "bb_middle": 1262.48,
-        "bb_lower": 1204.08
+        "bb_upper": 1318.76,
+        "bb_middle": 1262.06,
+        "bb_lower": 1205.35
       },
       "risk_metrics": {
-        "risk_score": 7,
+        "risk_score": 6,
         "beta": 0.2,
-        "atr": 26.5,
-        "volatility_30d": 17.3,
+        "atr": 26.61,
+        "volatility_30d": 17.62,
         "max_drawdown": -7.37,
-        "sharpe_ratio": 3.6,
+        "sharpe_ratio": 3.22,
         "support": 1221.0,
         "resistance": 1330.0,
-        "relative_strength": 5.66,
+        "relative_strength": 5.02,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 9.77,
@@ -5759,16 +5759,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1323.8,
-          "volume": 647790
+          "close": 1315.3,
+          "volume": 1142778
         }
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (57.16) and price position relative to SMA50 (1258.68). Technical analysis only — verify with fundamentals.",
-        "target_price": 1389.99,
-        "stop_loss": 1257.61,
+        "confidence": "Medium",
+        "reasoning": "JSW Steel's current price is near its 52-week high, with a relatively low P/E ratio of 12.71, indicating potential for further growth. The RSI of 57.16 suggests a neutral trend, while the MACD indicates a bullish crossover, supporting a buy signal. The company's debt-to-equity ratio is high, but the dividend yield of 55.0% is attractive, making it a worthwhile investment.",
+        "target_price": 1400.0,
+        "stop_loss": 1200.0,
         "risk": "Medium"
       }
     },
@@ -5776,17 +5776,17 @@
       "symbol": "KOTAKBANK",
       "name": "Kotak Bank",
       "sector": "Banking",
-      "price": 397.7,
-      "change": -2.3,
-      "change_pct": -0.57,
+      "price": 394.9,
+      "change": -5.1,
+      "change_pct": -1.28,
       "open": 397.25,
       "high": 398.8,
-      "low": 396.3,
-      "volume": 2453060,
-      "market_cap": 3955709444096,
-      "pe_ratio": 19.5,
-      "pb_ratio": 2.18,
-      "eps": 20.39,
+      "low": 394.4,
+      "volume": 5632809,
+      "market_cap": 3927859003392,
+      "pe_ratio": 19.24,
+      "pb_ratio": 2.17,
+      "eps": 20.52,
       "dividend_yield": 16.0,
       "roe": 0.0,
       "debt_to_equity": 0.0,
@@ -5794,25 +5794,25 @@
       "week52_low": 345.5,
       "technicals": {
         "rsi": 60.96,
-        "macd": 1.02,
-        "macd_signal": 1.02,
-        "sma20": 383.58,
-        "sma50": 389.33,
+        "macd": 2.28,
+        "macd_signal": 2.28,
+        "sma20": 386.53,
+        "sma50": 389.54,
         "sma200": null,
-        "bb_upper": 397.36,
-        "bb_middle": 383.58,
-        "bb_lower": 369.81
+        "bb_upper": 400.44,
+        "bb_middle": 386.53,
+        "bb_lower": 372.62
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.12,
-        "atr": 7.32,
-        "volatility_30d": 25.48,
+        "beta": 0.48,
+        "atr": 6.91,
+        "volatility_30d": 25.46,
         "max_drawdown": -9.51,
-        "sharpe_ratio": -0.44,
-        "support": 369.46,
-        "resistance": 397.7,
-        "relative_strength": -3.43,
+        "sharpe_ratio": -1.24,
+        "support": 376.5,
+        "resistance": 400.0,
+        "relative_strength": -5.72,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 2.45,
@@ -5821,26 +5821,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 401.46,
-          "volume": 7158956
-        },
-        {
-          "date": "2026-06-23",
-          "close": 400.96,
-          "volume": 10077909
-        },
-        {
-          "date": "2026-06-24",
-          "close": 405.25,
-          "volume": 11768059
-        },
-        {
-          "date": "2026-06-25",
-          "close": 408.3,
-          "volume": 16587414
-        },
         {
           "date": "2026-06-26",
           "close": 408.3,
@@ -5932,6 +5912,11 @@
           "volume": 17152911
         },
         {
+          "date": "2026-07-22",
+          "close": 381.15,
+          "volume": 11688952
+        },
+        {
           "date": "2026-07-23",
           "close": 383.35,
           "volume": 12720546
@@ -5962,22 +5947,37 @@
           "volume": 12205963
         },
         {
+          "date": "2026-07-31",
+          "close": 390.3,
+          "volume": 7014637
+        },
+        {
           "date": "2026-08-03",
           "close": 397.5,
           "volume": 11247062
         },
         {
+          "date": "2026-08-04",
+          "close": 398.0,
+          "volume": 9131231
+        },
+        {
+          "date": "2026-08-05",
+          "close": 400.0,
+          "volume": 11842327
+        },
+        {
           "date": "2026-08-06",
-          "close": 397.7,
-          "volume": 2453060
+          "close": 394.9,
+          "volume": 5632809
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (60.96) and price position relative to SMA50 (389.33). Technical analysis only — verify with fundamentals.",
-        "target_price": 417.58,
-        "stop_loss": 377.81,
+        "reasoning": "Based on RSI (60.96) and price position relative to SMA50 (389.54). Technical analysis only — verify with fundamentals.",
+        "target_price": 414.64,
+        "stop_loss": 375.15,
         "risk": "Medium"
       }
     },
@@ -5985,16 +5985,16 @@
       "symbol": "LT",
       "name": "L&T",
       "sector": "Infrastructure",
-      "price": 4065.0,
-      "change": 8.0,
-      "change_pct": 0.2,
+      "price": 4055.8,
+      "change": -1.2,
+      "change_pct": -0.03,
       "open": 4056.0,
       "high": 4070.0,
       "low": 4045.0,
-      "volume": 452920,
-      "market_cap": 5592895717376,
-      "pe_ratio": 33.18,
-      "pb_ratio": 5.12,
+      "volume": 1043799,
+      "market_cap": 5580237832192,
+      "pe_ratio": 33.1,
+      "pb_ratio": 5.11,
       "eps": 122.52,
       "dividend_yield": 94.0,
       "roe": 0.0,
@@ -6003,25 +6003,25 @@
       "week52_low": 3288.1,
       "technicals": {
         "rsi": 57.08,
-        "macd": 11.55,
-        "macd_signal": 11.55,
-        "sma20": 3888.04,
-        "sma50": 3991.18,
+        "macd": 10.81,
+        "macd_signal": 10.81,
+        "sma20": 3887.58,
+        "sma50": 3991.0,
         "sma200": null,
-        "bb_upper": 4072.44,
-        "bb_middle": 3888.04,
-        "bb_lower": 3703.64
+        "bb_upper": 4070.25,
+        "bb_middle": 3887.58,
+        "bb_lower": 3704.91
       },
       "risk_metrics": {
         "risk_score": 6,
         "beta": 0.63,
         "atr": 62.24,
-        "volatility_30d": 18.35,
+        "volatility_30d": 18.32,
         "max_drawdown": -10.45,
-        "sharpe_ratio": -1.96,
+        "sharpe_ratio": -2.07,
         "support": 3775.6,
-        "resistance": 4065.0,
-        "relative_strength": -6.09,
+        "resistance": 4057.0,
+        "relative_strength": -6.25,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 31.52,
@@ -6177,16 +6177,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 4065.0,
-          "volume": 452920
+          "close": 4055.8,
+          "volume": 1043799
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (57.08) and price position relative to SMA50 (3991.18). Technical analysis only — verify with fundamentals.",
-        "target_price": 4268.25,
-        "stop_loss": 3861.75,
+        "reasoning": "Based on RSI (57.08) and price position relative to SMA50 (3991.0). Technical analysis only — verify with fundamentals.",
+        "target_price": 4258.59,
+        "stop_loss": 3853.01,
         "risk": "Medium"
       }
     },
@@ -6194,16 +6194,16 @@
       "symbol": "M&M",
       "name": "M&M",
       "sector": "Auto",
-      "price": 3432.4,
-      "change": -23.0,
-      "change_pct": -0.67,
+      "price": 3421.6,
+      "change": -33.8,
+      "change_pct": -0.98,
       "open": 3449.0,
       "high": 3449.0,
-      "low": 3421.0,
-      "volume": 474707,
-      "market_cap": 4121496125440,
-      "pe_ratio": 20.74,
-      "pb_ratio": 4.12,
+      "low": 3414.1,
+      "volume": 1156081,
+      "market_cap": 4108528123904,
+      "pe_ratio": 20.67,
+      "pb_ratio": 4.11,
       "eps": 165.51,
       "dividend_yield": 96.0,
       "roe": 0.0,
@@ -6212,25 +6212,25 @@
       "week52_low": 2896.0,
       "technicals": {
         "rsi": 35.11,
-        "macd": 83.78,
-        "macd_signal": 83.78,
-        "sma20": 3242.99,
-        "sma50": 3128.66,
+        "macd": 82.92,
+        "macd_signal": 82.92,
+        "sma20": 3242.45,
+        "sma50": 3128.45,
         "sma200": null,
-        "bb_upper": 3481.85,
-        "bb_middle": 3242.99,
-        "bb_lower": 3004.13
+        "bb_upper": 3479.64,
+        "bb_middle": 3242.45,
+        "bb_lower": 3005.26
       },
       "risk_metrics": {
-        "risk_score": 6,
-        "beta": 0.76,
-        "atr": 83.56,
-        "volatility_30d": 24.98,
+        "risk_score": 7,
+        "beta": 0.77,
+        "atr": 84.05,
+        "volatility_30d": 25.09,
         "max_drawdown": -12.41,
-        "sharpe_ratio": 2.82,
+        "sharpe_ratio": 2.7,
         "support": 3082.9,
         "resistance": 3455.4,
-        "relative_strength": 6.5,
+        "relative_strength": 6.21,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 20.08,
@@ -6386,16 +6386,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 3432.4,
-          "volume": 474707
+          "close": 3421.6,
+          "volume": 1156146
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (35.11) and price position relative to SMA50 (3128.66). Technical analysis only — verify with fundamentals.",
-        "target_price": 3604.02,
-        "stop_loss": 3260.78,
+        "reasoning": "Based on RSI (35.11) and price position relative to SMA50 (3128.45). Technical analysis only — verify with fundamentals.",
+        "target_price": 3592.68,
+        "stop_loss": 3250.52,
         "risk": "Medium"
       }
     },
@@ -6403,16 +6403,16 @@
       "symbol": "MARUTI",
       "name": "Maruti Suzuki",
       "sector": "Auto",
-      "price": 14076.0,
-      "change": -114.0,
-      "change_pct": -0.8,
+      "price": 14020.0,
+      "change": -170.0,
+      "change_pct": -1.2,
       "open": 14181.0,
       "high": 14181.0,
-      "low": 14025.0,
-      "volume": 98259,
-      "market_cap": 4425530212352,
-      "pe_ratio": 30.81,
-      "pb_ratio": 4.13,
+      "low": 13985.0,
+      "volume": 227059,
+      "market_cap": 4407924097024,
+      "pe_ratio": 30.68,
+      "pb_ratio": 4.11,
       "eps": 456.92,
       "dividend_yield": 99.0,
       "roe": 0.0,
@@ -6421,25 +6421,25 @@
       "week52_low": 12201.0,
       "technicals": {
         "rsi": 32.3,
-        "macd": 91.06,
-        "macd_signal": 91.06,
-        "sma20": 13879.1,
-        "sma50": 13587.64,
+        "macd": 118.98,
+        "macd_signal": 118.98,
+        "sma20": 13806.9,
+        "sma50": 13657.68,
         "sma200": null,
-        "bb_upper": 14520.85,
-        "bb_middle": 13879.1,
-        "bb_lower": 13237.35
+        "bb_upper": 14346.35,
+        "bb_middle": 13806.9,
+        "bb_lower": 13267.45
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": -0.35,
-        "atr": 286.86,
-        "volatility_30d": 28.07,
+        "beta": 0.72,
+        "atr": 288.07,
+        "volatility_30d": 26.06,
         "max_drawdown": -7.81,
-        "sharpe_ratio": 1.43,
+        "sharpe_ratio": 0.54,
         "support": 13403.0,
-        "resistance": 14538.0,
-        "relative_strength": 2.59,
+        "resistance": 14234.0,
+        "relative_strength": -0.44,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 29.61,
@@ -6448,31 +6448,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-19",
-          "close": 13395.0,
-          "volume": 719756
-        },
-        {
-          "date": "2026-06-22",
-          "close": 13421.0,
-          "volume": 254533
-        },
-        {
-          "date": "2026-06-23",
-          "close": 13451.0,
-          "volume": 398558
-        },
-        {
-          "date": "2026-06-24",
-          "close": 13248.0,
-          "volume": 327495
-        },
-        {
-          "date": "2026-06-25",
-          "close": 13745.0,
-          "volume": 981556
-        },
         {
           "date": "2026-06-26",
           "close": 13745.0,
@@ -6554,9 +6529,19 @@
           "volume": 237330
         },
         {
+          "date": "2026-07-20",
+          "close": 13514.0,
+          "volume": 517730
+        },
+        {
           "date": "2026-07-21",
           "close": 13597.0,
           "volume": 341101
+        },
+        {
+          "date": "2026-07-22",
+          "close": 13545.0,
+          "volume": 299404
         },
         {
           "date": "2026-07-23",
@@ -6589,22 +6574,37 @@
           "volume": 626000
         },
         {
+          "date": "2026-07-31",
+          "close": 14234.0,
+          "volume": 535417
+        },
+        {
           "date": "2026-08-03",
           "close": 14150.0,
           "volume": 961183
         },
         {
+          "date": "2026-08-04",
+          "close": 14168.0,
+          "volume": 619717
+        },
+        {
+          "date": "2026-08-05",
+          "close": 14190.0,
+          "volume": 312540
+        },
+        {
           "date": "2026-08-06",
-          "close": 14076.0,
-          "volume": 98259
+          "close": 14020.0,
+          "volume": 227059
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (32.3) and price position relative to SMA50 (13587.64). Technical analysis only — verify with fundamentals.",
-        "target_price": 14779.8,
-        "stop_loss": 13372.2,
+        "reasoning": "Based on RSI (32.3) and price position relative to SMA50 (13657.68). Technical analysis only — verify with fundamentals.",
+        "target_price": 14721.0,
+        "stop_loss": 13319.0,
         "risk": "Medium"
       }
     },
@@ -6612,16 +6612,16 @@
       "symbol": "NESTLEIND",
       "name": "Nestle India",
       "sector": "FMCG",
-      "price": 1525.5,
-      "change": 5.5,
-      "change_pct": 0.36,
+      "price": 1519.8,
+      "change": -0.2,
+      "change_pct": -0.01,
       "open": 1531.9,
       "high": 1534.8,
-      "low": 1520.2,
-      "volume": 699089,
-      "market_cap": 2941643653120,
-      "pe_ratio": 77.2,
-      "pb_ratio": 57.04,
+      "low": 1518.2,
+      "volume": 1162444,
+      "market_cap": 2940679487488,
+      "pe_ratio": 77.18,
+      "pb_ratio": 57.02,
       "eps": 19.76,
       "dividend_yield": 78.0,
       "roe": 0.0,
@@ -6630,25 +6630,25 @@
       "week52_low": 1084.7,
       "technicals": {
         "rsi": 28.94,
-        "macd": 25.66,
-        "macd_signal": 25.66,
-        "sma20": 1468.54,
-        "sma50": 1430.66,
+        "macd": 25.39,
+        "macd_signal": 25.39,
+        "sma20": 1471.45,
+        "sma50": 1432.54,
         "sma200": null,
-        "bb_upper": 1543.69,
-        "bb_middle": 1468.54,
-        "bb_lower": 1393.39
+        "bb_upper": 1548.84,
+        "bb_middle": 1471.45,
+        "bb_lower": 1394.05
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.06,
-        "atr": 38.88,
-        "volatility_30d": 21.78,
+        "beta": 0.5,
+        "atr": 39.89,
+        "volatility_30d": 21.58,
         "max_drawdown": -7.5,
-        "sharpe_ratio": 3.34,
+        "sharpe_ratio": 3.19,
         "support": 1423.5,
         "resistance": 1530.0,
-        "relative_strength": 6.79,
+        "relative_strength": 6.44,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 35.41,
@@ -6657,11 +6657,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-25",
-          "close": 1395.89,
-          "volume": 1968226
-        },
         {
           "date": "2026-06-26",
           "close": 1395.89,
@@ -6803,17 +6798,22 @@
           "volume": 4023569
         },
         {
+          "date": "2026-08-05",
+          "close": 1520.0,
+          "volume": 2747079
+        },
+        {
           "date": "2026-08-06",
-          "close": 1525.5,
-          "volume": 699089
+          "close": 1519.8,
+          "volume": 985703
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Based on RSI (28.94) and price position relative to SMA50 (1430.66). Technical analysis only — verify with fundamentals.",
-        "target_price": 1601.78,
-        "stop_loss": 1449.22,
+        "reasoning": "Based on RSI (28.94) and price position relative to SMA50 (1432.54). Technical analysis only — verify with fundamentals.",
+        "target_price": 1595.79,
+        "stop_loss": 1443.81,
         "risk": "Medium"
       }
     },
@@ -6821,15 +6821,15 @@
       "symbol": "NTPC",
       "name": "NTPC",
       "sector": "Energy",
-      "price": 344.2,
-      "change": -5.7,
-      "change_pct": -1.63,
+      "price": 343.7,
+      "change": -6.2,
+      "change_pct": -1.77,
       "open": 347.5,
       "high": 349.25,
-      "low": 343.15,
-      "volume": 3413994,
-      "market_cap": 3337592766464,
-      "pe_ratio": 10.33,
+      "low": 343.1,
+      "volume": 7562942,
+      "market_cap": 3339047141376,
+      "pe_ratio": 10.34,
       "pb_ratio": 1.64,
       "eps": 33.31,
       "dividend_yield": 352.0,
@@ -6839,25 +6839,25 @@
       "week52_low": 315.55,
       "technicals": {
         "rsi": 43.95,
-        "macd": -3.18,
-        "macd_signal": -3.18,
-        "sma20": 346.64,
-        "sma50": 356.16,
+        "macd": -2.84,
+        "macd_signal": -2.84,
+        "sma20": 346.68,
+        "sma50": 354.09,
         "sma200": null,
-        "bb_upper": 352.6,
-        "bb_middle": 346.64,
-        "bb_lower": 340.68
+        "bb_upper": 352.79,
+        "bb_middle": 346.68,
+        "bb_lower": 340.56
       },
       "risk_metrics": {
         "risk_score": 6,
-        "beta": 0.16,
-        "atr": 5.5,
-        "volatility_30d": 16.56,
+        "beta": 0.35,
+        "atr": 6.06,
+        "volatility_30d": 16.99,
         "max_drawdown": -14.99,
-        "sharpe_ratio": -2.34,
+        "sharpe_ratio": -1.5,
         "support": 341.85,
         "resistance": 351.75,
-        "relative_strength": -6.1,
+        "relative_strength": -4.81,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 27.06,
@@ -6866,16 +6866,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-24",
-          "close": 357.05,
-          "volume": 12770898
-        },
-        {
-          "date": "2026-06-25",
-          "close": 352.05,
-          "volume": 19767157
-        },
         {
           "date": "2026-06-26",
           "close": 352.05,
@@ -7012,17 +7002,27 @@
           "volume": 5460220
         },
         {
+          "date": "2026-08-04",
+          "close": 343.65,
+          "volume": 7201524
+        },
+        {
+          "date": "2026-08-05",
+          "close": 349.9,
+          "volume": 18554536
+        },
+        {
           "date": "2026-08-06",
-          "close": 344.2,
-          "volume": 3413994
+          "close": 343.7,
+          "volume": 5522002
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Low",
-        "reasoning": "Based on RSI (43.95) and price position relative to SMA50 (356.16). Technical analysis only — verify with fundamentals.",
-        "target_price": 361.41,
-        "stop_loss": 326.99,
+        "reasoning": "Based on RSI (43.95) and price position relative to SMA50 (354.09). Technical analysis only — verify with fundamentals.",
+        "target_price": 360.88,
+        "stop_loss": 326.51,
         "risk": "Medium"
       }
     },
@@ -7030,17 +7030,17 @@
       "symbol": "ONGC",
       "name": "ONGC",
       "sector": "Energy",
-      "price": 237.19,
-      "change": -3.01,
-      "change_pct": -1.25,
+      "price": 237.33,
+      "change": -2.87,
+      "change_pct": -1.19,
       "open": 241.4,
       "high": 241.4,
       "low": 236.5,
-      "volume": 6318898,
-      "market_cap": 2983916470272,
-      "pe_ratio": 7.26,
+      "volume": 10412042,
+      "market_cap": 2985677815808,
+      "pe_ratio": 7.2,
       "pb_ratio": 0.8,
-      "eps": 32.69,
+      "eps": 32.94,
       "dividend_yield": 764.0,
       "roe": 12.7,
       "debt_to_equity": 42.55,
@@ -7048,25 +7048,25 @@
       "week52_low": 227.65,
       "technicals": {
         "rsi": 56.49,
-        "macd": -2.75,
-        "macd_signal": -2.75,
-        "sma20": 244.9,
-        "sma50": 248.98,
+        "macd": -2.64,
+        "macd_signal": -2.64,
+        "sma20": 244.87,
+        "sma50": 246.95,
         "sma200": null,
-        "bb_upper": 253.51,
-        "bb_middle": 244.9,
-        "bb_lower": 236.29
+        "bb_upper": 254.27,
+        "bb_middle": 244.87,
+        "bb_lower": 235.47
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.01,
-        "atr": 4.37,
-        "volatility_30d": 20.87,
+        "beta": -0.46,
+        "atr": 4.45,
+        "volatility_30d": 17.9,
         "max_drawdown": -22.53,
-        "sharpe_ratio": -1.42,
-        "support": 237.19,
+        "sharpe_ratio": 0.59,
+        "support": 237.33,
         "resistance": 252.37,
-        "relative_strength": -5.43,
+        "relative_strength": -0.62,
         "near_52w_high": false,
         "near_52w_low": true,
         "payout_ratio": 41.0,
@@ -7075,21 +7075,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 244.35,
-          "volume": 7400255
-        },
-        {
-          "date": "2026-06-24",
-          "close": 240.0,
-          "volume": 10278033
-        },
-        {
-          "date": "2026-06-25",
-          "close": 233.1,
-          "volume": 36085563
-        },
         {
           "date": "2026-06-26",
           "close": 233.1,
@@ -7181,6 +7166,11 @@
           "volume": 12240171
         },
         {
+          "date": "2026-07-22",
+          "close": 251.9,
+          "volume": 10909821
+        },
+        {
           "date": "2026-07-23",
           "close": 252.37,
           "volume": 9104521
@@ -7221,17 +7211,27 @@
           "volume": 8277525
         },
         {
+          "date": "2026-08-04",
+          "close": 242.0,
+          "volume": 10470809
+        },
+        {
+          "date": "2026-08-05",
+          "close": 240.2,
+          "volume": 19409088
+        },
+        {
           "date": "2026-08-06",
-          "close": 237.19,
-          "volume": 6318898
+          "close": 237.33,
+          "volume": 10412042
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Low",
-        "reasoning": "Based on RSI (56.49) and price position relative to SMA50 (248.98). Technical analysis only — verify with fundamentals.",
-        "target_price": 249.05,
-        "stop_loss": 225.33,
+        "reasoning": "Based on RSI (56.49) and price position relative to SMA50 (246.95). Technical analysis only — verify with fundamentals.",
+        "target_price": 249.2,
+        "stop_loss": 225.46,
         "risk": "Medium"
       }
     },
@@ -7245,37 +7245,37 @@
       "open": 279.75,
       "high": 281.0,
       "low": 270.5,
-      "volume": 8177484,
+      "volume": 12859376,
       "market_cap": 2522323877888,
       "pe_ratio": 13.56,
       "pb_ratio": 2.51,
       "eps": 20.0,
-      "dividend_yield": 432.0,
+      "dividend_yield": 427.0,
       "roe": 16.49,
       "debt_to_equity": 150.81,
       "week52_high": 324.95,
       "week52_low": 250.0,
       "technicals": {
         "rsi": 21.6,
-        "macd": -1.75,
-        "macd_signal": -1.75,
-        "sma20": 284.21,
-        "sma50": 286.52,
+        "macd": -2.0,
+        "macd_signal": -2.0,
+        "sma20": 284.66,
+        "sma50": 285.75,
         "sma200": null,
-        "bb_upper": 292.44,
-        "bb_middle": 284.21,
-        "bb_lower": 275.98
+        "bb_upper": 292.89,
+        "bb_middle": 284.66,
+        "bb_lower": 276.43
       },
       "risk_metrics": {
         "risk_score": 8,
-        "beta": -0.14,
-        "atr": 5.66,
-        "volatility_30d": 21.71,
+        "beta": 0.38,
+        "atr": 5.6,
+        "volatility_30d": 17.3,
         "max_drawdown": -14.16,
-        "sharpe_ratio": -3.11,
+        "sharpe_ratio": -2.54,
         "support": 271.2,
         "resistance": 289.8,
-        "relative_strength": -9.6,
+        "relative_strength": -6.91,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 44.76,
@@ -7284,21 +7284,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 291.95,
-          "volume": 12328516
-        },
-        {
-          "date": "2026-06-24",
-          "close": 290.9,
-          "volume": 10221176
-        },
-        {
-          "date": "2026-06-25",
-          "close": 283.9,
-          "volume": 16305770
-        },
         {
           "date": "2026-06-26",
           "close": 283.9,
@@ -7390,6 +7375,11 @@
           "volume": 7517060
         },
         {
+          "date": "2026-07-22",
+          "close": 289.3,
+          "volume": 4595987
+        },
+        {
           "date": "2026-07-23",
           "close": 289.8,
           "volume": 7407258
@@ -7430,15 +7420,25 @@
           "volume": 8749092
         },
         {
+          "date": "2026-08-04",
+          "close": 283.4,
+          "volume": 7656558
+        },
+        {
+          "date": "2026-08-05",
+          "close": 281.75,
+          "volume": 7544704
+        },
+        {
           "date": "2026-08-06",
           "close": 271.2,
-          "volume": 8177484
+          "volume": 12859376
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Low",
-        "reasoning": "Based on RSI (21.6) and price position relative to SMA50 (286.52). Technical analysis only — verify with fundamentals.",
+        "reasoning": "Based on RSI (21.6) and price position relative to SMA50 (285.75). Technical analysis only — verify with fundamentals.",
         "target_price": 284.76,
         "stop_loss": 257.64,
         "risk": "Medium"
@@ -7448,16 +7448,16 @@
       "symbol": "RELIANCE",
       "name": "Reliance",
       "sector": "Energy",
-      "price": 1310.8,
-      "change": 30.8,
-      "change_pct": 2.41,
+      "price": 1318.9,
+      "change": 38.9,
+      "change_pct": 3.04,
       "open": 1285.0,
-      "high": 1311.1,
+      "high": 1325.2,
       "low": 1281.2,
-      "volume": 6590708,
+      "volume": 15791553,
       "market_cap": 0,
-      "pe_ratio": 23.93,
-      "pb_ratio": 1.96,
+      "pe_ratio": 24.08,
+      "pb_ratio": 1.97,
       "eps": 54.78,
       "dividend_yield": 46.0,
       "roe": 0.0,
@@ -7466,48 +7466,33 @@
       "week52_low": 1249.8,
       "technicals": {
         "rsi": 29.23,
-        "macd": -2.46,
-        "macd_signal": -2.46,
-        "sma20": 1295.61,
-        "sma50": 1303.1,
+        "macd": -2.29,
+        "macd_signal": -2.29,
+        "sma20": 1295.78,
+        "sma50": 1299.68,
         "sma200": null,
-        "bb_upper": 1330.2,
-        "bb_middle": 1295.61,
-        "bb_lower": 1261.02
+        "bb_upper": 1329.86,
+        "bb_middle": 1295.78,
+        "bb_lower": 1261.71
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.14,
-        "atr": 23.07,
-        "volatility_30d": 18.14,
+        "beta": 0.57,
+        "atr": 23.64,
+        "volatility_30d": 20.2,
         "max_drawdown": -12.05,
-        "sharpe_ratio": -0.22,
+        "sharpe_ratio": -0.19,
         "support": 1267.7,
         "resistance": 1327.2,
-        "relative_strength": -2.4,
+        "relative_strength": -2.38,
         "near_52w_high": false,
-        "near_52w_low": true,
+        "near_52w_low": false,
         "payout_ratio": 20.83,
         "ex_dividend_date": "2026-06-05",
         "next_earnings_date": "2026-10-16",
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 1309.5,
-          "volume": 15400184
-        },
-        {
-          "date": "2026-06-24",
-          "close": 1313.6,
-          "volume": 11030917
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1318.1,
-          "volume": 12694362
-        },
         {
           "date": "2026-06-26",
           "close": 1318.1,
@@ -7599,6 +7584,11 @@
           "volume": 12753410
         },
         {
+          "date": "2026-07-22",
+          "close": 1288.6,
+          "volume": 10840383
+        },
+        {
           "date": "2026-07-23",
           "close": 1272.2,
           "volume": 12580741
@@ -7639,17 +7629,27 @@
           "volume": 7508023
         },
         {
+          "date": "2026-08-04",
+          "close": 1290.9,
+          "volume": 10759546
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1280.0,
+          "volume": 24820782
+        },
+        {
           "date": "2026-08-06",
-          "close": 1310.8,
-          "volume": 6590708
+          "close": 1318.9,
+          "volume": 15791553
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Based on RSI (29.23) and price position relative to SMA50 (1303.1). Technical analysis only — verify with fundamentals.",
-        "target_price": 1376.34,
-        "stop_loss": 1245.26,
+        "reasoning": "Based on RSI (29.23) and price position relative to SMA50 (1299.68). Technical analysis only — verify with fundamentals.",
+        "target_price": 1384.85,
+        "stop_loss": 1252.95,
         "risk": "Medium"
       }
     },
@@ -7657,16 +7657,16 @@
       "symbol": "SBIN",
       "name": "SBI",
       "sector": "Banking",
-      "price": 1057.0,
-      "change": 2.0,
-      "change_pct": 0.19,
+      "price": 1081.2,
+      "change": 26.2,
+      "change_pct": 2.48,
       "open": 1052.5,
-      "high": 1064.4,
+      "high": 1085.5,
       "low": 1052.5,
-      "volume": 2628723,
-      "market_cap": 9756762701824,
-      "pe_ratio": 11.46,
-      "pb_ratio": 1.64,
+      "volume": 9586373,
+      "market_cap": 9980142944256,
+      "pe_ratio": 11.73,
+      "pb_ratio": 1.67,
       "eps": 92.21,
       "dividend_yield": 166.0,
       "roe": 15.48,
@@ -7675,25 +7675,25 @@
       "week52_low": 790.0,
       "technicals": {
         "rsi": 22.2,
-        "macd": 3.99,
-        "macd_signal": 3.99,
-        "sma20": 1030.27,
-        "sma50": 1017.76,
+        "macd": 7.81,
+        "macd_signal": 7.81,
+        "sma20": 1033.75,
+        "sma50": 1022.62,
         "sma200": null,
-        "bb_upper": 1058.75,
-        "bb_middle": 1030.27,
-        "bb_lower": 1001.78
+        "bb_upper": 1068.91,
+        "bb_middle": 1033.75,
+        "bb_lower": 998.6
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.38,
-        "atr": 18.72,
-        "volatility_30d": 19.67,
+        "beta": 0.29,
+        "atr": 18.73,
+        "volatility_30d": 19.01,
         "max_drawdown": -12.74,
-        "sharpe_ratio": 1.18,
+        "sharpe_ratio": 1.27,
         "support": 1012.6,
-        "resistance": 1060.0,
-        "relative_strength": 0.71,
+        "resistance": 1081.2,
+        "relative_strength": 0.99,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 17.44,
@@ -7702,21 +7702,6 @@
         "earnings_soon": true
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 1024.2,
-          "volume": 10411004
-        },
-        {
-          "date": "2026-06-24",
-          "close": 1034.6,
-          "volume": 11724076
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1045.4,
-          "volume": 16002360
-        },
         {
           "date": "2026-06-26",
           "close": 1045.4,
@@ -7808,6 +7793,11 @@
           "volume": 10514887
         },
         {
+          "date": "2026-07-22",
+          "close": 1025.0,
+          "volume": 11227214
+        },
+        {
           "date": "2026-07-23",
           "close": 1012.6,
           "volume": 8910230
@@ -7848,17 +7838,27 @@
           "volume": 10507450
         },
         {
+          "date": "2026-08-04",
+          "close": 1042.7,
+          "volume": 8544184
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1055.0,
+          "volume": 8707119
+        },
+        {
           "date": "2026-08-06",
-          "close": 1057.0,
-          "volume": 2628723
+          "close": 1081.2,
+          "volume": 9586373
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Medium",
-        "reasoning": "Based on RSI (22.2) and price position relative to SMA50 (1017.76). Technical analysis only — verify with fundamentals.",
-        "target_price": 1109.85,
-        "stop_loss": 1004.15,
+        "reasoning": "Based on RSI (22.2) and price position relative to SMA50 (1022.62). Technical analysis only — verify with fundamentals.",
+        "target_price": 1135.26,
+        "stop_loss": 1027.14,
         "risk": "Medium"
       }
     },
@@ -7866,17 +7866,17 @@
       "symbol": "SBILIFE",
       "name": "SBI Life",
       "sector": "Financial Services",
-      "price": 1881.6,
-      "change": 1.7,
-      "change_pct": 0.09,
+      "price": 1865.0,
+      "change": -14.9,
+      "change_pct": -0.79,
       "open": 1870.0,
       "high": 1886.0,
-      "low": 1867.9,
-      "volume": 77256,
-      "market_cap": 1887736037376,
-      "pe_ratio": 72.79,
-      "pb_ratio": 9.38,
-      "eps": 25.85,
+      "low": 1860.3,
+      "volume": 288317,
+      "market_cap": 1872988078080,
+      "pe_ratio": 73.01,
+      "pb_ratio": 9.31,
+      "eps": 25.57,
       "dividend_yield": 14.0,
       "roe": 13.7,
       "debt_to_equity": 0.0,
@@ -7884,25 +7884,25 @@
       "week52_low": 1700.4,
       "technicals": {
         "rsi": 55.54,
-        "macd": 22.82,
-        "macd_signal": 22.82,
-        "sma20": 1848.97,
-        "sma50": 1812.39,
+        "macd": 20.54,
+        "macd_signal": 20.54,
+        "sma20": 1857.86,
+        "sma50": 1811.14,
         "sma200": null,
-        "bb_upper": 1916.37,
-        "bb_middle": 1848.97,
-        "bb_lower": 1781.56
+        "bb_upper": 1915.75,
+        "bb_middle": 1857.86,
+        "bb_lower": 1799.96
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": 0.03,
-        "atr": 39.99,
-        "volatility_30d": 21.06,
+        "beta": 0.27,
+        "atr": 38.53,
+        "volatility_30d": 20.41,
         "max_drawdown": -10.3,
-        "sharpe_ratio": 1.48,
-        "support": 1787.7,
+        "sharpe_ratio": 2.64,
+        "support": 1806.7,
         "resistance": 1915.0,
-        "relative_strength": 1.72,
+        "relative_strength": 4.44,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 10.42,
@@ -7911,21 +7911,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 1805.5,
-          "volume": 549653
-        },
-        {
-          "date": "2026-06-23",
-          "close": 1786.2,
-          "volume": 961453
-        },
-        {
-          "date": "2026-06-24",
-          "close": 1767.7,
-          "volume": 1280774
-        },
         {
           "date": "2026-06-25",
           "close": 1744.9,
@@ -8012,6 +7997,11 @@
           "volume": 1025533
         },
         {
+          "date": "2026-07-20",
+          "close": 1824.5,
+          "volume": 597865
+        },
+        {
           "date": "2026-07-21",
           "close": 1827.9,
           "volume": 583351
@@ -8057,17 +8047,27 @@
           "volume": 885610
         },
         {
+          "date": "2026-08-04",
+          "close": 1899.0,
+          "volume": 1516326
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1879.9,
+          "volume": 625147
+        },
+        {
           "date": "2026-08-06",
-          "close": 1881.6,
-          "volume": 77256
+          "close": 1865.0,
+          "volume": 186212
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (55.54) and price position relative to SMA50 (1812.39). Technical analysis only — verify with fundamentals.",
-        "target_price": 1975.68,
-        "stop_loss": 1787.52,
+        "reasoning": "Based on RSI (55.54) and price position relative to SMA50 (1811.14). Technical analysis only — verify with fundamentals.",
+        "target_price": 1958.25,
+        "stop_loss": 1771.75,
         "risk": "Medium"
       }
     },
@@ -8075,16 +8075,16 @@
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance",
       "sector": "Financial Services",
-      "price": 1151.8,
-      "change": 29.4,
-      "change_pct": 2.62,
+      "price": 1139.5,
+      "change": 17.1,
+      "change_pct": 1.52,
       "open": 1130.0,
       "high": 1153.7,
       "low": 1120.0,
-      "volume": 7716839,
-      "market_cap": 2710126198784,
-      "pe_ratio": 20.36,
-      "pb_ratio": 3.29,
+      "volume": 10663240,
+      "market_cap": 2681184714752,
+      "pe_ratio": 20.14,
+      "pb_ratio": 3.25,
       "eps": 56.58,
       "dividend_yield": 127.0,
       "roe": 18.5,
@@ -8093,25 +8093,25 @@
       "week52_low": 566.5,
       "technicals": {
         "rsi": 37.28,
-        "macd": 19.71,
-        "macd_signal": 19.71,
-        "sma20": 1043.58,
-        "sma50": 1003.93,
+        "macd": 23.87,
+        "macd_signal": 23.87,
+        "sma20": 1051.15,
+        "sma50": 1009.57,
         "sma200": null,
-        "bb_upper": 1105.31,
-        "bb_middle": 1043.58,
-        "bb_lower": 981.85
+        "bb_upper": 1118.27,
+        "bb_middle": 1051.15,
+        "bb_lower": 984.02
       },
       "risk_metrics": {
         "risk_score": 9,
-        "beta": 0.59,
-        "atr": 33.49,
-        "volatility_30d": 33.81,
+        "beta": 1.15,
+        "atr": 32.43,
+        "volatility_30d": 30.84,
         "max_drawdown": -12.74,
-        "sharpe_ratio": 3.28,
+        "sharpe_ratio": 2.86,
         "support": 1005.1,
-        "resistance": 1151.8,
-        "relative_strength": 11.17,
+        "resistance": 1139.5,
+        "relative_strength": 8.62,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 24.37,
@@ -8120,16 +8120,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-24",
-          "close": 1013.27,
-          "volume": 7885319
-        },
-        {
-          "date": "2026-06-25",
-          "close": 1026.0,
-          "volume": 8924791
-        },
         {
           "date": "2026-06-26",
           "close": 1026.0,
@@ -8266,17 +8256,27 @@
           "volume": 7047761
         },
         {
+          "date": "2026-08-04",
+          "close": 1087.3,
+          "volume": 3516949
+        },
+        {
+          "date": "2026-08-05",
+          "close": 1122.4,
+          "volume": 6684889
+        },
+        {
           "date": "2026-08-06",
-          "close": 1151.8,
-          "volume": 7716839
+          "close": 1139.5,
+          "volume": 10663240
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (37.28) and price position relative to SMA50 (1003.93). Technical analysis only — verify with fundamentals.",
-        "target_price": 1209.39,
-        "stop_loss": 1094.21,
+        "reasoning": "Based on RSI (37.28) and price position relative to SMA50 (1009.57). Technical analysis only — verify with fundamentals.",
+        "target_price": 1196.48,
+        "stop_loss": 1082.52,
         "risk": "Medium"
       }
     },
@@ -8284,16 +8284,16 @@
       "symbol": "SUNPHARMA",
       "name": "Sun Pharma",
       "sector": "Pharma",
-      "price": 1958.1,
-      "change": 18.1,
-      "change_pct": 0.93,
+      "price": 1952.7,
+      "change": 12.7,
+      "change_pct": 0.65,
       "open": 1930.0,
       "high": 1965.9,
       "low": 1930.0,
-      "volume": 610937,
-      "market_cap": 4698137427968,
-      "pe_ratio": 38.8,
-      "pb_ratio": 5.62,
+      "volume": 1255400,
+      "market_cap": 4689020583936,
+      "pe_ratio": 38.73,
+      "pb_ratio": 5.61,
       "eps": 50.46,
       "dividend_yield": 81.0,
       "roe": 0.0,
@@ -8302,25 +8302,25 @@
       "week52_low": 1548.0,
       "technicals": {
         "rsi": 48.26,
-        "macd": 20.38,
-        "macd_signal": 20.38,
-        "sma20": 1957.38,
-        "sma50": 1883.09,
+        "macd": 19.95,
+        "macd_signal": 19.95,
+        "sma20": 1957.11,
+        "sma50": 1882.98,
         "sma200": null,
-        "bb_upper": 1998.09,
-        "bb_middle": 1957.38,
-        "bb_lower": 1916.67
+        "bb_upper": 1997.87,
+        "bb_middle": 1957.11,
+        "bb_lower": 1916.35
       },
       "risk_metrics": {
         "risk_score": 3,
-        "beta": 0.08,
+        "beta": 0.07,
         "atr": 35.76,
-        "volatility_30d": 14.62,
+        "volatility_30d": 14.52,
         "max_drawdown": -6.65,
-        "sharpe_ratio": 2.71,
+        "sharpe_ratio": 2.56,
         "support": 1921.4,
         "resistance": 2001.1,
-        "relative_strength": 2.89,
+        "relative_strength": 2.66,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 31.75,
@@ -8476,16 +8476,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1958.1,
-          "volume": 610937
+          "close": 1952.7,
+          "volume": 957681
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (48.26) and price position relative to SMA50 (1883.09). Technical analysis only — verify with fundamentals.",
-        "target_price": 2056.01,
-        "stop_loss": 1860.19,
+        "reasoning": "Based on RSI (48.26) and price position relative to SMA50 (1882.98). Technical analysis only — verify with fundamentals.",
+        "target_price": 2050.34,
+        "stop_loss": 1855.07,
         "risk": "Medium"
       }
     },
@@ -8493,16 +8493,16 @@
       "symbol": "TATACONSUM",
       "name": "Tata Consumer",
       "sector": "FMCG",
-      "price": 1099.9,
-      "change": 3.6,
-      "change_pct": 0.33,
+      "price": 1094.8,
+      "change": -1.5,
+      "change_pct": -0.14,
       "open": 1102.0,
       "high": 1102.0,
       "low": 1086.0,
-      "volume": 384449,
-      "market_cap": 1088560037888,
-      "pe_ratio": 66.46,
-      "pb_ratio": 5.0,
+      "volume": 1005226,
+      "market_cap": 1083512651776,
+      "pe_ratio": 66.15,
+      "pb_ratio": 4.97,
       "eps": 16.55,
       "dividend_yield": 90.0,
       "roe": 0.0,
@@ -8511,25 +8511,25 @@
       "week52_low": 1007.2,
       "technicals": {
         "rsi": 60.51,
-        "macd": -4.83,
-        "macd_signal": -4.83,
-        "sma20": 1094.79,
-        "sma50": 1108.52,
+        "macd": -5.24,
+        "macd_signal": -5.24,
+        "sma20": 1094.53,
+        "sma50": 1108.42,
         "sma200": null,
-        "bb_upper": 1112.7,
-        "bb_middle": 1094.79,
-        "bb_lower": 1076.88
+        "bb_upper": 1112.29,
+        "bb_middle": 1094.53,
+        "bb_lower": 1076.78
       },
       "risk_metrics": {
         "risk_score": 4,
         "beta": 0.9,
         "atr": 24.01,
-        "volatility_30d": 22.72,
+        "volatility_30d": 22.69,
         "max_drawdown": -14.66,
-        "sharpe_ratio": -1.22,
+        "sharpe_ratio": -1.4,
         "support": 1081.5,
         "resistance": 1111.9,
-        "relative_strength": -5.27,
+        "relative_strength": -5.66,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 60.53,
@@ -8685,16 +8685,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1099.9,
-          "volume": 384449
+          "close": 1094.8,
+          "volume": 1005226
         }
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Tata Consumer's high P/E ratio and low ROE raise concerns, but its stable position in the FMCG sector and moderate RSI value suggest a hold strategy, considering the stock is near its 52-week low and has a relatively low debt-to-equity ratio",
-        "target_price": 1150.0,
-        "stop_loss": 1050.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (60.51) and price position relative to SMA50 (1108.42). Technical analysis only — verify with fundamentals.",
+        "target_price": 1149.54,
+        "stop_loss": 1040.06,
         "risk": "Medium"
       }
     },
@@ -8702,16 +8702,16 @@
       "symbol": "TMPV",
       "name": "Tata Motors PV",
       "sector": "Auto",
-      "price": 346.65,
-      "change": -3.15,
-      "change_pct": -0.9,
+      "price": 345.0,
+      "change": -4.8,
+      "change_pct": -1.37,
       "open": 349.0,
       "high": 349.0,
-      "low": 345.4,
-      "volume": 1709015,
-      "market_cap": 1276674310144,
+      "low": 343.75,
+      "volume": 3687224,
+      "market_cap": 1270597550080,
       "pe_ratio": 0.0,
-      "pb_ratio": 1.14,
+      "pb_ratio": 1.13,
       "eps": -4.44,
       "dividend_yield": 86.0,
       "roe": -1.12,
@@ -8720,25 +8720,25 @@
       "week52_low": 294.3,
       "technicals": {
         "rsi": 67.36,
-        "macd": -0.58,
-        "macd_signal": -0.58,
-        "sma20": 335.5,
-        "sma50": 353.72,
+        "macd": -0.71,
+        "macd_signal": -0.71,
+        "sma20": 335.42,
+        "sma50": 353.69,
         "sma200": null,
-        "bb_upper": 351.81,
-        "bb_middle": 335.5,
-        "bb_lower": 319.2
+        "bb_upper": 351.52,
+        "bb_middle": 335.42,
+        "bb_lower": 319.33
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": 0.79,
-        "atr": 6.29,
-        "volatility_30d": 22.56,
+        "atr": 6.41,
+        "volatility_30d": 22.75,
         "max_drawdown": -18.57,
-        "sharpe_ratio": -0.88,
+        "sharpe_ratio": -1.05,
         "support": 323.8,
         "resistance": 349.8,
-        "relative_strength": -4.35,
+        "relative_strength": -4.76,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 56.44,
@@ -8894,16 +8894,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 346.65,
-          "volume": 1709015
+          "close": 345.0,
+          "volume": 3687224
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Low",
-        "reasoning": "Based on RSI (67.36) and price position relative to SMA50 (353.72). Technical analysis only — verify with fundamentals.",
-        "target_price": 363.98,
-        "stop_loss": 329.32,
+        "reasoning": "Based on RSI (67.36) and price position relative to SMA50 (353.69). Technical analysis only — verify with fundamentals.",
+        "target_price": 362.25,
+        "stop_loss": 327.75,
         "risk": "Medium"
       }
     },
@@ -8911,16 +8911,16 @@
       "symbol": "TATASTEEL",
       "name": "Tata Steel",
       "sector": "Metals",
-      "price": 191.14,
-      "change": -1.85,
-      "change_pct": -0.96,
+      "price": 190.4,
+      "change": -2.59,
+      "change_pct": -1.34,
       "open": 193.45,
       "high": 193.65,
-      "low": 191.0,
-      "volume": 5955323,
-      "market_cap": 2384340713472,
-      "pe_ratio": 21.62,
-      "pb_ratio": 2.34,
+      "low": 190.1,
+      "volume": 11621133,
+      "market_cap": 2376357117952,
+      "pe_ratio": 21.55,
+      "pb_ratio": 2.33,
       "eps": 8.84,
       "dividend_yield": 209.0,
       "roe": 0.0,
@@ -8929,25 +8929,25 @@
       "week52_low": 153.05,
       "technicals": {
         "rsi": 42.52,
-        "macd": -0.31,
-        "macd_signal": -0.31,
-        "sma20": 187.36,
-        "sma50": 192.28,
+        "macd": -0.37,
+        "macd_signal": -0.37,
+        "sma20": 187.32,
+        "sma50": 192.26,
         "sma200": null,
-        "bb_upper": 193.17,
-        "bb_middle": 187.36,
-        "bb_lower": 181.55
+        "bb_upper": 193.04,
+        "bb_middle": 187.32,
+        "bb_lower": 181.6
       },
       "risk_metrics": {
         "risk_score": 6,
         "beta": -0.0,
-        "atr": 3.44,
-        "volatility_30d": 16.8,
+        "atr": 3.5,
+        "volatility_30d": 17.03,
         "max_drawdown": -15.71,
-        "sharpe_ratio": 0.36,
+        "sharpe_ratio": 0.16,
         "support": 182.63,
         "resistance": 192.99,
-        "relative_strength": -1.21,
+        "relative_strength": -1.54,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 45.25,
@@ -9103,16 +9103,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 191.14,
-          "volume": 5955323
+          "close": 190.4,
+          "volume": 9226904
         }
       ],
       "ai": {
         "signal": "Hold",
         "confidence": "Low",
-        "reasoning": "Based on RSI (42.52) and price position relative to SMA50 (192.28). Technical analysis only — verify with fundamentals.",
-        "target_price": 200.7,
-        "stop_loss": 181.58,
+        "reasoning": "Based on RSI (42.52) and price position relative to SMA50 (192.26). Technical analysis only — verify with fundamentals.",
+        "target_price": 199.92,
+        "stop_loss": 180.88,
         "risk": "Medium"
       }
     },
@@ -9120,16 +9120,16 @@
       "symbol": "TCS",
       "name": "TCS",
       "sector": "IT",
-      "price": 2402.8,
-      "change": -10.2,
-      "change_pct": -0.42,
+      "price": 2388.6,
+      "change": -24.4,
+      "change_pct": -1.01,
       "open": 2417.0,
       "high": 2434.5,
-      "low": 2396.0,
-      "volume": 891217,
+      "low": 2384.8,
+      "volume": 1683686,
       "market_cap": 0,
-      "pe_ratio": 17.78,
-      "pb_ratio": 7.93,
+      "pe_ratio": 17.68,
+      "pb_ratio": 7.88,
       "eps": 135.13,
       "dividend_yield": 263.0,
       "roe": 47.74,
@@ -9138,25 +9138,25 @@
       "week52_low": 1976.8,
       "technicals": {
         "rsi": 30.88,
-        "macd": 76.06,
-        "macd_signal": 76.06,
-        "sma20": 2251.39,
-        "sma50": 2193.71,
+        "macd": 74.99,
+        "macd_signal": 74.99,
+        "sma20": 2296.29,
+        "sma50": 2198.9,
         "sma200": null,
-        "bb_upper": 2516.2,
-        "bb_middle": 2251.39,
-        "bb_lower": 1986.59
+        "bb_upper": 2525.38,
+        "bb_middle": 2296.29,
+        "bb_lower": 2067.19
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": 0.04,
-        "atr": 70.99,
-        "volatility_30d": 37.25,
+        "beta": 0.34,
+        "atr": 64.86,
+        "volatility_30d": 35.08,
         "max_drawdown": -18.98,
-        "sharpe_ratio": 3.83,
-        "support": 2038.32,
+        "sharpe_ratio": 3.34,
+        "support": 2057.72,
         "resistance": 2473.7,
-        "relative_strength": 14.81,
+        "relative_strength": 12.22,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 38.51,
@@ -9165,21 +9165,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 2048.37,
-          "volume": 6392736
-        },
-        {
-          "date": "2026-06-24",
-          "close": 2097.5,
-          "volume": 4747277
-        },
-        {
-          "date": "2026-06-25",
-          "close": 2083.28,
-          "volume": 4738903
-        },
         {
           "date": "2026-06-26",
           "close": 2083.28,
@@ -9271,6 +9256,11 @@
           "volume": 2382160
         },
         {
+          "date": "2026-07-22",
+          "close": 2208.3,
+          "volume": 1599665
+        },
+        {
           "date": "2026-07-23",
           "close": 2242.9,
           "volume": 2503539
@@ -9311,17 +9301,27 @@
           "volume": 3036839
         },
         {
+          "date": "2026-08-04",
+          "close": 2460.0,
+          "volume": 2792792
+        },
+        {
+          "date": "2026-08-05",
+          "close": 2413.0,
+          "volume": 3014409
+        },
+        {
           "date": "2026-08-06",
-          "close": 2402.8,
-          "volume": 891217
+          "close": 2388.6,
+          "volume": 1683686
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (30.88) and price position relative to SMA50 (2193.71). Technical analysis only — verify with fundamentals.",
-        "target_price": 2522.94,
-        "stop_loss": 2282.66,
+        "reasoning": "Based on RSI (30.88) and price position relative to SMA50 (2198.9). Technical analysis only — verify with fundamentals.",
+        "target_price": 2508.03,
+        "stop_loss": 2269.17,
         "risk": "Medium"
       }
     },
@@ -9329,16 +9329,16 @@
       "symbol": "TECHM",
       "name": "Tech Mahindra",
       "sector": "IT",
-      "price": 1652.5,
-      "change": 2.5,
-      "change_pct": 0.15,
+      "price": 1646.7,
+      "change": -3.3,
+      "change_pct": -0.2,
       "open": 1655.0,
       "high": 1670.0,
-      "low": 1649.0,
-      "volume": 879424,
-      "market_cap": 1463865704448,
-      "pe_ratio": 28.53,
-      "pb_ratio": 4.94,
+      "low": 1634.8,
+      "volume": 2168968,
+      "market_cap": 1452615532544,
+      "pe_ratio": 28.31,
+      "pb_ratio": 4.9,
       "eps": 57.92,
       "dividend_yield": 309.0,
       "roe": 0.0,
@@ -9347,25 +9347,25 @@
       "week52_low": 1304.1,
       "technicals": {
         "rsi": 48.9,
-        "macd": 56.27,
-        "macd_signal": 56.27,
-        "sma20": 1581.44,
-        "sma50": 1484.57,
+        "macd": 55.81,
+        "macd_signal": 55.81,
+        "sma20": 1581.15,
+        "sma50": 1484.46,
         "sma200": null,
-        "bb_upper": 1710.46,
-        "bb_middle": 1581.44,
-        "bb_lower": 1452.42
+        "bb_upper": 1709.55,
+        "bb_middle": 1581.15,
+        "bb_lower": 1452.75
       },
       "risk_metrics": {
         "risk_score": 5,
         "beta": 0.35,
-        "atr": 38.24,
-        "volatility_30d": 27.9,
+        "atr": 38.46,
+        "volatility_30d": 27.96,
         "max_drawdown": -13.31,
-        "sharpe_ratio": 5.0,
+        "sharpe_ratio": 4.88,
         "support": 1454.8,
         "resistance": 1669.0,
-        "relative_strength": 15.48,
+        "relative_strength": 15.12,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 88.19,
@@ -9521,16 +9521,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 1652.5,
-          "volume": 879424
+          "close": 1646.7,
+          "volume": 1183021
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (48.9) and price position relative to SMA50 (1484.57). Technical analysis only — verify with fundamentals.",
-        "target_price": 1735.12,
-        "stop_loss": 1569.88,
+        "reasoning": "Based on RSI (48.9) and price position relative to SMA50 (1484.46). Technical analysis only — verify with fundamentals.",
+        "target_price": 1729.04,
+        "stop_loss": 1564.37,
         "risk": "Medium"
       }
     },
@@ -9538,16 +9538,16 @@
       "symbol": "TITAN",
       "name": "Titan",
       "sector": "Others",
-      "price": 4973.5,
-      "change": 61.1,
-      "change_pct": 1.24,
+      "price": 4975.0,
+      "change": 62.6,
+      "change_pct": 1.27,
       "open": 4883.9,
       "high": 5005.0,
       "low": 4883.9,
-      "volume": 527131,
-      "market_cap": 4411719417856,
-      "pe_ratio": 87.29,
-      "pb_ratio": 28.12,
+      "volume": 892352,
+      "market_cap": 4395131731968,
+      "pe_ratio": 86.96,
+      "pb_ratio": 28.01,
       "eps": 56.98,
       "dividend_yield": 30.0,
       "roe": 37.13,
@@ -9556,25 +9556,25 @@
       "week52_low": 3303.1,
       "technicals": {
         "rsi": 37.95,
-        "macd": 148.48,
-        "macd_signal": 148.48,
-        "sma20": 4699.53,
-        "sma50": 4416.75,
+        "macd": 137.21,
+        "macd_signal": 137.21,
+        "sma20": 4750.43,
+        "sma50": 4471.09,
         "sma200": null,
-        "bb_upper": 4993.06,
-        "bb_middle": 4699.53,
-        "bb_lower": 4406.01
+        "bb_upper": 5026.75,
+        "bb_middle": 4750.43,
+        "bb_lower": 4474.1
       },
       "risk_metrics": {
         "risk_score": 8,
-        "beta": -0.38,
-        "atr": 75.46,
-        "volatility_30d": 17.67,
+        "beta": 0.4,
+        "atr": 80.39,
+        "volatility_30d": 16.77,
         "max_drawdown": -10.74,
-        "sharpe_ratio": 6.32,
-        "support": 4469.73,
+        "sharpe_ratio": 7.45,
+        "support": 4573.7,
         "resistance": 5000.0,
-        "relative_strength": 11.62,
+        "relative_strength": 13.87,
         "near_52w_high": true,
         "near_52w_low": false,
         "payout_ratio": 19.24,
@@ -9583,26 +9583,6 @@
         "earnings_soon": true
       },
       "price_history": [
-        {
-          "date": "2026-06-22",
-          "close": 4358.2,
-          "volume": 390835
-        },
-        {
-          "date": "2026-06-23",
-          "close": 4291.22,
-          "volume": 586588
-        },
-        {
-          "date": "2026-06-24",
-          "close": 4309.66,
-          "volume": 652078
-        },
-        {
-          "date": "2026-06-25",
-          "close": 4277.26,
-          "volume": 754050
-        },
         {
           "date": "2026-06-26",
           "close": 4277.26,
@@ -9684,9 +9664,19 @@
           "volume": 667212
         },
         {
+          "date": "2026-07-20",
+          "close": 4643.4,
+          "volume": 274158
+        },
+        {
           "date": "2026-07-21",
           "close": 4688.7,
           "volume": 530094
+        },
+        {
+          "date": "2026-07-22",
+          "close": 4711.6,
+          "volume": 996475
         },
         {
           "date": "2026-07-23",
@@ -9729,17 +9719,27 @@
           "volume": 505420
         },
         {
+          "date": "2026-08-04",
+          "close": 4935.0,
+          "volume": 1181747
+        },
+        {
+          "date": "2026-08-05",
+          "close": 4912.4,
+          "volume": 546332
+        },
+        {
           "date": "2026-08-06",
-          "close": 4973.5,
-          "volume": 527131
+          "close": 4975.0,
+          "volume": 702378
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (37.95) and price position relative to SMA50 (4416.75). Technical analysis only — verify with fundamentals.",
-        "target_price": 5222.18,
-        "stop_loss": 4724.82,
+        "reasoning": "Based on RSI (37.95) and price position relative to SMA50 (4471.09). Technical analysis only — verify with fundamentals.",
+        "target_price": 5223.75,
+        "stop_loss": 4726.25,
         "risk": "Medium"
       }
     },
@@ -9747,16 +9747,16 @@
       "symbol": "TRENT",
       "name": "Trent",
       "sector": "Others",
-      "price": 3069.9,
-      "change": -59.1,
-      "change_pct": -1.89,
+      "price": 3060.5,
+      "change": -68.5,
+      "change_pct": -2.19,
       "open": 3120.0,
-      "high": 3127.0,
-      "low": 3050.0,
-      "volume": 509617,
-      "market_cap": 1636969742336,
-      "pe_ratio": 94.34,
-      "pb_ratio": 23.44,
+      "high": 3244.5,
+      "low": 3046.2,
+      "volume": 2798334,
+      "market_cap": 1644648333312,
+      "pe_ratio": 94.78,
+      "pb_ratio": 23.55,
       "eps": 32.54,
       "dividend_yield": 13.0,
       "roe": 27.13,
@@ -9765,25 +9765,25 @@
       "week52_low": 2183.67,
       "technicals": {
         "rsi": 46.69,
-        "macd": 22.21,
-        "macd_signal": 22.21,
-        "sma20": 2947.57,
-        "sma50": 2987.01,
+        "macd": 19.08,
+        "macd_signal": 19.08,
+        "sma20": 2942.01,
+        "sma50": 2983.27,
         "sma200": null,
-        "bb_upper": 3117.7,
-        "bb_middle": 2947.57,
-        "bb_lower": 2777.44
+        "bb_upper": 3109.56,
+        "bb_middle": 2942.01,
+        "bb_lower": 2774.46
       },
       "risk_metrics": {
-        "risk_score": 6,
-        "beta": 0.37,
-        "atr": 63.83,
-        "volatility_30d": 39.88,
+        "risk_score": 7,
+        "beta": 1.41,
+        "atr": 64.09,
+        "volatility_30d": 40.14,
         "max_drawdown": -14.99,
-        "sharpe_ratio": -0.94,
+        "sharpe_ratio": -1.0,
         "support": 2842.4,
         "resistance": 3129.0,
-        "relative_strength": -7.05,
+        "relative_strength": -7.28,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 10.34,
@@ -9792,6 +9792,11 @@
         "earnings_soon": false
       },
       "price_history": [
+        {
+          "date": "2026-06-25",
+          "close": 3216.2,
+          "volume": 1414292
+        },
         {
           "date": "2026-06-26",
           "close": 3216.2,
@@ -9918,11 +9923,6 @@
           "volume": 806910
         },
         {
-          "date": "2026-07-31",
-          "close": 3005.9,
-          "volume": 605222
-        },
-        {
           "date": "2026-08-03",
           "close": 3050.0,
           "volume": 883208
@@ -9939,16 +9939,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 3069.9,
-          "volume": 509617
+          "close": 3060.5,
+          "volume": 773222
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (46.69) and price position relative to SMA50 (2987.01). Technical analysis only — verify with fundamentals.",
-        "target_price": 3223.4,
-        "stop_loss": 2916.4,
+        "reasoning": "Based on RSI (46.69) and price position relative to SMA50 (2983.27). Technical analysis only — verify with fundamentals.",
+        "target_price": 3213.53,
+        "stop_loss": 2907.47,
         "risk": "Medium"
       }
     },
@@ -9956,16 +9956,16 @@
       "symbol": "ULTRACEMCO",
       "name": "UltraTech Cement",
       "sector": "Infrastructure",
-      "price": 12178.0,
-      "change": -12.0,
-      "change_pct": -0.1,
+      "price": 12098.0,
+      "change": -92.0,
+      "change_pct": -0.75,
       "open": 12190.0,
       "high": 12204.0,
-      "low": 12110.0,
-      "volume": 50684,
-      "market_cap": 3582397775872,
-      "pe_ratio": 41.45,
-      "pb_ratio": 4.97,
+      "low": 12076.0,
+      "volume": 152361,
+      "market_cap": 3557981683712,
+      "pe_ratio": 41.17,
+      "pb_ratio": 4.94,
       "eps": 293.78,
       "dividend_yield": 199.0,
       "roe": 0.0,
@@ -9974,25 +9974,25 @@
       "week52_low": 10325.0,
       "technicals": {
         "rsi": 36.89,
-        "macd": 183.39,
-        "macd_signal": 183.39,
-        "sma20": 11608.47,
-        "sma50": 11297.92,
+        "macd": 201.23,
+        "macd_signal": 201.23,
+        "sma20": 11689.38,
+        "sma50": 11324.21,
         "sma200": null,
-        "bb_upper": 12114.33,
-        "bb_middle": 11608.47,
-        "bb_lower": 11102.61
+        "bb_upper": 12204.55,
+        "bb_middle": 11689.38,
+        "bb_lower": 11174.2
       },
       "risk_metrics": {
         "risk_score": 4,
-        "beta": -0.12,
-        "atr": 216.23,
-        "volatility_30d": 18.94,
+        "beta": 0.64,
+        "atr": 206.27,
+        "volatility_30d": 18.83,
         "max_drawdown": -11.12,
-        "sharpe_ratio": 4.09,
-        "support": 11125.9,
-        "resistance": 12178.0,
-        "relative_strength": 7.4,
+        "sharpe_ratio": 3.02,
+        "support": 11266.04,
+        "resistance": 12190.0,
+        "relative_strength": 5.01,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 26.71,
@@ -10001,16 +10001,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 11080.82,
-          "volume": 324599
-        },
-        {
-          "date": "2026-06-24",
-          "close": 11201.36,
-          "volume": 233046
-        },
         {
           "date": "2026-06-25",
           "close": 11259.18,
@@ -10147,17 +10137,27 @@
           "volume": 159579
         },
         {
+          "date": "2026-08-04",
+          "close": 12050.0,
+          "volume": 126569
+        },
+        {
+          "date": "2026-08-05",
+          "close": 12190.0,
+          "volume": 215254
+        },
+        {
           "date": "2026-08-06",
-          "close": 12178.0,
-          "volume": 50684
+          "close": 12098.0,
+          "volume": 116526
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (36.89) and price position relative to SMA50 (11297.92). Technical analysis only — verify with fundamentals.",
-        "target_price": 12786.9,
-        "stop_loss": 11569.1,
+        "reasoning": "Based on RSI (36.89) and price position relative to SMA50 (11324.21). Technical analysis only — verify with fundamentals.",
+        "target_price": 12702.9,
+        "stop_loss": 11493.1,
         "risk": "Medium"
       }
     },
@@ -10165,17 +10165,17 @@
       "symbol": "WIPRO",
       "name": "Wipro",
       "sector": "IT",
-      "price": 186.31,
-      "change": -0.68,
-      "change_pct": -0.36,
+      "price": 185.55,
+      "change": -1.44,
+      "change_pct": -0.77,
       "open": 186.0,
       "high": 188.24,
-      "low": 185.81,
-      "volume": 2652234,
-      "market_cap": 1843043893248,
-      "pe_ratio": 14.81,
-      "pb_ratio": 2.38,
-      "eps": 12.58,
+      "low": 185.41,
+      "volume": 4636486,
+      "market_cap": 1838988001280,
+      "pe_ratio": 14.71,
+      "pb_ratio": 2.37,
+      "eps": 12.64,
       "dividend_yield": 424.0,
       "roe": 16.13,
       "debt_to_equity": 27.4,
@@ -10183,25 +10183,25 @@
       "week52_low": 169.0,
       "technicals": {
         "rsi": 56.67,
-        "macd": 2.62,
-        "macd_signal": 2.62,
-        "sma20": 178.84,
-        "sma50": 179.85,
+        "macd": 2.56,
+        "macd_signal": 2.56,
+        "sma20": 178.8,
+        "sma50": 179.83,
         "sma200": null,
-        "bb_upper": 190.2,
-        "bb_middle": 178.84,
-        "bb_lower": 167.48
+        "bb_upper": 190.06,
+        "bb_middle": 178.8,
+        "bb_lower": 167.54
       },
       "risk_metrics": {
         "risk_score": 4,
         "beta": 0.33,
-        "atr": 3.77,
-        "volatility_30d": 20.6,
+        "atr": 3.8,
+        "volatility_30d": 20.74,
         "max_drawdown": -18.92,
-        "sharpe_ratio": 2.87,
+        "sharpe_ratio": 2.68,
         "support": 172.47,
         "resistance": 188.66,
-        "relative_strength": 5.18,
+        "relative_strength": 4.8,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 87.37,
@@ -10357,16 +10357,16 @@
         },
         {
           "date": "2026-08-06",
-          "close": 186.31,
-          "volume": 2652234
+          "close": 185.55,
+          "volume": 3894764
         }
       ],
       "ai": {
         "signal": "Buy",
         "confidence": "Low",
-        "reasoning": "Based on RSI (56.67) and price position relative to SMA50 (179.85). Technical analysis only — verify with fundamentals.",
-        "target_price": 195.63,
-        "stop_loss": 176.99,
+        "reasoning": "Based on RSI (56.67) and price position relative to SMA50 (179.83). Technical analysis only — verify with fundamentals.",
+        "target_price": 194.83,
+        "stop_loss": 176.27,
         "risk": "Medium"
       }
     },
@@ -10374,43 +10374,43 @@
       "symbol": "BRITANNIA",
       "name": "Britannia",
       "sector": "FMCG",
-      "price": 5411.5,
-      "change": -28.5,
-      "change_pct": -0.52,
+      "price": 5406.0,
+      "change": -34.0,
+      "change_pct": -0.62,
       "open": 5440.0,
       "high": 5443.5,
-      "low": 5390.0,
-      "volume": 65389,
-      "market_cap": 1303458742272,
-      "pe_ratio": 51.45,
-      "pb_ratio": 25.53,
+      "low": 5363.5,
+      "volume": 241655,
+      "market_cap": 1302133997568,
+      "pe_ratio": 51.4,
+      "pb_ratio": 25.5,
       "eps": 105.18,
-      "dividend_yield": 164.0,
+      "dividend_yield": 165.0,
       "roe": 53.31,
       "debt_to_equity": 26.88,
       "week52_high": 6336.0,
       "week52_low": 5035.0,
       "technicals": {
         "rsi": 20.13,
-        "macd": NaN,
-        "macd_signal": NaN,
-        "sma20": NaN,
-        "sma50": NaN,
+        "macd": 58.27,
+        "macd_signal": 58.27,
+        "sma20": 5353.8,
+        "sma50": 5220.54,
         "sma200": null,
-        "bb_upper": NaN,
-        "bb_middle": NaN,
-        "bb_lower": NaN
+        "bb_upper": 5534.16,
+        "bb_middle": 5353.8,
+        "bb_lower": 5173.43
       },
       "risk_metrics": {
         "risk_score": 5,
-        "beta": NaN,
-        "atr": NaN,
-        "volatility_30d": NaN,
+        "beta": 0.52,
+        "atr": 103.58,
+        "volatility_30d": 19.35,
         "max_drawdown": -12.9,
-        "sharpe_ratio": NaN,
+        "sharpe_ratio": 1.9,
         "support": 5196.95,
         "resistance": 5531.0,
-        "relative_strength": 2.48,
+        "relative_strength": 2.51,
         "near_52w_high": false,
         "near_52w_low": false,
         "payout_ratio": 71.31,
@@ -10419,21 +10419,6 @@
         "earnings_soon": false
       },
       "price_history": [
-        {
-          "date": "2026-06-23",
-          "close": 5155.14,
-          "volume": 220646
-        },
-        {
-          "date": "2026-06-24",
-          "close": 5176.29,
-          "volume": 286835
-        },
-        {
-          "date": "2026-06-25",
-          "close": 5151.21,
-          "volume": 193478
-        },
         {
           "date": "2026-06-26",
           "close": 5151.21,
@@ -10515,6 +10500,11 @@
           "volume": 199477
         },
         {
+          "date": "2026-07-20",
+          "close": 5380.39,
+          "volume": 227434
+        },
+        {
           "date": "2026-07-21",
           "close": 5392.2,
           "volume": 158603
@@ -10556,8 +10546,8 @@
         },
         {
           "date": "2026-07-31",
-          "close": NaN,
-          "volume": 0
+          "close": 5416.5,
+          "volume": 428290
         },
         {
           "date": "2026-08-03",
@@ -10565,17 +10555,27 @@
           "volume": 201410
         },
         {
+          "date": "2026-08-04",
+          "close": 5478.0,
+          "volume": 272040
+        },
+        {
+          "date": "2026-08-05",
+          "close": 5440.0,
+          "volume": 409191
+        },
+        {
           "date": "2026-08-06",
-          "close": 5411.5,
-          "volume": 65389
+          "close": 5406.0,
+          "volume": 241655
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Low",
-        "reasoning": "Based on RSI (20.13) and price position relative to SMA50 (nan). Technical analysis only — verify with fundamentals.",
-        "target_price": 5682.07,
-        "stop_loss": 5140.93,
+        "signal": "Buy",
+        "confidence": "Medium",
+        "reasoning": "Based on RSI (20.13) and price position relative to SMA50 (5220.54). Technical analysis only — verify with fundamentals.",
+        "target_price": 5676.3,
+        "stop_loss": 5135.7,
         "risk": "Medium"
       }
     }
@@ -10597,11 +10597,6 @@
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTFNTZVZXS29iV0hzdmR6cHFrZC00VkxZQ0lOTzRlaC1EdzJKQkpMendkZ2hNZURzYjBjRHBhVF9OUDQ4ckJDY3ZiX184NWVfSnlFdW1uMC1QaTNidE1jTDdMQ1hhUVhJSjVYMmFVNXo3eFhtTmpjR0FGU0FIVnJHQ2ozVEVOOGc?oc=5"
     },
     {
-      "title": "Why Sensex jumped 504-pts, while Nifty plunged 184-pts Tuesday morning?",
-      "date": "2026-08-04",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdHU4Ty0yNHZPWVJlSWl2NVBianN1bmVhRDdpUXFfU3VqTjhJU0NRZEl2SUZjZ1RBS0RSaEZqWERySUpvcXB2ZHhDUmVTeGJlTXBTT0NrNWRyRkFVNlM0Q3c0dEZyeUkyb0twaEsxNGpJbjlkUkdibkNIbXRZSDhTVGo5THpCOHJBOEpkcUxjNlFiVWhOaS1McmFqV2cyek84cW9OVFh4bzlYdzh4VXc2YWJpTHdTXzBvd0xqMDhteFNNX1pPRk1kRWt5OTJhMHJLRUHSAdcBQVVfeXFMT0pWblRVdTFjM0wtdklmb3RGZzFGZDdSOTN1TlFaenBTTWRiVUZwdi03QU1yMHJUVXpzemlMeE01ZXNJM1JmU21MYXY3Y0FOYzR4OUNEaDlzVHZhOEZvYjZsSDU1YWo3b0I4RldYNjlJWVM1TWVLRmUyNzRSYUo2NGpJMzBESUk5bGlFZ01adF9aNGxJSjJmQV90QkgyNlBTQ2VTWHNob1g1akVtNUZyOEYtODBlSV9RcWFzRTNONTlQTVl6RVozYm9KY0taZEpQeEpUbjYwZlU?oc=5"
-    },
-    {
       "title": "Sensex gains 0.6% while Nifty 50 crashes over 1%: Decoding the unusual market divergence",
       "date": "2026-08-04",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQZ3kxcDRYall5NUJYZUw2VUs3UERKNFZzX1d5dksyQUJDZnpoYzhZTHdWN1lEVG1CdmlIbU0ySDhGTU5aODdBOGd2dmtWM2NMR1ZRQmdnT1RfZ01oNzNFQWpEWEF6Q2h6MU13UW9wSGRJT1pncUVpX2FwMEhYd0lSTjZISVV0TmFpNEVQYllFYUlmcVItdWxfS0dTLTdwZ1M4UmRnc3JBNEV2MGl0ZlNLZTRaSzhvNE8teHhkcXZrM0hOaVhCZlkyMnBDU0V4aE1CbEFZbE1Dbzg0S2tsR0RKamxrY2NCdG5fMDY00gHwAUFVX3lxTE42ZDBBV2FSandibm9kNHJHeTlJajdQelBDajNYYjdMdHR6UVVReEF3aWlwRUxYeDJ0dFBrSHRxR0U2SlcySi1feHJTTjNheFowdWRkU1VucHJ0Unk5UWJOaW1heEFqbjRtUVVNc1A4Ul9RRHhTNGFBeGZWXzlIa29uTVBvTGtHNlNEazFsdEFScjVyaUNTZzRjS2tHc0hPZzZUUkQwc3Q4aDkxRV91U0Jyd3Q5VHYyRklnVE5uNWZmT2hZVmNPUm5MRXJKY2ROekM1clUtVC1ITTNPYmhqRGlPWDljUm1Jam9TNDcxRzc4TA?oc=5"
@@ -10617,39 +10612,44 @@
       "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOcDFheXBtUXg5Uy1NTWQ2VG5pWENKNXlTejFOZUt3cXRXaHhTdjRDWFp4ZDY5ZkdpNkVrbzZ3V1g1anVBcWVzc1ZEVUtPU3l0YWlRRFQyYWtWdlVfMUVOX2ZMd0dCdndnMExNdkdaQmtOUlQxT1JIOWlHZG41Qm1GMEo2MFpfX0V4QXZaZnNfRXBKdFNWalR2V2N0SzZFMjJiWUYya3UxTHV2TVdZWTAwU0dVaHl3YzhadktLWEQ1ZkRhMFp6TWw5TktmMXZlcDl2ckZ3R2h4RjVvckVsdHNCcFg0X3dWTjdydVFVZnRDcUQ3dTFibHJmY2lsLU9ybzjSAYQCQVVfeXFMTnhEd3c4dEpMeFYzOWZraVVBRG1EdWRrLWtzVjdNYnV3M2pZY3RjYmlSd1B3UWNzMDVPdWM5cGVPbU1KdGhDaEFPTVVQZlBnU2RtSEVMVUlMQzhPVnNnYVF0aDRMb3VZVXFfMC1yMXNIRzluV2pEejY0cUxqQk9rQXhPeHdTYVpWU1hYeVVxMThEanFhVFoyeGljNnYyT291N3dvd2RHRGFhMWRTSEhuWmpSSFJuRmFySDNJRDhORVFwWGlla19rR083aXV4blFVS3hueVJQOTk3Wi1nLWhRMVA2ZnpPRUxlSVhoTnBmd3RPSm9nYWF4NGFUN0Zfck9qbzFoR0w?oc=5"
     },
     {
-      "title": "Breakout stocks to buy or sell: Sumeet Bagadia recommends five shares to buy today — 5 August 2026",
-      "date": "2026-08-05",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNbzF6UVgyUlNpSGVYR3pyQVVVVWwwaEI5aGVLb3dwQlN0cHNHcVNjYWszSHhRbnVGLXZuMktLTXZYRS1EcS1ScDhGeTNwVDVYYnJaR3h4RU4xRUxvT3Bkal8tS2pyS01kelBHSFpKR1F0cmVvUmVnTVU2UlQ4b05tbjhDQ3ZJMnpTS28tVUY3LUlfaUUyVzBfQ1hEdlc4bTdic1JMSURnMFJaTFlVWDBtaVpxa0JibEJtbElibEZJeFZrcWtiNEhaSUNMeXdlTHpxSTUyamY0NkFjX3RKSEVfa3R6b0lLWUJQWUV4STZSZkN2TWY3dmpTSNIB_gFBVV95cUxOSWk1bl9UUk9EM3NJMmkyWTk0TmdLeC0za2V1bEVQVExkZnRILTBzTUdQUWprdHhhSWU3R0xWdFBOdjJTZ2pFa0xkZjUyM2xlODhaVGJBY0RPMm9qcjNEcVplZExrdHJxOHV1LU93MkNXQkJfZGEwd3FKV3FYZEc5bmtvY05QYXN4WEJaRVREWGFnU0p3SHZrOXpFaC0tZXhlYnc4MkhWUHEzeF9CY0ktTDJXeUxBTTItdEwwYl9vUDVGZ1JsM3NjLVlkTktmaGR4TTRpaFRyXzJGYXB4b1dmWk40MXBMNUFPdDR3cnhvZjNobWRLSmpMZDh2aUZnZw?oc=5"
-    },
-    {
-      "title": "From Gift Nifty to RBI MPC meeting outcome, oil prices: 8 key things that changed for Indian stock market overnight",
-      "date": "2026-08-05",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNOEU5WUtCaFAxQU1TU05zN3ZqYTA4R2hDSXdrNm12emxjZEVzQWFUenNILUJKclppcDFMRjhtZC15ZDAxX2FGQmVtbjlMUnNoeWRUNG00cW5ZZDVpdGJWTEE2SENjY1BXcG96WU5aazg1QXdFRy1YOF9DZ3FOdndmVlNRdzJldnlveWdqQXd2Q1pmaUtnWjJubFpzT1JzcjhtYVkzZUpHQUtwVmstVkxVS1RkUm1vc2JXQl9MZldlVno3M1l1ZWREVTE3U0Z4dEFNQlpLRlgtWHhsRVZCNk01UmVlcTlIQ1FSbE5kZmxGaWdycGFQbHhJVUI0TGtrT0Y0YWc5MG95aDNGWmQzdGlsSNIBlgJBVV95cUxPeXNkZ01uOVR4QVNGZVFWd2Q5RjhQRHN6NThaZ0hXY2V3VVRaVjhMaGJUbzBTOHJHUldPWXFyRWhaZ1o3TmwzdDVZMVhNZjhRWHFnTEVpZjhJMFo0eTFQaG9LOWthNGVVTmszTkFxTmdveTlPSjYwMElRZWFkczIwdEN4d1VsbEppbkNlV1l6bUwwZXNxWnB6eVVUMktzQ3NtbU5ZUVM0WlB4NjFmc2N6Q3NiaTJ5NnFrbHFpNzMtMUdTRHZlT3NXRm1melJmdk93VHU1SlZUSU9RN1lJTnUwWnZUZ3U0cE5ELVR5TEFvVXMwejBwOVdZd081RHZKMHh2YkNoZWJjdFE3LUs1WC1ab1k5V0xKQQ?oc=5"
-    },
-    {
       "title": "Stock market today: Nifty50 tops 22,700, BSE Sensex gains 185 points amid Iran war de-escalation hopes",
       "date": "2026-04-02",
       "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxNdTlvV2xUQXc1RnhTX0ttR0lsWnc3ZWowOEFHM1phYmFWdE1oMGpFa0VuN05pdFRMVkJVdzEwc2p2S2Y5M1ZvQzNwZTJZZjlORWM3QWMtYWUwbFNLSDRPSVIxY0NvRFBQVVdYWmhzUFhwUXRDU1Q5aFdBS0l0SkFrRnQwdXZlREl4cFBCQ3FoRGVZYzY1OW5aV2pGS2hqcEpXOHlLUTRaQS1oYlhzcnk4cFh1WkZHSGxWU2owRkVxcUFXTzJ2MWdQWXVUa3pkNkVySDlSNGRGLWdUaXY0TnhwdHgxNmJVZjlQZllQbmhDMVRYSmhkV1dENHh2SGJFR21KMEtEcGR2SzctYk9DWkhybVlIT1BVLWMwZkFBZUNqWVpHWVdjWWktMHZQYjQ0cHBZV2RzN9IBugJBVV95cUxPZmMtVDZoRURuVWxib1F2bDhVWGVlYU5CcHRjR1JxbmFWQjN5SlNEdG1XTWlOeHlhOUYzS1ZNeEJVc3J1YXltblFQMktmQjgtZzloTUtkZnI0dzlOOWlWMjRZeFBhSEFJNzMzV2NEV1pDa1RuVEdmZWc0NGN3dUNQa1VVV2xlZjM5N1dSRDlaelRaQWFwZk9Qak1GM2xnV1FnbUVtV1haRWl5SzZxQmpoVTlzTi1EY0hWVzBQNHhzX0oyT0tKeTlXVzh4OE05QnhzM2ZUQUdNZ3g2Q3BuYjl5cTZHUnE1SExJb2htbGZhWWt0M3NDRU44M3oxbEYtVzVEcDJKM1lobUZlTnZuLXNwR2swcm5pMlhGMkJzemRTNVNnWTJmYi1sUW1XQ1hSdTdqVnVrRU9pdjhLUQ?oc=5"
+    },
+    {
+      "title": "Sensex crashes over 700 points, Nifty 50 ends below 24,000- key factors behind stock market fall explained",
+      "date": "2026-07-22",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQYjVkQ05MUVp6cnJRX0tIY2R4V1RDUkpKZ0daeS1IMnF2NTZuRXFINDE0bkdISks0ZnlkUVFZejFXTGs4eUwtdGk2NTRTclpTY3VMSUN1cVBKYVRYQU1PVVpkQk1ic3lGQU03VkpBTVJ5QllaVkl1aUg0Q3JCT0x1RzRpcjVZbG1YNUlxUlFSWW4ybUR2NjFqUnVFX1RiU2tGOTNSR2tVaE0zX056bTM2cWdIajNuaEYwZm51WjUxSVpmeHRRVzJpbVZWY1U4R1R2ck9NbEQ5UEEtdTZpOWVyRTZsaTBFallGYjVBRVdJUk9ldUVHYXc4aU4zU1VIeUZTYXhXTnp5b2VLYlFGaFVB0gGUAkFVX3lxTE8yNUpEWTUtUE9YWW9NanZiMUZFYU9JNW4wUVRzTkhDdElnMElNNHZoNEVkTURNRmV2YnN3ckdtQnVQSVZrZnVyX0RUQVBBR0h1d01GZDg3QmRBdEF5Nks2SDhoWlRvWnRRQVB2SzZfOUhmcS1Ca3lBd09nMWtLYkFNYUFNZHBSWGNibmxzZ0N6d2RlMXNzeWF2ZGdiVFZFUGVmNWVEVFpMY2QxRGV1ZXk5UVUyaERILXFVRUV2ajdBR2gzdVctTER4X3JYeVVHZXQ0LTFLTTlFYi0zUHpNNWx3dU13Z01pS3ZiajRMbnZOS1E4dDdYbkNRam5GUmJOV2UyaTZyVjVwNHlpdVBQTFphZkJlNg?oc=5"
+    },
+    {
+      "title": "Sensex tanks 700 points: 3 reasons why the stock market is falling today",
+      "date": "2026-07-22",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNSTJQUDBNdExlYVhyUXh4WlZ5MUlDeUR5LTNYRExqRlM3TlpxMlcwTkdMUnliQzFYclFxaE1YazRpSkloTlBadTdtcTE1SlZWdXZveHNVYzFkV2N2dlB1emlxOU9tejZDY1RMc2phb3FIM0pBUVc2eXdZc2dqQm5iRmphaFVSS01yQmVCMHgtTGY5Q1ZZTGlCS1VDNzI5UjMwSDR4MEZhRVlIRi1tTTA0VlNIWUphQ3IxbUxPRmY4Vk1mX1c4bWI2YXRDemxWbXE5SnFiR3hjZ2V4bnUzanA2X0dUQlpsRTg1N01EN3cwc3dVYjjSAfgBQVVfeXFMTVZzTHdDZVFzd1o0MEtFUmhlOGxjTmJSNGRTRnh3b3BaMDNuWG9oWVo0SE9XTHYxVkpZOXIyOEZNbzVLMzBNY2VibFZFc3FqNEllcW5ycnBnTmdRM3ItTHhqY3lpUzNXWVc2UFJ6aEZJNlpxcGdBaEN2Q0NzS0pHM29jRUZRRkE5NkItZlloODgta2dYcGVKVHROZTcwak00QTJRanA5UWs0ajFSeFpJVW50SWRDOUwtbHNQVHZvaXV3eWN2bWRRbU5kNzdlTVNUVnBFRTRoMmRmU3hCbHI5MW0xbUhDcnZxMkl5Vk9vMDlLV2VFdUZTZjg?oc=5"
+    },
+    {
+      "title": "Are Stock Markets Shut For Ram Navami Today? Check NSE, BSE Holiday List",
+      "date": "2026-03-26",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcWJqNDFtYTVaMlMxVGNvVWtQbFB4UERJLUU2bzB1by1xb2RQZTFkRGMyNFFTNEIxYXF6bVdPek01d0dOeU9BZ3Byc3VkdkJtZEpaTG9yYjU2ak5YSG14clZuWFFjenhDcDNLREdFZDNzdkVsMFRiX2pSaTRvZGJxcVVZTktsdWZYWnpmZk1EdXZzQngwZzVnS3g0OGhjdEJJQTB1UGNWUzBMQzFoNXVCUdIBuAFBVV95cUxOQXhGMVpFWHV5QlpsUS0zQkdxZ1E0UV9ZT2Zsa0tJSTVIZUE1TWZOTFI0RUNZRDJOUzVQWHd5UkdlTGQ5TEtZNzZidklMbGpDZnVSU1RlU2xJMXVSaUdmVGtrQnRJNGJLUk5HcW9odlJWS0YzS011OXpmV095dlBuaXdsajF6alNVaDJMYTUzc3Z0YUxrYXJwU3RoZ2tJcU1kYmVQOFJiaU9tZzVfa3Z5ZmJGbDd6d3p2?oc=5"
     }
   ],
   "sector_performance": {
-    "Infrastructure": 0.13,
-    "Pharma": 0.65,
-    "Others": -0.38,
-    "Banking": 0.21,
-    "Auto": -0.63,
-    "Financial Services": 0.34,
-    "Energy": -0.84,
-    "IT": -0.41,
-    "Metals": -1.0,
-    "FMCG": -0.11
+    "Infrastructure": -0.48,
+    "Pharma": 0.31,
+    "Others": -0.64,
+    "Banking": 0.33,
+    "Auto": -1.27,
+    "Financial Services": 0.01,
+    "Energy": -0.77,
+    "IT": -0.67,
+    "Metals": -1.34,
+    "FMCG": -0.3
   },
   "summary": {
     "total": 50,
     "buy": 23,
-    "hold": 26,
-    "sell": 1,
-    "gainers": 20,
-    "losers": 30
+    "hold": 27,
+    "sell": 0,
+    "gainers": 11,
+    "losers": 38
   }
 }
