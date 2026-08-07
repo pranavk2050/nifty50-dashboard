@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T11:17:43Z",
+  "last_updated": "2026-08-07T11:24:10Z",
   "nifty_index": {
     "value": 24570.65,
     "change": -65.35,
@@ -330,11 +330,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
+        "signal": "Sell",
         "confidence": "Medium",
-        "reasoning": "Adani Enterprises' high P/E ratio and debt-to-equity ratio are concerns, but the stock's strong 52-week performance and high RSI value indicate momentum, while the MACD and SMA indicators suggest a potential correction, making it a hold for now. The dividend yield of 4.0% is attractive, but the ROE of 0.0% is a concern. The stock's infrastructure sector exposure and recent price action warrant a cautious approach.",
-        "target_price": 3100.0,
-        "stop_loss": 2800.0,
+        "reasoning": "Based on RSI (79.31) and price position relative to SMA50 (3048.6). Technical analysis only — verify with fundamentals.",
+        "target_price": 3171.0,
+        "stop_loss": 2869.0,
         "risk": "Medium"
       }
     },
@@ -540,10 +540,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Adani Ports' current price is near its 20-day and 50-day moving averages, indicating a neutral trend, while its high debt-to-equity ratio and zero ROE raise concerns about its fundamental strength, but the dividend yield is attractive",
-        "target_price": 1750.0,
-        "stop_loss": 1600.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (64.01) and price position relative to SMA50 (1795.28). Technical analysis only — verify with fundamentals.",
+        "target_price": 1778.18,
+        "stop_loss": 1608.82,
         "risk": "Medium"
       }
     },
@@ -957,11 +957,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Asian Paints' current price is near its 52-week high, and the RSI of 67 indicates a slightly overbought position, but its strong fundamentals, including a high ROE and low debt-to-equity ratio, suggest a stable outlook. The stock's P/E ratio is high, but the company's consistent dividend yield and growth prospects justify the valuation. However, given the current market conditions and technical indicators, a hold strategy seems prudent.",
-        "target_price": 2850.0,
-        "stop_loss": 2600.0,
+        "signal": "Buy",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (67.0) and price position relative to SMA50 (2693.95). Technical analysis only — verify with fundamentals.",
+        "target_price": 2871.75,
+        "stop_loss": 2598.25,
         "risk": "Medium"
       }
     },
@@ -1167,10 +1167,10 @@
       ],
       "ai": {
         "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Axis Bank's current price is near its 20-day moving average, and the RSI is at 53.73, indicating a neutral trend, while its fundamental factors such as a decent ROE of 13.35% and a high dividend yield of 8.0% support a hold position, but the recent decline in price and negative MACD value are causes for caution",
-        "target_price": 1300.0,
-        "stop_loss": 1150.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (53.73) and price position relative to SMA50 (1301.85). Technical analysis only — verify with fundamentals.",
+        "target_price": 1299.9,
+        "stop_loss": 1176.1,
         "risk": "Medium"
       }
     },
@@ -1375,11 +1375,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Bajaj Auto's current price is near its 52-week high, with a relatively high P/E ratio, indicating potential overvaluation, but its strong dividend yield and improving technical indicators like RSI and MACD suggest a hold strategy for now, as the stock may consolidate before its next move",
-        "target_price": 12000.0,
-        "stop_loss": 11000.0,
+        "signal": "Buy",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (55.19) and price position relative to SMA50 (10457.9). Technical analysis only — verify with fundamentals.",
+        "target_price": 12245.1,
+        "stop_loss": 11078.9,
         "risk": "Medium"
       }
     },
@@ -1584,11 +1584,11 @@
         }
       ],
       "ai": {
-        "signal": "Hold",
-        "confidence": "Medium",
-        "reasoning": "Bajaj Finance's current price is near its 20-day moving average, and the RSI indicates a neutral position, suggesting a hold strategy. The high debt-to-equity ratio is a concern, but the company's strong track record and decent EPS support its valuation. However, the recent price drop and low RSI value may indicate a potential buying opportunity in the near term.",
-        "target_price": 1150.0,
-        "stop_loss": 1000.0,
+        "signal": "Buy",
+        "confidence": "Low",
+        "reasoning": "Based on RSI (37.78) and price position relative to SMA50 (999.29). Technical analysis only — verify with fundamentals.",
+        "target_price": 1131.9,
+        "stop_loss": 1024.1,
         "risk": "Medium"
       }
     },
@@ -5556,10 +5556,10 @@
       ],
       "ai": {
         "signal": "Buy",
-        "confidence": "Medium",
-        "reasoning": "ITC's current price is near its 52-week low, and its RSI indicates a potential oversold condition, while its dividend yield is attractive, making it a good value pick in the FMCG sector. The stock's P/E ratio is reasonable, and its SMA20 and SMA50 indicate a potential trend reversal. However, the debt-equity ratio is a concern, which tempers the confidence in this recommendation.",
-        "target_price": 310.0,
-        "stop_loss": 270.0,
+        "confidence": "Low",
+        "reasoning": "Based on RSI (38.39) and price position relative to SMA50 (284.9). Technical analysis only — verify with fundamentals.",
+        "target_price": 300.41,
+        "stop_loss": 271.8,
         "risk": "Medium"
       }
     },
@@ -10646,9 +10646,9 @@
   },
   "summary": {
     "total": 50,
-    "buy": 32,
-    "hold": 16,
-    "sell": 2,
+    "buy": 35,
+    "hold": 12,
+    "sell": 3,
     "gainers": 24,
     "losers": 26
   }
